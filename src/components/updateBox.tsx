@@ -10,7 +10,7 @@ const UpdateBox = ({ yearSelected }: { yearSelected: number }) => {
           return (
             <article
               key={index}
-              className={`space-y-4 relative transition-all duration-500 ${
+              className={`space-y-4 relative transition-all duration-700 ${
                 yearSelected === year
                   ? "opacity-100 min-w-full h-auto overflow-visible px-10 py-7"
                   : "opacity-0 w-0 h-0 overflow-hidden px-0 py-0"

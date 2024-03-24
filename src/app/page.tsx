@@ -13,15 +13,12 @@ const years = [
 ];
 
 export default function Home() {
-  const [yearSelected, setYearSelected] = useState(2018);
+  const [yearSelected, setYearSelected] = useState(2015);
 
   // useEffect(() => {
   //   const yearsCont = document.querySelector("#years-cont")!;
 
-  //   yearsCont.scroll({
-  //     left: yearsCont.clientWidth / 20 + 50,
-  //     behavior: "smooth",
-  //   });
+  //   yearsCont.scrollLeft += 50;
   // }, [yearSelected]);
 
   return (
@@ -88,7 +85,7 @@ export default function Home() {
           <span className="absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-black/5 to-transparent pointer-events-none"></span>
           <span className="absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-black/5 to-transparent pointer-events-none"></span>
           <div
-            className="flex py-3 gap-1 px-5 overflow-x-scroll hide-scrollbar"
+            className="flex py-3 gap-1 px-5 overflow-x-scroll hide-scrollbar scroll-smooth"
             id="years-cont"
           >
             {years.map((year, index) => (

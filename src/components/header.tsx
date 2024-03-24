@@ -17,33 +17,7 @@ import { Squeeze as Hamburger } from "hamburger-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-
-const socialLinks = [
-  {
-    title: "github",
-    link: "#",
-  },
-  {
-    title: "medium",
-    link: "#",
-  },
-  {
-    title: "linkedin",
-    link: "#",
-  },
-  {
-    title: "instagram",
-    link: "#",
-  },
-  {
-    title: "google scholar",
-    link: "#",
-  },
-  {
-    title: "INFO@TOLUWANI.EA",
-    link: "#",
-  },
-];
+import { socialLinks } from "../../data";
 
 const navLinks = ["about", "updates", "blog", "contact"];
 
@@ -67,7 +41,7 @@ const Header = () => {
     setOpen(false);
   }, [pathname]);
 
-  const isContactPage = pathname === "/contact";
+  const showInfo = pathname === "/contact" || pathname === "/about";
 
   return (
     <>
@@ -75,12 +49,12 @@ const Header = () => {
         <Link href="/" data-cursor="-hidden">
           <Logo />
         </Link>
-        {isContactPage ? (
+        {showInfo ? (
           <InfoBar open={open} setOpen={setOpen} />
         ) : (
           <>
             <div
-              className="px-5 py-[18px] bg-[#00000026] flex gap-6 rounded-[48px]"
+              className="px-5 py-[18px] mr-28 bg-[#00000026] flex gap-6 rounded-[48px]"
               data-cursor="-hidden"
             >
               <button className="transition-transform duration-500 hover:scale-125">

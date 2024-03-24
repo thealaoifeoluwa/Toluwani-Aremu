@@ -1,3 +1,30 @@
+export const socialLinks = [
+  {
+    title: "github",
+    link: "#",
+  },
+  {
+    title: "medium",
+    link: "#",
+  },
+  {
+    title: "linkedin",
+    link: "#",
+  },
+  {
+    title: "instagram",
+    link: "#",
+  },
+  {
+    title: "google scholar",
+    link: "#",
+  },
+  {
+    title: "INFO@TOLUWANI.EA",
+    link: "#",
+  },
+];
+
 type dataType = {
   year: number;
   contents: {
