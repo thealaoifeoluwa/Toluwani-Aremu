@@ -1,13 +1,21 @@
+"use client";
+
 import GoogleIcon from "@/icons/google";
 import SpotifyIcon from "@/icons/spotify";
 import Image from "next/image";
 import Link from "next/link";
 import { socialLinks } from "../../../data";
+import { useDrag } from "@/hooks/useAnimation";
 
 const Page = () => {
+  useDrag();
+
   return (
     <div className="mt-[115px]">
-      <div className="flex items-start gap-80 overflow-x-scroll h-[75vh] pr-20 hide-scrollbar">
+      <div
+        className="flex items-start gap-80 overflow-x-scroll h-[75vh] pr-20 hide-scrollbar"
+        id="draggable"
+      >
         <section className="min-w-[100vw] flex items-center">
           <div className="flex gap-16 items-end w-fullscreen px-10 max-w-full mx-auto">
             <div>

@@ -28,8 +28,8 @@ export const useAnimateHeaderDropdown = () => {
         {
           opacity: 1,
           y: 0,
-          stagger: 0.4,
-          duration: 0.5,
+          stagger: 0.3,
+          duration: 0.4,
         }
       )
       .fromTo(
@@ -39,10 +39,10 @@ export const useAnimateHeaderDropdown = () => {
           x: 50,
         },
         {
-          delay: 0.2,
+          delay: 0.1,
           opacity: 1,
           x: 0,
-          duration: 0.4,
+          duration: 0.3,
         }
         // "<"
       );
