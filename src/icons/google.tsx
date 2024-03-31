@@ -1,7 +1,8 @@
 const GoogleIcon = () => {
   return (
     <svg
-      width="20"
+      className="w-4 md:w-5"
+      // width="20"
       height="21"
       viewBox="0 0 20 21"
       fill="none"

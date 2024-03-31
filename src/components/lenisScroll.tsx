@@ -54,11 +54,11 @@ const LenisScroll = ({ children }: { children: ReactNode }) => {
   }, []);
 
   // FIX SCROLL TO TOP ERROR WHEN ENTERING ANOTHER PAGE
-  useEffect(() => {
-    if (lenis) {
-      lenis.scrollTo(0, { immediate: true });
-    }
-  }, [pathname, lenis]);
+  // useEffect(() => {
+  //   if (lenis) {
+  //     lenis.scrollTo(0, { immediate: true });
+  //   }
+  // }, [pathname, lenis]);
 
   // UPDATE LOADING ANIMATION FOR EVERY PAGE
   useEffect(() => {

@@ -37,6 +37,27 @@ type dataType = {
   }[];
 };
 
+const data2024: dataType = {
+  year: 2024,
+  contents: [
+    {
+      title: "January",
+      data: [
+        {
+          text: 'Our paper, "ScholarFace: Scanning Faces, Discovering Minds", has been published in the 2024 IEEE International Conference on Consumer Electronics (ICCE). Congratulations to the team!',
+          link: "",
+          linkTitle: "Paper",
+        },
+        {
+          text: 'Our preprint, "Edge of Tomorrow: Evaluating Misinformation and Bias in LLM-Powered Chatbots on Climate Change and Mental Health", has been uploaded on SSRN.',
+          link: "",
+          linkTitle: "Preprint",
+        },
+      ],
+    },
+  ],
+};
+
 const data2023: dataType = {
   year: 2023,
   contents: [
@@ -458,7 +479,10 @@ export const allData = [
   data2021,
   data2022,
   data2023,
+  data2024,
 ];
+
+export const years = allData.map((data) => data.year);
 
 // {
 //   title: "",

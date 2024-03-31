@@ -8,10 +8,7 @@ import MailIcon2 from "@/icons/mail2";
 import StarIcon from "@/icons/star";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-
-const years = [
-  2012, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023,
-];
+import { years } from "../../data";
 
 export default function Home() {
   useDrag();
@@ -42,7 +39,7 @@ export default function Home() {
             <h1 className="text-[45px] min-[385px]:text-[52px] md:text-[90px] 2xl:text-[128px] leading-[40px] md:leading-[105px] text-nowrap text-stroke-1 md:text-stroke-2 text-center font-semibold">
               Toluwani Aremu
             </h1>
-            <span className="block text-right text-xs md:text-[20px] text-gray-500">
+            <span className="block text-right text-xs md:text-[20px] text-primary">
               Seeking AI... responsibly!
             </span>
           </div>
@@ -83,7 +80,10 @@ export default function Home() {
       </div>
 
       <div className="mt-[102px] px-5">
-        <h2 className="text-[32px] md:text-[64px] font-medium font-Acorns text-center">
+        <h2
+          className="text-[32px] md:text-[64px] font-medium font-Acorns text-center"
+          id="updates"
+        >
           Update
         </h2>
 
@@ -116,7 +116,10 @@ export default function Home() {
       </div>
 
       <div className="mt-[102px] text-center">
-        <h2 className="text-[32px] md:text-[64px] font-medium font-Acorns">
+        <h2
+          className="text-[32px] md:text-[64px] font-medium font-Acorns"
+          id="blog"
+        >
           Blog
         </h2>
         <p className="mt-4 w-[640px] max-w-full mx-auto md:text-2xl font-Acorns px-10 md:px-0">

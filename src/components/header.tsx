@@ -18,6 +18,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { socialLinks } from "../../data";
+import InfoBar from "./infoBar";
 
 const navLinks = ["about", "updates", "blog", "contact"];
 
@@ -41,7 +42,8 @@ const Header = () => {
     setOpen(false);
   }, [pathname]);
 
-  const showInfo = pathname === "/contact" || pathname === "/about";
+  // const showInfo = pathname === "/contact" || pathname === "/about";
+  const isHomepage = pathname === "/";
 
   return (
     <>
@@ -49,9 +51,7 @@ const Header = () => {
         <Link href="/" data-cursor="-hidden">
           <Logo />
         </Link>
-        {showInfo ? (
-          <InfoBar />
-        ) : (
+        {isHomepage && (
           <div
             className="px-5 py-[18px] mr-28 bg-[#00000026] hidden md:flex gap-6 rounded-[48px]"
             data-cursor="-hidden"
@@ -94,8 +94,10 @@ const Header = () => {
         // data-cursor-img="./images/toluwani.png"
       >
         <Gradient />
+
+        <InfoBar isHeader />
+
         <div className="w-fullscreen mt-5 2xl:mt-10 mx-auto px-5 md:px-10 max-w-full flex items-center justify-between relative">
-          <InfoBar />
           <Link href="/" data-cursor="-hidden">
             <Logo />
           </Link>
@@ -115,8 +117,13 @@ const Header = () => {
           <div id="menu" className="font-Acorns">
             {navLinks.map((link, index) => (
               <Link
+                onClick={() => setOpen(false)}
                 key={index}
-                href={"/" + link}
+                href={
+                  link === "updates" || link === "blog"
+                    ? `/#${link}`
+                    : `/${link}`
+                }
                 className="block font-semibold uppercase text-[48px] md:text-[70px] 2xl:text-[96px] before:transition-all before:duration-500 w-fit relative before:absolute before:contents-[' '] before:left-0 before:bottom-4 md:before:bottom-6 2xl:before:bottom-8 before:opacity-0 before:hover:opacity-100 before:h-0.5 md:before:h-1 before:w-0 before:hover:w-full before:bg-black relative z-10"
               >
                 {link}
@@ -142,31 +149,6 @@ const Header = () => {
         </div>
       </div>
     </>
-  );
-};
-
-const InfoBar = () => {
-  return (
-    <div className="absolute top-20 md:top-0 right-8 md:right-60">
-      <div
-        className="text-right space-y-1 text-xs md:text-sm font-light"
-        id="info"
-      >
-        <span className="flex gap-1 items-center">
-          10°C  <WeatherIcon />
-          <strong className="font-medium">ABU DHABI</strong> 05:05 PM
-        </span>
-        <span className="inline-block">
-          AVAILABLE <strong className="font-medium">APRIL 2024</strong>
-        </span>
-        <span className="flex gap-2 items-center justify-end">
-          <KiteIcon />
-          <a href="mailto:info@toluwani.ea" className="font-medium">
-            INFO@TOLUWANI.EA
-          </a>
-        </span>
-      </div>
-    </div>
   );
 };
 
