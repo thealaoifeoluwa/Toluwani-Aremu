@@ -1,8 +1,10 @@
 const Gradient = () => {
   return (
     <>
+      {/* COLOR GRADIENT */}
       <div className="pointer-events-none fixed -z-10 left-0 right-0 top-0 w-full">
         <svg
+          className="hidden md:block"
           // width="1512"
           // height="1546"
           viewBox="0 0 1512 1546"
@@ -264,6 +266,240 @@ const Gradient = () => {
             </clipPath>
           </defs>
         </svg>
+
+        {/* mobile */}
+        <svg
+          className="md:hidden"
+          // width="430"
+          // height="1412"
+          viewBox="0 0 430 1412"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g opacity="0.25" clip-path="url(#clip0_301_364)">
+            <g filter="url(#filter0_f_301_364)">
+              <ellipse
+                cx="315.232"
+                cy="101.12"
+                rx="514.5"
+                ry="161.399"
+                transform="rotate(38.4098 315.232 101.12)"
+                fill="#0041BE"
+              />
+            </g>
+            <g filter="url(#filter1_f_301_364)">
+              <ellipse
+                cx="867.648"
+                cy="288.988"
+                rx="310.177"
+                ry="102.746"
+                transform="rotate(-24.8314 867.648 288.988)"
+                fill="#0041BE"
+              />
+            </g>
+            <g filter="url(#filter2_f_301_364)">
+              <ellipse
+                cx="38.8219"
+                cy="673.494"
+                rx="932"
+                ry="532"
+                transform="rotate(13.7659 38.8219 673.494)"
+                fill="#00E5E0"
+              />
+            </g>
+            <g filter="url(#filter3_f_301_364)">
+              <ellipse
+                cx="887.286"
+                cy="511.986"
+                rx="272.5"
+                ry="155.011"
+                transform="rotate(-15.7049 887.286 511.986)"
+                fill="#00BCC2"
+              />
+            </g>
+            <g filter="url(#filter4_f_301_364)">
+              <ellipse
+                cx="618.159"
+                cy="628.165"
+                rx="320.693"
+                ry="98.4983"
+                transform="rotate(-43.6017 618.159 628.165)"
+                fill="#00FF66"
+              />
+            </g>
+            <g filter="url(#filter5_f_301_364)">
+              <ellipse
+                cx="747.159"
+                cy="636.49"
+                rx="320.693"
+                ry="98.4983"
+                transform="rotate(-43.6017 747.159 636.49)"
+                fill="#D6FFEE"
+              />
+            </g>
+            <g filter="url(#filter6_f_301_364)">
+              <ellipse
+                cx="1295"
+                cy="701.5"
+                rx="699"
+                ry="244.5"
+                fill="#FFB000"
+              />
+            </g>
+          </g>
+          <defs>
+            <filter
+              id="filter0_f_301_364"
+              x="-400.305"
+              y="-542.731"
+              width="1431.07"
+              height="1287.7"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="150"
+                result="effect1_foregroundBlur_301_364"
+              />
+            </filter>
+            <filter
+              id="filter1_f_301_364"
+              x="282.82"
+              y="-171.219"
+              width="1169.66"
+              height="920.413"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="150"
+                result="effect1_foregroundBlur_301_364"
+              />
+            </filter>
+            <filter
+              id="filter2_f_301_364"
+              x="-1075.33"
+              y="-88.9512"
+              width="2228.3"
+              height="1524.89"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="100"
+                result="effect1_foregroundBlur_301_364"
+              />
+            </filter>
+            <filter
+              id="filter3_f_301_364"
+              x="421.585"
+              y="145.489"
+              width="931.402"
+              height="732.993"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="100"
+                result="effect1_foregroundBlur_301_364"
+              />
+            </filter>
+            <filter
+              id="filter4_f_301_364"
+              x="176.135"
+              y="195.723"
+              width="884.048"
+              height="864.885"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="100"
+                result="effect1_foregroundBlur_301_364"
+              />
+            </filter>
+            <filter
+              id="filter5_f_301_364"
+              x="305.135"
+              y="204.048"
+              width="884.048"
+              height="864.885"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="100"
+                result="effect1_foregroundBlur_301_364"
+              />
+            </filter>
+            <filter
+              id="filter6_f_301_364"
+              x="396"
+              y="257"
+              width="1798"
+              height="889"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="100"
+                result="effect1_foregroundBlur_301_364"
+              />
+            </filter>
+            <clipPath id="clip0_301_364">
+              <rect width="430" height="1412" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
       </div>
 
       {/* LINE GRADIENT */}
@@ -271,6 +507,7 @@ const Gradient = () => {
         <svg
           // width="1513"
           // height="1120"
+          className="hidden md:block"
           viewBox="0 0 1513 1120"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -344,6 +581,89 @@ const Gradient = () => {
               y1="-2.18557e-08"
               x2="1512.5"
               y2="1120"
+              stroke="black"
+            />
+          </g>
+        </svg>
+
+        {/* mobile */}
+        <svg
+          className="md:hidden"
+          // width="431"
+          // height="960"
+          viewBox="0 0 431 960"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g opacity="0.06">
+            <line
+              x1="0.5"
+              y1="-2.04247e-08"
+              x2="0.500045"
+              y2="960"
+              stroke="black"
+            />
+            <line
+              x1="48.2778"
+              y1="-3.0352e-08"
+              x2="48.2779"
+              y2="960"
+              stroke="black"
+            />
+            <line
+              x1="96.0557"
+              y1="-3.0352e-08"
+              x2="96.0557"
+              y2="960"
+              stroke="black"
+            />
+            <line
+              x1="143.833"
+              y1="-3.0352e-08"
+              x2="143.834"
+              y2="960"
+              stroke="black"
+            />
+            <line
+              x1="191.611"
+              y1="-3.0352e-08"
+              x2="191.611"
+              y2="960"
+              stroke="black"
+            />
+            <line
+              x1="239.389"
+              y1="-3.0352e-08"
+              x2="239.389"
+              y2="960"
+              stroke="black"
+            />
+            <line
+              x1="287.167"
+              y1="-3.0352e-08"
+              x2="287.167"
+              y2="960"
+              stroke="black"
+            />
+            <line
+              x1="334.944"
+              y1="-3.0352e-08"
+              x2="334.944"
+              y2="960"
+              stroke="black"
+            />
+            <line
+              x1="382.722"
+              y1="-3.0352e-08"
+              x2="382.722"
+              y2="960"
+              stroke="black"
+            />
+            <line
+              x1="430.5"
+              y1="-3.24786e-08"
+              x2="430.5"
+              y2="960"
               stroke="black"
             />
           </g>
