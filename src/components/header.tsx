@@ -124,7 +124,7 @@ const Header = () => {
             ))}
           </div>
           <div
-            className="absolute bottom-10 right-5 md:right-10 flex flex-col items-end gap-3 w-[240px] max-w-full ml-auto font-light md:text-xl text-right"
+            className="absolute bottom-20 md:-bottom-10 2xl:-bottom-20 right-5 md:right-10 flex flex-col items-end gap-3 w-[240px] max-w-full ml-auto font-light md:text-xl text-right"
             id="menuLinks"
           >
             <h2 className="text-[#949494]">CONTACT</h2>

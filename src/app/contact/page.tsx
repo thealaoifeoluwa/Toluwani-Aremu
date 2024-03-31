@@ -26,7 +26,7 @@ const socialLinks = [
 const Page = () => {
   return (
     <div className="w-fullscreen px-7 sm:px-10 mx-auto max-w-full mt-[150px] md:mt-[60px] 2xl:mt-[142px]">
-      <div id="menu">
+      <div>
         <h2 className="font-light sm:text-xl text-[#949494]">CONTACT</h2>
         <h3 className="mt-3 2xl:mt-5 font-Acorns font-semibold text-[45px] 2xl:text-[65px] w-[293px] max-w-full sm:w-full">
           Want to work together on a <br className="hidden sm:block" /> project
@@ -42,10 +42,7 @@ const Page = () => {
           Or follow me from a distance:
         </p>
       </div>
-      <div
-        className="mt-5 2xl:mt-14 space-y-1 2xl:space-y-2 pb-5"
-        id="menuLinks"
-      >
+      <div className="mt-5 2xl:mt-14 space-y-1 2xl:space-y-2 pb-5">
         {socialLinks.map((link, index) => (
           <div
             key={index}

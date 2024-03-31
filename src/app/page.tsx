@@ -42,12 +42,12 @@ export default function Home() {
             <h1 className="text-[45px] min-[385px]:text-[52px] md:text-[90px] 2xl:text-[128px] leading-[40px] md:leading-[105px] text-nowrap text-stroke-1 md:text-stroke-2 text-center font-semibold">
               Toluwani Aremu
             </h1>
-            <span className="block text-right text-[8.5px] md:text-[20px] text-gray-500 min-[385px]:text-black">
+            <span className="block text-right text-xs md:text-[20px] text-gray-500">
               Seeking AI... responsibly!
             </span>
           </div>
         </div>
-        <p className="w-[425px] max-w-full px-10 text-center md:text-xl">
+        <p className="w-[425px] max-w-full px-10 md:px-0 text-center md:text-xl">
           I&apos;m a passionate learner and dedicated researcher specializing in
           advancing artificial intelligence with a robust skill set spanning
           both research and industry.
@@ -68,14 +68,14 @@ export default function Home() {
         <p className="md:text-xl">
           I am well-versed in essential tools such as
         </p>
-        <div className="flex justify-center gap-2.5 mt-4 md:text-xl">
+        <div className="flex justify-center gap-2 sm:gap-2.5 mt-4 md:text-xl">
           <span className="btn">Python</span>
           <span className="btn">PyTorch</span>
           <span className="btn">TensorFlow</span>
           <span className="btn">Keras</span>
         </div>
         <p className="mt-10 md:text-xl">Development Environments</p>
-        <div className="flex justify-center gap-2.5 mt-4 md:text-xl">
+        <div className="flex justify-center gap-2 sm:gap-2.5 mt-4 md:text-xl">
           <span className="btn">VSCode</span>
           <span className="btn">Visual Studio</span>
           <span className="btn">PyCharm</span>
@@ -119,7 +119,7 @@ export default function Home() {
         <h2 className="text-[32px] md:text-[64px] font-medium font-Acorns">
           Blog
         </h2>
-        <p className="mt-4 w-[640px] max-w-full mx-auto md:text-2xl font-Acorns px-10">
+        <p className="mt-4 w-[640px] max-w-full mx-auto md:text-2xl font-Acorns px-10 md:px-0">
           Some thoughts, reflections, & notes on artificial intelligence and
           development, along with some latest work in progress.
         </p>

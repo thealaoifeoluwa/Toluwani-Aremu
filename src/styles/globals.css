@@ -17,7 +17,7 @@
 } */
 
 .btn {
-  @apply px-4 md:px-6 py-2 md:py-3 rounded-md border-primary border-[1.5px] md:border-2 text-sm md:text-xl transition-colors duration-500 hover:bg-primary hover:text-white;
+  @apply px-3 md:px-6 py-1.5 md:py-3 rounded-md border-primary border-[1.5px] md:border-2 text-sm md:text-xl transition-colors duration-500 hover:bg-primary hover:text-white;
 }
 
 @layer utilities {
