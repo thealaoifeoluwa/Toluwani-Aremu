@@ -1,8 +1,9 @@
 const SpotifyIcon = () => {
   return (
     <svg
-      width="390"
-      height="82"
+      className="w-[400px] max-w-full"
+      // width="390"
+      // height="82"
       viewBox="0 0 390 82"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

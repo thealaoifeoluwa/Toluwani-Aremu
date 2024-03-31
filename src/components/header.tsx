@@ -45,80 +45,86 @@ const Header = () => {
 
   return (
     <>
-      <header className="w-fullscreen mt-10 mx-auto px-10 max-w-full flex justify-between items-center">
+      <header className="w-fullscreen mt-5 2xl:mt-10 mx-auto px-5 md:px-10 max-w-full flex justify-between items-center relative">
         <Link href="/" data-cursor="-hidden">
           <Logo />
         </Link>
         {showInfo ? (
-          <InfoBar open={open} setOpen={setOpen} />
+          <InfoBar />
         ) : (
-          <>
-            <div
-              className="px-5 py-[18px] mr-28 bg-[#00000026] flex gap-6 rounded-[48px]"
-              data-cursor="-hidden"
-            >
-              <button className="transition-transform duration-500 hover:scale-125">
-                <GoogleIcon />
-              </button>
-              <button className="transition-transform duration-500 hover:scale-125">
-                <LinkedinIcon />
-              </button>
-              <button className="transition-transform duration-500 hover:scale-125">
-                <XIcon />
-              </button>
-              <button className="transition-transform duration-500 hover:scale-125">
-                <GithubIcon />
-              </button>
-              <button className="transition-transform duration-500 hover:scale-125">
-                <MediumIcon />
-              </button>
-              <button className="transition-transform duration-500 hover:scale-125">
-                <InstagramIcon />
-              </button>
-            </div>
-            <button data-cursor="-hidden">
-              <Hamburger
-                toggled={open}
-                toggle={setOpen}
-                rounded
-                label="Show menu"
-                distance="sm"
-                size={35}
-              />
+          <div
+            className="px-5 py-[18px] mr-28 bg-[#00000026] hidden md:flex gap-6 rounded-[48px]"
+            data-cursor="-hidden"
+          >
+            <button className="transition-transform duration-500 hover:scale-125">
+              <GoogleIcon />
             </button>
-          </>
+            <button className="transition-transform duration-500 hover:scale-125">
+              <LinkedinIcon />
+            </button>
+            <button className="transition-transform duration-500 hover:scale-125">
+              <XIcon />
+            </button>
+            <button className="transition-transform duration-500 hover:scale-125">
+              <GithubIcon />
+            </button>
+            <button className="transition-transform duration-500 hover:scale-125">
+              <MediumIcon />
+            </button>
+            <button className="transition-transform duration-500 hover:scale-125">
+              <InstagramIcon />
+            </button>
+          </div>
         )}
+        <button data-cursor="-hidden" className="scale-[0.7] md:scale-100">
+          <Hamburger
+            toggled={open}
+            toggle={setOpen}
+            rounded
+            label="Show menu"
+            distance="sm"
+          />
+        </button>
       </header>
 
       {/* MOBILE DROPDOWN */}
       <div
-        className="fixed top-0 left-0 w-full h-screen bg-[#EEF2FF] z-40 opacity-0 invisible"
+        className="fixed top-0 left-0 w-full h-screen bg-[#EEF2FF] z-[60] 2xl:z-40 opacity-0 invisible"
         id="dropdown"
         // data-cursor-img="./images/toluwani.png"
       >
         <Gradient />
-        <div className="w-fullscreen mt-12 mx-auto px-10 max-w-full flex justify-between">
+        <div className="w-fullscreen mt-5 2xl:mt-10 mx-auto px-5 md:px-10 max-w-full flex items-center justify-between relative">
+          <InfoBar />
           <Link href="/" data-cursor="-hidden">
             <Logo />
           </Link>
 
-          <InfoBar open={open} setOpen={setOpen} />
+          <button data-cursor="-hidden" className="scale-[0.7] md:scale-100">
+            <Hamburger
+              toggled={open}
+              toggle={setOpen}
+              rounded
+              label="Show menu"
+              distance="sm"
+            />
+          </button>
         </div>
 
-        <div className="w-fullscreen px-10 mx-auto max-w-full mt-[142px]">
+        <div className="w-fullscreen px-5 md:px-10 mx-auto max-w-full mt-[140px] md:mt-[80px] 2xl:mt-[142px] xl:relative">
           <div id="menu" className="font-Acorns">
             {navLinks.map((link, index) => (
               <Link
                 key={index}
                 href={"/" + link}
-                className="block font-semibold uppercase text-[96px] before:transition-all before:duration-500 w-fit relative before:absolute before:contents-[' '] before:left-0 before:bottom-8 before:opacity-0 before:hover:opacity-100 before:h-1 before:w-0 before:hover:w-full before:bg-black"
+                className="block font-semibold uppercase text-[48px] md:text-[70px] 2xl:text-[96px] before:transition-all before:duration-500 w-fit relative before:absolute before:contents-[' '] before:left-0 before:bottom-4 md:before:bottom-6 2xl:before:bottom-8 before:opacity-0 before:hover:opacity-100 before:h-0.5 md:before:h-1 before:w-0 before:hover:w-full before:bg-black relative z-10"
               >
                 {link}
               </Link>
             ))}
           </div>
           <div
-            className="-mt-40 flex flex-col items-end gap-3 w-[240px] max-w-full ml-auto font-light text-xl text-right"
+            className="absolute bottom-10 right-5 md:right-10 flex flex-col items-end gap-3 w-[240px] max-w-full ml-auto font-light md:text-xl text-right"
             id="menuLinks"
           >
             <h2 className="text-[#949494]">CONTACT</h2>
@@ -139,16 +145,13 @@ const Header = () => {
   );
 };
 
-const InfoBar = ({
-  open,
-  setOpen,
-}: {
-  open: boolean;
-  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
-}) => {
+const InfoBar = () => {
   return (
-    <div className="flex gap-32 items-center">
-      <div className="text-right space-y-1 text-sm font-light" id="info">
+    <div className="absolute top-20 md:top-0 right-8 md:right-60">
+      <div
+        className="text-right space-y-1 text-xs md:text-sm font-light"
+        id="info"
+      >
         <span className="flex gap-1 items-center">
           10°C  <WeatherIcon />
           <strong className="font-medium">ABU DHABI</strong> 05:05 PM
@@ -163,16 +166,6 @@ const InfoBar = ({
           </a>
         </span>
       </div>
-      <button data-cursor="-hidden">
-        <Hamburger
-          toggled={open}
-          toggle={setOpen}
-          rounded
-          label="Show menu"
-          distance="sm"
-          size={35}
-        />
-      </button>
     </div>
   );
 };

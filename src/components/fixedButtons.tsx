@@ -2,13 +2,13 @@ const FixedButtons = () => {
   return (
     <>
       <button
-        className="fixed left-16 bottom-16 z-50 rounded-full"
+        className="fixed left-4 sm:left-8 2xl:left-16 bottom-4 sm:bottom-8 2xl:bottom-16 z-50 rounded-full"
         data-cursor="-hidden"
       >
         <LightIcon />
       </button>
       <button
-        className="fixed right-5 bottom-5 z-50 rounded-full"
+        className="fixed right-0 sm:right-2 2xl:right-5 bottom-0 sm:bottom-2 2xl:bottom-5 z-50 rounded-full"
         data-cursor="-hidden"
       >
         <GetCVIcon />
@@ -19,8 +19,9 @@ const FixedButtons = () => {
 
 const LightIcon = () => (
   <svg
-    width="34"
-    height="34"
+    className="w-7 sm:w-9"
+    // width="34"
+    // height="34"
     viewBox="0 0 34 34"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -39,8 +40,9 @@ const LightIcon = () => (
 
 const DarkIcon = () => (
   <svg
-    width="34"
-    height="34"
+    className="w-7 sm:w-9"
+    // width="34"
+    // height="34"
     viewBox="0 0 34 34"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -59,8 +61,9 @@ const DarkIcon = () => (
 
 const GetCVIcon = () => (
   <svg
-    width="134"
-    height="134"
+    className="w-[90px] 2xl:w-[134px]"
+    // width="134"
+    // height="134"
     viewBox="0 0 134 134"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

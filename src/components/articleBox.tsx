@@ -2,16 +2,16 @@ import Image from "next/image";
 
 const ArticleBox = () => {
   return (
-    <article className="w-[390px] min-w-fit h-[330px] p-5 bg-white rounded-[10px]">
+    <article className="w-[390px] min-w-[350px] h-full p-3 sm:p-5 bg-white rounded-[10px]">
       <Image
         src="/images/blog.png"
         alt="blog image"
         width={0}
         height={0}
         sizes="100vw"
-        className="w-full h-[202px] object-cover rounded-xl"
+        className="w-full h-[150px] sm:h-[202px] object-cover rounded-xl"
       />
-      <h2 className="my-[14px] font-Acorns font-medium">
+      <h2 className="my-[14px] font-Acorns font-medium text-left">
         16 Facts about artificial intelligence and our world
       </h2>
       <div className="flex items-center gap-2">

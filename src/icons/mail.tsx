@@ -1,12 +1,12 @@
 const MailIcon = () => {
   return (
     <svg
-      width="20"
-      height="16"
+      className="w-4 md-5 text-primary fill-current group-hover:text-white transition-colors duration-500"
+      // width="20"
+      // height="16"
       viewBox="0 0 20 16"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="text-primary fill-current group-hover:text-white transition-colors duration-500"
     >
       <path
         fillRule="evenodd"

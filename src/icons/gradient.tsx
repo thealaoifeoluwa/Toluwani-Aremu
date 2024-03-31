@@ -265,6 +265,8 @@ const Gradient = () => {
           </defs>
         </svg>
       </div>
+
+      {/* LINE GRADIENT */}
       <div className="pointer-events-none fixed -z-10 left-0 right-0 top-0 w-full">
         <svg
           // width="1513"
