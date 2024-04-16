@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const ArticleBox = () => {
   return (
-    <article className="w-[390px] min-w-[300px] md:min-w-[390px] h-full p-3 sm:p-5 bg-white rounded-[10px]">
+    <article className="w-[390px] min-w-[300px] md:min-w-[390px] h-full p-3 sm:p-5 bg-white dark:bg-[#1B1B1B] rounded-[10px]">
       <Image
         src="/images/blog.png"
         alt="blog image"

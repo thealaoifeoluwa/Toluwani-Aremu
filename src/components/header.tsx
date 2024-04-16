@@ -53,7 +53,7 @@ const Header = () => {
         </Link>
         {isHomepage && (
           <div
-            className="px-5 py-[18px] mr-28 bg-[#00000026] hidden md:flex gap-6 rounded-[48px]"
+            className="px-5 py-[18px] mr-28 bg-[#00000026] dark:bg-[#B4B3B326] hidden md:flex gap-6 rounded-[48px]"
             data-cursor="-hidden"
           >
             <button className="transition-transform duration-500 hover:scale-125">
@@ -76,7 +76,10 @@ const Header = () => {
             </button>
           </div>
         )}
-        <button data-cursor="-hidden" className="scale-[0.7] md:scale-100">
+        <button
+          data-cursor="-hidden"
+          className="scale-[0.7] md:scale-100 text-black dark:text-white"
+        >
           <Hamburger
             toggled={open}
             toggle={setOpen}
@@ -87,17 +90,17 @@ const Header = () => {
         </button>
       </header>
 
-      {/* MOBILE DROPDOWN */}
+      {/* DROPDOWN */}
       <div
-        className="fixed top-0 left-0 w-full h-screen bg-[#EEF2FF] z-[60] 2xl:z-40 opacity-0 invisible"
+        className="fixed top-0 left-0 w-full h-screen bg-[#EEF2FF] dark:bg-[#0A0A0A] text-black dark:text-white z-[60] 2xl:z-40 opacity-0 invisible"
         id="dropdown"
         // data-cursor-img="./images/toluwani.png"
       >
         <Gradient />
 
-        <InfoBar isHeader />
-
         <div className="w-fullscreen mt-5 2xl:mt-10 mx-auto px-5 md:px-10 max-w-full flex items-center justify-between relative">
+          <InfoBar isHeader />
+
           <Link href="/" data-cursor="-hidden">
             <Logo />
           </Link>
@@ -124,7 +127,7 @@ const Header = () => {
                     ? `/#${link}`
                     : `/${link}`
                 }
-                className="block font-semibold uppercase text-[48px] md:text-[70px] 2xl:text-[96px] before:transition-all before:duration-500 w-fit relative before:absolute before:contents-[' '] before:left-0 before:bottom-4 md:before:bottom-6 2xl:before:bottom-8 before:opacity-0 before:hover:opacity-100 before:h-0.5 md:before:h-1 before:w-0 before:hover:w-full before:bg-black relative z-10"
+                className="block font-semibold uppercase text-[48px] md:text-[70px] 2xl:text-[96px] before:transition-all before:duration-500 w-fit relative before:absolute before:contents-[' '] before:left-0 before:bottom-4 md:before:bottom-6 2xl:before:bottom-8 before:opacity-0 before:hover:opacity-100 before:h-0.5 md:before:h-1 before:w-0 before:hover:w-full before:bg-black dark:before:bg-white relative z-10"
               >
                 {link}
               </Link>

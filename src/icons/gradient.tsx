@@ -518,70 +518,80 @@ const Gradient = () => {
               y1="-2.04247e-08"
               x2="0.500052"
               y2="1120"
-              stroke="black"
+              // stroke="black"
+              className="stroke-current text-black dark:text-white"
             />
             <line
               x1="168.5"
               y1="-2.04247e-08"
               x2="168.5"
               y2="1120"
-              stroke="black"
+              // stroke="black"
+              className="stroke-current text-black dark:text-white"
             />
             <line
               x1="336.5"
               y1="-2.04247e-08"
               x2="336.5"
               y2="1120"
-              stroke="black"
+              // stroke="black"
+              className="stroke-current text-black dark:text-white"
             />
             <line
               x1="504.5"
               y1="-2.04247e-08"
               x2="504.5"
               y2="1120"
-              stroke="black"
+              // stroke="black"
+              className="stroke-current text-black dark:text-white"
             />
             <line
               x1="672.5"
               y1="-2.04247e-08"
               x2="672.5"
               y2="1120"
-              stroke="black"
+              // stroke="black"
+              className="stroke-current text-black dark:text-white"
             />
             <line
               x1="840.5"
               y1="-2.04247e-08"
               x2="840.5"
               y2="1120"
-              stroke="black"
+              // stroke="black"
+              className="stroke-current text-black dark:text-white"
             />
             <line
               x1="1008.5"
               y1="-2.04247e-08"
               x2="1008.5"
               y2="1120"
-              stroke="black"
+              // stroke="black"
+              className="stroke-current text-black dark:text-white"
             />
             <line
               x1="1176.5"
               y1="-2.04247e-08"
               x2="1176.5"
               y2="1120"
-              stroke="black"
+              // stroke="black"
+              className="stroke-current text-black dark:text-white"
             />
             <line
               x1="1344.5"
               y1="-2.04247e-08"
               x2="1344.5"
               y2="1120"
-              stroke="black"
+              // stroke="black"
+              className="stroke-current text-black dark:text-white"
             />
             <line
               x1="1512.5"
               y1="-2.18557e-08"
               x2="1512.5"
               y2="1120"
-              stroke="black"
+              // stroke="black"
+              className="stroke-current text-black dark:text-white"
             />
           </g>
         </svg>
@@ -601,70 +611,80 @@ const Gradient = () => {
               y1="-2.04247e-08"
               x2="0.500045"
               y2="960"
-              stroke="black"
+              // stroke="black"
+              className="stroke-current text-black dark:text-white"
             />
             <line
               x1="48.2778"
               y1="-3.0352e-08"
               x2="48.2779"
               y2="960"
-              stroke="black"
+              // stroke="black"
+              className="stroke-current text-black dark:text-white"
             />
             <line
               x1="96.0557"
               y1="-3.0352e-08"
               x2="96.0557"
               y2="960"
-              stroke="black"
+              // stroke="black"
+              className="stroke-current text-black dark:text-white"
             />
             <line
               x1="143.833"
               y1="-3.0352e-08"
               x2="143.834"
               y2="960"
-              stroke="black"
+              // stroke="black"
+              className="stroke-current text-black dark:text-white"
             />
             <line
               x1="191.611"
               y1="-3.0352e-08"
               x2="191.611"
               y2="960"
-              stroke="black"
+              // stroke="black"
+              className="stroke-current text-black dark:text-white"
             />
             <line
               x1="239.389"
               y1="-3.0352e-08"
               x2="239.389"
               y2="960"
-              stroke="black"
+              // stroke="black"
+              className="stroke-current text-black dark:text-white"
             />
             <line
               x1="287.167"
               y1="-3.0352e-08"
               x2="287.167"
               y2="960"
-              stroke="black"
+              // stroke="black"
+              className="stroke-current text-black dark:text-white"
             />
             <line
               x1="334.944"
               y1="-3.0352e-08"
               x2="334.944"
               y2="960"
-              stroke="black"
+              // stroke="black"
+              className="stroke-current text-black dark:text-white"
             />
             <line
               x1="382.722"
               y1="-3.0352e-08"
               x2="382.722"
               y2="960"
-              stroke="black"
+              // stroke="black"
+              className="stroke-current text-black dark:text-white"
             />
             <line
               x1="430.5"
               y1="-3.24786e-08"
               x2="430.5"
               y2="960"
-              stroke="black"
+              // stroke="black"
+              className="stroke-current text-black dark:text-white"
             />
           </g>
         </svg>

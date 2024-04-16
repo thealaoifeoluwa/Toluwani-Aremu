@@ -66,7 +66,7 @@ const LenisScroll = ({ children }: { children: ReactNode }) => {
 
     setTimeout(() => {
       loader?.classList.add("close");
-      document.body.className = "";
+      // document.body.className = "";
     }, 2000);
   }, [pathname]);
 

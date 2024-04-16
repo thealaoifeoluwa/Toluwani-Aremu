@@ -18,6 +18,9 @@ const config: Config = {
       fontFamily: {
         Acorns: ["var(--font-Acorns)"],
       },
+      animation: {
+        spin: "spin 4s linear infinite",
+      },
     },
   },
   plugins: [],
