@@ -56,3 +56,7 @@
   visibility: hidden;
   top: -120%;
 }
+
+* {
+  transition: background 0.5s;
+}

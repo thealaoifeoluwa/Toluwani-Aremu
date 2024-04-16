@@ -60,6 +60,19 @@ const LenisScroll = ({ children }: { children: ReactNode }) => {
   //   }
   // }, [pathname, lenis]);
 
+  // UPDATE DARK MODE
+  useEffect(() => {
+    if (
+      localStorage.toluwaniTheme === "dark" ||
+      (!("toluwaniTheme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, []);
+
   // UPDATE LOADING ANIMATION FOR EVERY PAGE
   useEffect(() => {
     const loader = document.querySelector("#loader");

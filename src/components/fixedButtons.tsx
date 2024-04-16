@@ -1,9 +1,24 @@
 const FixedButtons = () => {
+  const toggleDarkMode = () => {
+    if (
+      localStorage.toluwaniTheme === "dark" ||
+      (!("toluwaniTheme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.documentElement.classList.remove("dark");
+      localStorage.toluwaniTheme = "light";
+    } else {
+      localStorage.toluwaniTheme = "dark";
+      document.documentElement.classList.add("dark");
+    }
+  };
+
   return (
     <>
       <button
         className="fixed left-4 sm:left-8 2xl:left-16 bottom-10 sm:bottom-10 2xl:bottom-16 z-50 rounded-full"
         data-cursor="-hidden"
+        onClick={toggleDarkMode}
       >
         <span className="block dark:hidden">
           <LightIcon />

@@ -7,6 +7,7 @@ const config: Config = {
     "./src/icons/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "selector",
   theme: {
     extend: {
       width: {
