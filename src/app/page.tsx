@@ -36,7 +36,7 @@ export default function Home() {
             <StarIcon />
           </span>
           <div className="absolute top-32 md:top-60 2xl:top-80 left-1/2 -translate-x-1/2 font-Acorns">
-            <h1 className="text-[45px] min-[385px]:text-[52px] md:text-[90px] 2xl:text-[128px] leading-[40px] md:leading-[105px] text-nowrap text-stroke-1 md:text-stroke-2 dark:text-stroke-0 text-center font-semibold">
+            <h1 className="text-[45px] min-[385px]:text-[52px] md:text-[90px] 2xl:text-[128px] leading-[40px] md:leading-[105px] text-nowrap text-stroke-1 md:text-stroke-2 text-center font-semibold">
               Toluwani Aremu
             </h1>
             <span className="block text-right text-xs md:text-[20px] text-primary">
