@@ -49,7 +49,7 @@ const Loader = () => {
         <span className="text-stroke-primary-1 md:text-stroke-primary-2 xl:text-stroke-primary-4">
           {percent}
         </span>
-        <span className="text-stroke-primary-auto text-[50px] md:text-[150px]">
+        <span className="text-stroke-primary-1 md:text-stroke-primary-auto text-[80px] md:text-[150px]">
           %
         </span>
       </span>
