@@ -1,8 +1,18 @@
+import Image from "next/image";
+
 const Gradient = ({ isLoading }: { isLoading?: boolean }) => {
   return (
     <>
       {/* COLOR GRADIENT */}
       <div className="pointer-events-none fixed -z-10 left-0 right-0 top-0 w-full">
+        <Image
+          src="/images/texture.png"
+          alt="texture image"
+          width={0}
+          height={0}
+          sizes="100vw"
+          className="w-full h-full absolute inset-0 opacity-50"
+        />
         <svg
           className="hidden md:block"
           // width="1512"

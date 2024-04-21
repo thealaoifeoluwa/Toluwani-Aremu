@@ -12,7 +12,7 @@ import { years } from "../../data";
 
 export default function Home() {
   useDrag();
-  const [yearSelected, setYearSelected] = useState(2015);
+  const [yearSelected, setYearSelected] = useState(2024);
 
   // useEffect(() => {
   //   const yearsCont = document.querySelector("#years-cont")!;
