@@ -45,11 +45,13 @@ const Loader = () => {
       <Gradient isLoading />
       <Logo />
 
-      <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 text-[130px] leading-[400px] md:text-[250px] md:leading-[300px] xl:text-[400px] xl:leading-[400px] font-black text-transparent opacity-40 dark:opacity-20">
+      <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 text-[130px] leading-[400px] md:text-[250px] md:leading-[200px] xl:text-[400px] xl:leading-[250px] font-black text-transparent opacity-40 dark:opacity-20">
         <span className="text-stroke-primary-1 md:text-stroke-primary-2 xl:text-stroke-primary-4">
           {percent}
         </span>
-        <span className="text-stroke-primary-1 xl:text-[305px]">%</span>
+        <span className="text-stroke-primary-auto text-[50px] md:text-[150px]">
+          %
+        </span>
       </span>
     </div>
   );

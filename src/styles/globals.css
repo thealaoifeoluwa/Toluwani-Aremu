@@ -35,6 +35,9 @@
       -webkit-text-stroke: 4px white;
     }
 
+    .text-stroke-primary-auto {
+      -webkit-text-stroke: 0.1px #6385ff;
+    }
     .text-stroke-primary-1 {
       -webkit-text-stroke: 1px #6385ff;
     }

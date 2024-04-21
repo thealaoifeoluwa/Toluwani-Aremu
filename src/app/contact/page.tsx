@@ -33,10 +33,10 @@ const Page = () => {
         </div>
       </div>
 
-      <div className="w-fullscreen px-7 sm:px-10 mx-auto max-w-full mt-[150px] md:mt-[60px] 2xl:mt-[142px]">
+      <div className="w-fullscreen px-7 sm:px-10 mx-auto max-w-full mt-[120px] md:mt-[60px] 2xl:mt-[142px]">
         <div>
           <h2 className="font-light sm:text-xl text-[#949494]">CONTACT</h2>
-          <h3 className="mt-3 2xl:mt-5 font-Acorns font-semibold text-[45px] 2xl:text-[65px] w-[293px] max-w-full sm:w-full">
+          <h3 className="mt-3 2xl:mt-5 font-Acorns font-semibold text-[45px] 2xl:text-[65px] leading-[55px] md:leading-normal w-[293px] max-w-full sm:w-full">
             Want to work together on a <br className="hidden sm:block" />{" "}
             project ?
           </h3>
