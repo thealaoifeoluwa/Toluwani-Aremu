@@ -18,6 +18,7 @@ import "aos/dist/aos.css";
 import Header from "./header";
 import Gradient from "@/icons/gradient";
 import FixedButtons from "./fixedButtons";
+import Loader from "./loader";
 
 const LenisScroll = ({ children }: { children: ReactNode }) => {
   const pathname = usePathname();
@@ -80,12 +81,13 @@ const LenisScroll = ({ children }: { children: ReactNode }) => {
     setTimeout(() => {
       loader?.classList.add("close");
       // document.body.className = "";
-    }, 2000);
+    }, 6000);
   }, [pathname]);
 
   return (
     <ReactLenis root options={{ duration: 2 }}>
       <Gradient />
+      <Loader />
       <Header />
       {children}
       <FixedButtons />

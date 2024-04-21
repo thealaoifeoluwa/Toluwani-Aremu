@@ -34,6 +34,19 @@
     .text-stroke-4 {
       -webkit-text-stroke: 4px white;
     }
+
+    .text-stroke-primary-1 {
+      -webkit-text-stroke: 1px #6385ff;
+    }
+    .text-stroke-primary-2 {
+      -webkit-text-stroke: 2px #6385ff;
+    }
+    .text-stroke-primary-3 {
+      -webkit-text-stroke: 3px #6385ff;
+    }
+    .text-stroke-primary-4 {
+      -webkit-text-stroke: 4px #6385ff;
+    }
   }
 }
 

@@ -16,7 +16,7 @@ const FixedButtons = () => {
   return (
     <>
       <button
-        className="fixed left-4 sm:left-8 2xl:left-16 bottom-10 sm:bottom-10 2xl:bottom-16 z-50 rounded-full"
+        className="fixed left-4 sm:left-8 2xl:left-16 bottom-10 sm:bottom-10 2xl:bottom-16 z-40 rounded-full"
         data-cursor="-hidden"
         onClick={toggleDarkMode}
       >
@@ -28,7 +28,7 @@ const FixedButtons = () => {
         </span>
       </button>
       <button
-        className="fixed right-0 sm:right-4 2xl:right-8 bottom-0 sm:bottom-4 2xl:bottom-8 z-50 rounded-full"
+        className="fixed right-0 sm:right-4 2xl:right-8 bottom-0 sm:bottom-4 2xl:bottom-8 z-40 rounded-full"
         data-cursor="-hidden"
       >
         <GetCVIcon />

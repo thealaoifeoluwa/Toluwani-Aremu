@@ -19,8 +19,19 @@ const config: Config = {
       fontFamily: {
         Acorns: ["var(--font-Acorns)"],
       },
+      keyframes: {
+        scrollLeft: {
+          "0%": {
+            translate: "0 0",
+          },
+          "100%": {
+            translate: "-100% 0",
+          },
+        },
+      },
       animation: {
         spin: "spin 4s linear infinite",
+        scrollLeft: "scrollLeft 20s linear infinite",
       },
     },
   },
