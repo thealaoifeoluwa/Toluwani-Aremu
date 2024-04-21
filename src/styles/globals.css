@@ -76,3 +76,7 @@
 * {
   transition: background 0.5s;
 }
+
+html.dark .title {
+  -webkit-text-stroke: 0px;
+}

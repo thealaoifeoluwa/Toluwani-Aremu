@@ -14,11 +14,23 @@ export default function Home() {
   useDrag();
   const [yearSelected, setYearSelected] = useState(2024);
 
-  // useEffect(() => {
-  //   const yearsCont = document.querySelector("#years-cont")!;
+  useEffect(() => {
+    const yearsCont = document.querySelector("#years-cont")!;
 
-  //   yearsCont.scrollLeft += 50;
-  // }, [yearSelected]);
+    yearsCont.scrollLeft += 1000;
+  }, []);
+
+  const scrollContainer = (value: number) => {
+    const yearsCont = document.querySelector("#years-cont")!;
+
+    if (value > yearSelected) {
+      const range = value - yearSelected;
+      yearsCont.scrollLeft += 50 * range;
+    } else {
+      const range = yearSelected - value;
+      yearsCont.scrollLeft -= 50 * range;
+    }
+  };
 
   return (
     <main className="pb-32">
@@ -36,7 +48,7 @@ export default function Home() {
             <StarIcon />
           </span>
           <div className="absolute top-32 md:top-60 2xl:top-80 left-1/2 -translate-x-1/2 font-Acorns">
-            <h1 className="text-[45px] min-[385px]:text-[52px] md:text-[90px] 2xl:text-[128px] leading-[40px] md:leading-[105px] text-nowrap text-stroke-1 md:text-stroke-2 text-center font-semibold">
+            <h1 className="text-[45px] min-[385px]:text-[52px] md:text-[90px] 2xl:text-[128px] leading-[40px] md:leading-[105px] text-nowrap text-stroke-1 md:text-stroke-2 text-center font-semibold title">
               Toluwani Aremu
             </h1>
             <span className="block text-right text-xs md:text-[20px] text-primary">
@@ -88,15 +100,18 @@ export default function Home() {
         </h2>
 
         <div className="mt-6 md:mt-8 w-[380px] max-w-full mx-auto overflow-hidden relative rounded-full">
-          <span className="absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-black/5 dark:from-black/30 to-transparent pointer-events-none"></span>
-          <span className="absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-black/5 dark:from-black/30 to-transparent pointer-events-none"></span>
+          <span className="absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-black/10 dark:from-black/30 to-transparent pointer-events-none"></span>
+          <span className="absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-black/10 dark:from-black/30 to-transparent pointer-events-none"></span>
           <div
             className="flex py-3 gap-1 px-5 overflow-x-scroll hide-scrollbar scroll-smooth"
             id="years-cont"
           >
             {years.map((year, index) => (
               <button
-                onClick={() => setYearSelected(year)}
+                onClick={() => {
+                  scrollContainer(year);
+                  setYearSelected(year);
+                }}
                 key={index}
                 className={`rounded-2xl text-lg md:text-xl outline-none px-3 py-2 transition-colors duration-500 ${
                   yearSelected === year
