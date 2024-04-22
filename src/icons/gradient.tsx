@@ -11,7 +11,7 @@ const Gradient = ({ isLoading }: { isLoading?: boolean }) => {
           width={0}
           height={0}
           sizes="100vw"
-          className="w-full h-full fixed inset-0 opacity-30 dark:opacity-70 z-10"
+          className="w-full h-screen fixed inset-0 opacity-30 dark:opacity-70 z-10"
         />
 
         <svg
