@@ -19,7 +19,9 @@ const ArticleBox = ({ data }: { data: (typeof blogs)[0] }) => {
         sizes="100vw"
         className="w-full h-[150px] sm:h-[202px] object-cover rounded-xl"
       />
-      <h2 className="my-[14px] font-Acorns font-medium text-left">{title}</h2>
+      <h2 className="my-[14px] min-h-12 md:min-h-[auto] font-Acorns font-medium text-left">
+        {title}
+      </h2>
       <div className="flex items-center gap-2">
         <Image
           src="/images/toluwani.png"
