@@ -43,12 +43,12 @@ const InfoBar = ({
         );
         const res = await response.json();
 
+        if (res.cod === 401) return;
+
         const { weather, main } = res;
-        let { icon, description } = weather ? weather[0] : "";
-        const temp = main ? Math.round(main.temp - 273) : 0;
-        icon = icon
-          ? `https://openweathermap.org/img/wn/${icon}@2x.png`
-          : '"/images/icon.svg"';
+        let { icon, description } = weather[0];
+        const temp = Math.round(main.temp - 273);
+        icon = `https://openweathermap.org/img/wn/${icon}@2x.png`;
 
         setData({ description, icon, temp });
       } catch (error) {
