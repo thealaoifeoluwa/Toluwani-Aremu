@@ -43,6 +43,7 @@ export default function Home() {
             height={0}
             sizes="100vw"
             className="md:w-auto h-auto min-w-[170px] w-[170px] md:min-w-[350px] 2xl:min-w-[460px]"
+            priority
           />
           <span className="absolute -right-2 md:-right-5 -top-2 md:-top-5">
             <StarIcon />
