@@ -5,11 +5,11 @@ export const socialLinks = [
   },
   {
     title: "medium",
-    link: "#",
+    link: "https://tolusophy.medium.com/",
   },
   {
     title: "linkedin",
-    link: "#",
+    link: "https://www.linkedin.com/in/toluwaniaremu/",
   },
   {
     title: "instagram",
@@ -21,7 +21,7 @@ export const socialLinks = [
   },
   {
     title: "INFO@TOLUWANI.EA",
-    link: "#",
+    link: "mailto:tioluwaniaremu@gmail.com",
   },
 ];
 
@@ -33,6 +33,10 @@ type dataType = {
       text: string;
       link?: string;
       linkTitle?: string;
+      links?: {
+        link: string;
+        linkTitle: string;
+      }[];
     }[];
   }[];
 };
@@ -45,13 +49,13 @@ const data2024: dataType = {
       data: [
         {
           text: 'Our paper, "ScholarFace: Scanning Faces, Discovering Minds", has been published in the 2024 IEEE International Conference on Consumer Electronics (ICCE). Congratulations to the team!',
-          link: "",
-          linkTitle: "Paper",
+          link: "https://ieeexplore.ieee.org/abstract/document/10444350",
+          linkTitle: "[Paper]",
         },
         {
           text: 'Our preprint, "Edge of Tomorrow: Evaluating Misinformation and Bias in LLM-Powered Chatbots on Climate Change and Mental Health", has been uploaded on SSRN.',
-          link: "",
-          linkTitle: "Preprint",
+          link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4699451",
+          linkTitle: "[Preprint]",
         },
       ],
     },
@@ -66,7 +70,6 @@ const data2023: dataType = {
       data: [
         {
           text: "Graduated from Mohamed Bin Zayed University of Artificial Intelligence with a MSc in Machine Learning.",
-          link: "",
         },
       ],
     },
@@ -75,15 +78,17 @@ const data2023: dataType = {
       data: [
         {
           text: 'Published an article on Medium titled, "Learning Rate Schedulers".',
-          link: "https://www.google.com",
+          link: "https://pub.towardsai.net/choosing-a-learning-rate-for-dnns-35c201b1b49b",
         },
         {
-          text: "Started a new exciting role as an Applied Science Intern at G42 Healthcare.",
-          link: "",
+          text: "Started a new exciting role as an Applied Science Intern at",
+          link: "https://www.g42healthcare.ai/",
+          linkTitle: "G42 Healthcare.",
         },
         {
-          text: "Started a new exciting role as an AI Researcher at the MCR and Metaverse Lab at MBZUAI.",
-          link: "",
+          text: "Started a new exciting role as an AI Researcher at the MCR and Metaverse Lab at",
+          link: "https://mbzuai.ac.ae/",
+          linkTitle: "MBZUAI.",
         },
       ],
     },
@@ -91,8 +96,9 @@ const data2023: dataType = {
       title: "April",
       data: [
         {
-          text: "Concluded my internship at G42 Healthcare.",
-          link: "",
+          text: "Concluded my internship at",
+          link: "https://www.g42healthcare.ai/",
+          linkTitle: "G42 Healthcare.",
         },
       ],
     },
@@ -109,20 +115,26 @@ const data2023: dataType = {
       title: "June",
       data: [
         {
-          text: 'Published a preprint on Research Square and arXiv titled, "SSIVD-Net: A Novel Salient Super Image Classification & Detection Technique for Weaponized Violence." [read on RS|read on arXiv]',
-          link: "",
+          text: 'Our preprint, "SSIVD-Net: A Novel Salient Super Image Classification & Detection Technique for Weaponized Violence" has been uploaded on ResearchSquare and ArXiv. Update!!! It has been accepted for presentation at the 2024 SAI Computing Conference and will appear in the Springer Lecture Notes in Networks and Systems publication. Congratulations to the team.',
+          links: [
+            {
+              link: "https://www.researchsquare.com/article/rs-3024402/v1",
+              linkTitle: "[ResearchSquare]",
+            },
+            {
+              link: "https://arxiv.org/abs/2207.12850",
+              linkTitle: "[ArXiv]",
+            },
+          ],
         },
         {
-          text: 'Published a preprint on SSRN titled, "Unlocking Pandoras Box: Unveiling the Elusive Realm of AI Text Detection."',
-          link: "https://www.google.com",
+          text: `My preprint "Unlocking Pandora's Box: Unveiling the Elusive Realm of AI Text Detection" has been uploaded on SSRN.`,
+          link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4470719",
+          linkTitle: "[Paper]",
         },
         {
           text: 'Published an article on Medium titled, "AI Text Detectors: Amazing Sleuths or WHAT?"',
-          link: "https://www.google.com",
-        },
-        {
-          text: "Got my first ever citation on my published PolyKervNet paper.",
-          link: "",
+          link: "https://pub.towardsai.net/ai-text-detectors-amazing-sleuths-or-what-31e4e2ca7803",
         },
       ],
     },
@@ -131,7 +143,7 @@ const data2023: dataType = {
       data: [
         {
           text: 'Published an article on Medium titled, "Accented Speech Recognition: The Inclusive Realm of Automatic Speech Recognition Systems."',
-          link: "https://www.google.com",
+          link: "https://pub.towardsai.net/accented-speech-recognition-the-inclusive-realm-of-automatic-speech-recognition-systems-881ee480c502",
         },
       ],
     },
@@ -143,8 +155,9 @@ const data2023: dataType = {
           link: "",
         },
         {
-          text: "Started PhD in Machine Learning at MBZUAI.",
-          link: "",
+          text: "Started PhD in Machine Learning at",
+          link: "https://mbzuai.ac.ae/",
+          linkTitle: "MBZUAI.",
         },
       ],
     },
@@ -159,12 +172,12 @@ const data2022: dataType = {
       data: [
         {
           text: 'Gave a talk titled, "Ethical Perspectives of AI" to graduate students at the Department of Material Sciences, University of Denver.',
-          link: "",
-          linkTitle: "Slides",
+          link: "https://docs.google.com/presentation/d/e/2PACX-1vQ9e8YoL_JvkHoZxx_E27kwqOKOYyOIQ7Q9CiJWkTKwZuVheooS1AicZfKGw_vU1Q/pub?start=true&loop=true&delayms=5000&slide=id.p1",
+          linkTitle: "[Slides]",
         },
         {
           text: `Published an article on Medium titled, "What AI Still Can't Do #001".`,
-          link: "link",
+          link: "https://tolusophy.medium.com/what-ai-still-cant-do-001-69c25d2f3a7e",
         },
       ],
     },
@@ -173,11 +186,11 @@ const data2022: dataType = {
       data: [
         {
           text: `Published an article on Medium titled, "What AI Still Can't Do #002".`,
-          link: "link",
+          link: "https://tolusophy.medium.com/what-ai-still-cant-do-002-e8893991012",
         },
         {
           text: `Published an article on Medium titled, "Impact of Optimizers in Image Classifiers".`,
-          link: "link",
+          link: "https://pub.towardsai.net/impact-of-optimizers-in-image-classifiers-3b04ed20823a",
         },
       ],
     },
@@ -195,16 +208,16 @@ const data2022: dataType = {
       data: [
         {
           text: `My first ever research paper, based on my master's thesis titled, "PolyKervNets: Activation-Free Neural Networks for Efficient Private Inference" was accepted for oral presentation at the 2023 IEEE Secure and Trustworthy Machine Learning (SaTML) conference.`,
-          link: "hello",
-          linkTitle: "Paper",
+          link: "https://openreview.net/pdf?id=OGzt9NKC0lO",
+          linkTitle: "[Paper]",
         },
         {
           text: `Published an article on Medium titled, "What AI Still Can't Do #003".`,
-          link: "",
+          link: "https://pub.towardsai.net/what-ai-still-cant-do-003-c2123837dd90",
         },
         {
           text: `Published an article on Medium titled, "Choosing a Learning Rate for DNNs".`,
-          link: "",
+          link: "https://pub.towardsai.net/choosing-a-learning-rate-for-dnns-35c201b1b49b",
         },
       ],
     },
@@ -484,17 +497,55 @@ export const allData = [
 
 export const years = allData.map((data) => data.year);
 
-// {
-//   title: "",
-//   data: [
-//     {
-//       text: "",
-//       link: "",
-//     },
-//   ],
-// },
+export const blogs = [
+  {
+    title: "Accented Speech Recognition",
+    image: "/image-1.png",
+    link: "https://tolusophy.medium.com/accented-speech-recognition-the-inclusive-realm-of-automatic-speech-recognition-systems-881ee480c502",
+    date: "01 July 2024",
+  },
+  {
+    title: "AI Text Detectors: Amazing Sleuths or WHAT?",
+    image: "/image-2.png",
+    link: "https://tolusophy.medium.com/ai-text-detectors-amazing-sleuths-or-what-31e4e2ca7803",
+    date: "10 January 2023",
+  },
+  {
+    title: "Learning Rate Schedulers",
+    image: "/image-3.png",
+    link: "https://pub.towardsai.net/learning-rate-schedulers-6bd7ae60ed47",
+    date: "12 February 2023",
+  },
+  {
+    title: "Choosing a Learning Rate for DNNs",
+    image: "/image-4.png",
+    link: "https://pub.towardsai.net/choosing-a-learning-rate-for-dnns-35c201b1b49b",
+    date: "26 December 2022",
+  },
+  {
+    title: "What AI Still Can’t Do #003",
+    image: "/image-5.png",
+    link: "https://pub.towardsai.net/what-ai-still-cant-do-003-c2123837dd90",
+    date: "18 December 2022",
+  },
+  {
+    title: "Impact of Optimizers in Image Classifiers",
+    image: "/image-6.png",
+    link: "https://pub.towardsai.net/impact-of-optimizers-in-image-c.pnglassifiers-3b04ed20823a",
+    date: "28 August 2022",
+  },
+  {
+    title: "What AI still can’t do #002",
+    image: "/image-7.png",
+    link: "https://tolusophy.medium.com/what-ai-still-cant-do-002-e8893991012",
+    date: "24 August 2022",
+  },
+  {
+    title: "What AI still can’t do #001",
+    image: "/image-8.png",
+    link: "https://tolusophy.medium.com/what-ai-still-cant-do-001-69c25d2f3a7e",
+    date: "31 July 2022",
+  },
+];
 
-// {
-//   title: "",
-//   data: [],
-// },
+export const email = "tioluwaniaremu@gmail.com";

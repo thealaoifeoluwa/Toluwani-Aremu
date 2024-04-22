@@ -11,11 +11,11 @@ const socialLinks = [
   },
   {
     title: "medium",
-    link: "#",
+    link: "https://tolusophy.medium.com/",
   },
   {
     title: "linkedin",
-    link: "#",
+    link: "https://www.linkedin.com/in/toluwaniaremu/",
   },
   {
     title: "instagram",
@@ -44,7 +44,7 @@ const Page = () => {
             project ?
           </h3>
           <a
-            href="mailto:info@toluwani.ea"
+            href="mailto:tioluwaniaremu@gmail.com"
             className="mt-3 2xl:mt-5 inline-block font-light sm:text-[24px] 2xl:text-[32px] underline underline-offset-4"
           >
             Get in touch with me by email

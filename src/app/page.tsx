@@ -8,7 +8,8 @@ import MailIcon2 from "@/icons/mail2";
 import StarIcon from "@/icons/star";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { years } from "../../data";
+import { blogs, years } from "../../data";
+import Link from "next/link";
 
 export default function Home() {
   useDrag();
@@ -65,14 +66,15 @@ export default function Home() {
           advancing artificial intelligence with a robust skill set spanning
           both research and industry.
         </p>
-        <button
+        <Link
+          href="mailto:tioluwaniaremu@gmail.com"
           data-aos="fade-up"
           className="btn flex items-center gap-3 group"
           data-cursor="-hidden"
         >
           <MailIcon />
           Say Hi!
-        </button>
+        </Link>
       </div>
 
       <div className="mt-[74px] md:mt-[120px] text-center">
@@ -83,7 +85,7 @@ export default function Home() {
           Skillset
         </h2>
         <p className="md:text-xl" data-aos="fade-up">
-          I am well-versed in essential tools such as
+          Here are some tools I work with
         </p>
         <div
           className="flex justify-center gap-2 sm:gap-2.5 mt-4 md:text-xl"
@@ -171,8 +173,8 @@ export default function Home() {
             className="mt-14 flex gap-4 overflow-x-scroll px-5 sm:px-10 hide-scrollbar"
             id="draggable"
           >
-            {[...Array(8)].map((data, index) => (
-              <ArticleBox key={index} />
+            {blogs.map((data, index) => (
+              <ArticleBox key={index} data={data} />
             ))}
           </div>
         </div>
@@ -202,9 +204,12 @@ export default function Home() {
           data-aos="fade-up"
         >
           <MailIcon2 />
-          <a href="mailto:toluwani@aremu.ai" className="md:text-xl font-light">
+          <Link
+            href="mailto:tioluwaniaremu@gmail.com"
+            className="md:text-xl font-light"
+          >
             WRITE ME AN EMAIL
-          </a>
+          </Link>
         </div>
       </div>
     </main>

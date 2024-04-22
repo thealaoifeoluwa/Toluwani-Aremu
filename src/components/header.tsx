@@ -58,24 +58,48 @@ const Header = () => {
             className="px-5 py-[18px] mr-28 bg-[#00000026] dark:bg-[#B4B3B326] hidden md:flex gap-6 rounded-[48px]"
             data-cursor="-hidden"
           >
-            <button className="transition-transform duration-500 hover:scale-125">
+            <Link
+              href=""
+              target="_blank"
+              className="transition-transform duration-500 hover:scale-125"
+            >
               <GoogleIcon />
-            </button>
-            <button className="transition-transform duration-500 hover:scale-125">
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/toluwaniaremu/"
+              target="_blank"
+              className="transition-transform duration-500 hover:scale-125"
+            >
               <LinkedinIcon />
-            </button>
-            <button className="transition-transform duration-500 hover:scale-125">
+            </Link>
+            <Link
+              href=""
+              target="_blank"
+              className="transition-transform duration-500 hover:scale-125"
+            >
               <XIcon />
-            </button>
-            <button className="transition-transform duration-500 hover:scale-125">
+            </Link>
+            <Link
+              href=""
+              target="_blank"
+              className="transition-transform duration-500 hover:scale-125"
+            >
               <GithubIcon />
-            </button>
-            <button className="transition-transform duration-500 hover:scale-125">
+            </Link>
+            <Link
+              href="https://tolusophy.medium.com/"
+              target="_blank"
+              className="transition-transform duration-500 hover:scale-125"
+            >
               <MediumIcon />
-            </button>
-            <button className="transition-transform duration-500 hover:scale-125">
+            </Link>
+            <Link
+              href=""
+              target="_blank"
+              className="transition-transform duration-500 hover:scale-125"
+            >
               <InstagramIcon />
-            </button>
+            </Link>
           </div>
         )}
         <button

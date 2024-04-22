@@ -37,9 +37,19 @@ const UpdateBox = ({ yearSelected }: { yearSelected: number }) => {
                             href={li.link}
                             className="text-primary inline-block ml-2"
                           >
-                            [{li.linkTitle ? li.linkTitle : "Read"}]
+                            {li.linkTitle ? li.linkTitle : "[Read]"}
                           </a>
                         )}
+                        {li.links &&
+                          li.links.map((li, index) => (
+                            <a
+                              key={index}
+                              href={li.link}
+                              className="text-primary inline-block ml-2"
+                            >
+                              {li.linkTitle ? li.linkTitle : "[Read]"}
+                            </a>
+                          ))}
                       </li>
                     ))}
                   </ul>

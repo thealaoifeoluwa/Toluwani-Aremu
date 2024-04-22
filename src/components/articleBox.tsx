@@ -1,19 +1,25 @@
 import Image from "next/image";
+import { blogs } from "../../data";
+import Link from "next/link";
 
-const ArticleBox = () => {
+const ArticleBox = ({ data }: { data: (typeof blogs)[0] }) => {
+  const { date, image, link, title } = data;
+
   return (
-    <article className="w-[390px] min-w-[300px] md:min-w-[390px] h-full p-3 sm:p-5 bg-white dark:bg-[#1B1B1B] rounded-[10px]">
+    <Link
+      href={link}
+      target="_blank"
+      className="w-[390px] min-w-[300px] md:min-w-[390px] h-full p-3 sm:p-5 bg-white dark:bg-[#1B1B1B] rounded-[10px]"
+    >
       <Image
-        src="/images/blog.png"
-        alt="blog image"
+        src={"/images/blogs" + image}
+        alt={"image for " + title}
         width={0}
         height={0}
         sizes="100vw"
         className="w-full h-[150px] sm:h-[202px] object-cover rounded-xl"
       />
-      <h2 className="my-[14px] font-Acorns font-medium text-left">
-        16 Facts about artificial intelligence and our world
-      </h2>
+      <h2 className="my-[14px] font-Acorns font-medium text-left">{title}</h2>
       <div className="flex items-center gap-2">
         <Image
           src="/images/toluwani.png"
@@ -25,10 +31,10 @@ const ArticleBox = () => {
         />
         <div className="text-xs">
           <span className="block text-primary">Toluwani Aremu</span>
-          <span>18 January 2024</span>
+          <span>{date}</span>
         </div>
       </div>
-    </article>
+    </Link>
   );
 };
 
