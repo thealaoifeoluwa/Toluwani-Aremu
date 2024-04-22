@@ -4,7 +4,7 @@ const Gradient = ({ isLoading }: { isLoading?: boolean }) => {
   return (
     <>
       {/* COLOR GRADIENT */}
-      <div className="pointer-events-none fixed -z-10 left-0 right-0 top-0 w-full">
+      <div className="pointer-events-none fixed -z-10 inset-0 w-full">
         <Image
           src="/images/texture.png"
           alt="texture image"
@@ -514,7 +514,7 @@ const Gradient = ({ isLoading }: { isLoading?: boolean }) => {
 
       {/* LINE GRADIENT */}
       {!isLoading && (
-        <div className="pointer-events-none fixed -z-10 left-0 right-0 top-0 w-full">
+        <div className="pointer-events-none fixed -z-10 inset-0 w-full">
           <svg
             // width="1513"
             // height="1120"

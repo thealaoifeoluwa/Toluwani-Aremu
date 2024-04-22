@@ -2,7 +2,6 @@
 
 import { useAnimateHeaderDropdown } from "@/hooks/useAnimation";
 import Gradient from "@/icons/gradient";
-import KiteIcon from "@/icons/kite";
 import Logo from "@/icons/logo";
 import {
   GoogleIcon,
@@ -18,7 +17,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { socialLinks } from "../../data";
-import InfoBar from "./infoBar";
+// import InfoBar from "./infoBar";
+import dynamic from "next/dynamic";
+
+const InfoBar = dynamic(() => import("@/components/infoBar"), { ssr: false });
 
 const navLinks = ["about", "updates", "blog", "contact"];
 

@@ -1,5 +1,8 @@
-import InfoBar from "@/components/infoBar";
+// import InfoBar from "@/components/infoBar";
 import Link from "next/link";
+import dynamic from "next/dynamic";
+
+const InfoBar = dynamic(() => import("@/components/infoBar"), { ssr: false });
 
 const socialLinks = [
   {

@@ -6,7 +6,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { socialLinks } from "../../../data";
 import { useDrag } from "@/hooks/useAnimation";
-import InfoBar from "@/components/infoBar";
+// import InfoBar from "@/components/infoBar";
+import dynamic from "next/dynamic";
+
+const InfoBar = dynamic(() => import("@/components/infoBar"), { ssr: false });
 
 const Page = () => {
   useDrag();
@@ -28,10 +31,16 @@ const Page = () => {
           <section className="2xl:min-w-[100vw] flex items-center relative pt-20 md:pt-0">
             <div className="flex flex-col-reverse md:flex-row md:gap-16 2xl:w-fullscreen px-5 md:px-10 max-w-full mx-auto">
               <div>
-                <h1 className="font-Acorns font-semibold text-[36px] md:text-[45px] 2xl:text-[65px] absolute md:static top-0 left-5">
+                <h1
+                  className="font-Acorns font-semibold text-[36px] md:text-[45px] 2xl:text-[65px] absolute md:static top-0 left-5"
+                  data-aos="fade-up"
+                >
                   ABOUT
                 </h1>
-                <p className="mt-5 2xl:mt-9 md:text-lg 2xl:text-2xl md:w-[425px] text-justify">
+                <p
+                  className="mt-5 2xl:mt-9 md:text-lg 2xl:text-2xl md:w-[425px] text-justify"
+                  data-aos="fade-up"
+                >
                   I&apos;m <strong className="font-bold">Toluwani Aremu</strong>
                   , a passionate learner and dedicated researcher specializing
                   in advancing artificial intelligence with a robust skill set
@@ -41,14 +50,17 @@ const Page = () => {
                   Development Environments, including VSCode, Visual Studio, and
                   PyCharm.
                 </p>
-                <button className="mt-7 md:mt-16 flex gap-2 md:gap-4 items-center md:text-xl">
+                <button
+                  className="mt-7 md:mt-16 flex gap-2 md:gap-4 items-center md:text-xl"
+                  data-aos="fade-up"
+                >
                   <GoogleIcon />
                   <span className="underline underline-offset-2 inline-block">
                     GOOGLE SCHOLAR
                   </span>
                 </button>
               </div>
-              <div className="relative flex w-fit items-end">
+              <div className="relative flex w-fit items-end" data-aos="fade-up">
                 <Image
                   src="/images/toluwani.png"
                   alt="toluwani image"
@@ -67,10 +79,16 @@ const Page = () => {
           <section className="2xl:-ml-[600px] px-5 md:px-0">
             {/* -ml-32 */}
             <div className="md:w-[570px]">
-              <h1 className="font-Acorns font-semibold text-[36px] md:text-[45px] 2xl:text-[65px]">
+              <h1
+                className="font-Acorns font-semibold text-[36px] md:text-[45px] 2xl:text-[65px]"
+                data-aos="fade-up"
+              >
                 Current Exploration
               </h1>
-              <p className="mt-5 2xl:mt-9 md:text-lg 2xl:text-2xl text-justify">
+              <p
+                className="mt-5 2xl:mt-9 md:text-lg 2xl:text-2xl text-justify"
+                data-aos="fade-up"
+              >
                 I am currently exploring and developing neural networks that are
                 not only safe and robust but also prioritize privacy. My focus
                 is on designing these networks by drawing inspiration from human
@@ -82,12 +100,21 @@ const Page = () => {
           </section>
 
           <section className="px-5 md:px-0">
-            <h1 className="font-Acorns font-semibold text-[36px] md:text-[45px] 2xl:text-[65px]">
+            <h1
+              className="font-Acorns font-semibold text-[36px] md:text-[45px] 2xl:text-[65px]"
+              data-aos="fade-up"
+            >
               Past Research Experience
             </h1>
-            <div className="flex flex-col md:flex-row gap-5 md:gap-16 mt-5 2xl:mt-9">
+            <div
+              className="flex flex-col md:flex-row gap-5 md:gap-16 mt-5 2xl:mt-9"
+              data-aos="fade-up"
+            >
               <div className="md:w-[580px] space-y-5 2xl:space-y-9">
-                <p className="md:text-lg 2xl:text-2xl text-justify">
+                <p
+                  className="md:text-lg 2xl:text-2xl text-justify"
+                  data-aos="fade-up"
+                >
                   As a student at MBZUAI, I served as a Research Assistant at
                   the SPriNT-AI Lab, collaborating with Dr. Karthik Nandakumar.
                   My primary focus was the development of an innovative method
@@ -95,7 +122,10 @@ const Page = () => {
                   Accuracy-Efficiency challenge within Deep Neural Networks,
                   particularly in the context of private inference (PI).
                 </p>
-                <p className="md:text-lg 2xl:text-2xl text-justify">
+                <p
+                  className="md:text-lg 2xl:text-2xl text-justify"
+                  data-aos="fade-up"
+                >
                   Additionally, I embarked on personal projects covering
                   Accented Speech Recognition, Racial Bias Mitigation in SSLs,
                   and Gender Bias Mitigation in Word Embeddings. These projects
@@ -105,14 +135,20 @@ const Page = () => {
                 </p>
               </div>
               <div className="md:w-[580px] space-y-5 2xl:space-y-9">
-                <p className="md:text-lg 2xl:text-2xl text-justify">
+                <p
+                  className="md:text-lg 2xl:text-2xl text-justify"
+                  data-aos="fade-up"
+                >
                   During my Applied Science Internship at G42, I played a
                   pivotal role in developing a toolkit aimed at streamlining the
                   preprocessing of the NHANES dataset, ultimately facilitating
                   model utilization, result reproduction, and TRIPOD statement
                   extraction.
                 </p>
-                <p className="md:text-lg 2xl:text-2xl text-justify">
+                <p
+                  className="md:text-lg 2xl:text-2xl text-justify"
+                  data-aos="fade-up"
+                >
                   Subsequently, as an AI research assistant at MBZUAI Metaverse
                   Lab under the guidance of Prof. Abdulmotaleb El Saddik, I
                   embarked on projects to enhance 2D classifiers in the
@@ -124,22 +160,34 @@ const Page = () => {
           </section>
 
           <section className="px-5 md:px-0">
-            <h1 className="font-Acorns font-semibold text-[36px] md:text-[45px] 2xl:text-[65px]">
+            <h1
+              className="font-Acorns font-semibold text-[36px] md:text-[45px] 2xl:text-[65px]"
+              data-aos="fade-up"
+            >
               Education
             </h1>
             <div className="md:w-[620px] mt-5 2xl:mt-9 space-y-5 2xl:space-y-9">
-              <p className="md:text-lg 2xl:text-2xl text-justify">
+              <p
+                className="md:text-lg 2xl:text-2xl text-justify"
+                data-aos="fade-up"
+              >
                 My academic journey includes a Bachelor of Science in Computer
                 Science from Adeleke University, Nigeria, and a subsequent
                 Master of Science in Computer Science from the University of
                 Ibadan, Nigeria.
               </p>
-              <p className="md:text-lg 2xl:text-2xl text-justify">
+              <p
+                className="md:text-lg 2xl:text-2xl text-justify"
+                data-aos="fade-up"
+              >
                 More recently, I achieved a Research-focused Master of Science
                 in Machine Learning at the Mohamed Bin Zayed University of
                 Artificial Intelligence in December 2022.
               </p>
-              <p className="md:text-lg 2xl:text-2xl text-justify">
+              <p
+                className="md:text-lg 2xl:text-2xl text-justify"
+                data-aos="fade-up"
+              >
                 Presently, I am pursuing a PhD in Machine Learning at MBZUAI,
                 working under the guidance of esteemed mentors: Prof.
                 Abdulmotaleb El Saddik and Dr. Karthik Nandakumar, while also
@@ -152,10 +200,16 @@ const Page = () => {
             className="flex flex-col md:flex-row gap-5 md:gap-16 md:items-end"
             // id={document.documentElement.clientWidth < 768 ? "draggable" : ""}
           >
-            <h1 className="font-Acorns font-semibold text-[36px] md:text-[45px] 2xl:text-[65px] px-5 md:px-0">
+            <h1
+              className="font-Acorns font-semibold text-[36px] md:text-[45px] 2xl:text-[65px] px-5 md:px-0"
+              data-aos="fade-up"
+            >
               GALLERY
             </h1>
-            <div className="flex gap-2 md:gap-5 overflow-x-scroll md:overflow-visible w-screen md:w-auto px-5 md:px-0 hide-scrollbar">
+            <div
+              className="flex gap-2 md:gap-5 overflow-x-scroll md:overflow-visible w-screen md:w-auto px-5 md:px-0 hide-scrollbar"
+              data-aos="fade-up"
+            >
               <article className="overflow-clip rounded-xl md:rounded-3xl min-w-[370px] w-[370px] md:w-[840px] md:min-w-[840px] h-[250px] md:h-[450px] 2xl:h-[560px] relative">
                 <Image
                   src="/images/gallery.png"
@@ -236,15 +290,25 @@ const Page = () => {
           </section>
 
           <section className="px-5 md:px-0 pb-20 md:pb-0 2xl:pr-40">
-            <h1 className="font-Acorns font-semibold text-[36px] md:text-[45px] 2xl:text-[65px] md:text-right">
+            <h1
+              className="font-Acorns font-semibold text-[36px] md:text-[45px] 2xl:text-[65px] md:text-right"
+              data-aos="fade-up"
+            >
               SOCIAL
             </h1>
-            <p className="w-[170px] md:text-right md:ml-auto md:text-lg 2xl:text-2xl mt-5 2xl:mt-9">
+            <p
+              className="w-[170px] md:text-right md:ml-auto md:text-lg 2xl:text-2xl mt-5 2xl:mt-9"
+              data-aos="fade-up"
+            >
               I am open to collaborations and can be reached through
             </p>
 
-            <div className="mt-9 2xl:mt-16 flex flex-col md:items-end gap-2 2xl:gap-3 w-[240px] max-w-full ml-auto font-light text-lg 2xl:text-xl md:text-right">
+            <div
+              className="mt-9 2xl:mt-16 flex flex-col md:items-end gap-2 2xl:gap-3 w-[240px] max-w-full ml-auto font-light text-lg 2xl:text-xl md:text-right"
+              data-aos="fade-up"
+            >
               <h2 className="text-[#949494]">CONTACT</h2>
+
               {socialLinks.map((link, index) => (
                 <Link
                   key={index}

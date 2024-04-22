@@ -6,6 +6,10 @@ import { ReactNode, useEffect, useState } from "react";
 // import { gsap } from "gsap/dist/gsap";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Header from "./header";
+import Gradient from "@/icons/gradient";
+import FixedButtons from "./fixedButtons";
+import Loader from "./loader";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,10 +19,6 @@ MouseFollower.registerGSAP(gsap);
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Header from "./header";
-import Gradient from "@/icons/gradient";
-import FixedButtons from "./fixedButtons";
-import Loader from "./loader";
 
 const LenisScroll = ({ children }: { children: ReactNode }) => {
   const pathname = usePathname();
@@ -46,7 +46,7 @@ const LenisScroll = ({ children }: { children: ReactNode }) => {
   // INITIALIZE ANIMATE ON SCROLL
   useEffect(() => {
     AOS.init({
-      offset: 120,
+      offset: 50,
       delay: 0,
       duration: 1000,
       easing: "ease",
@@ -80,7 +80,8 @@ const LenisScroll = ({ children }: { children: ReactNode }) => {
 
     setTimeout(() => {
       loader?.classList.add("close");
-      // document.body.className = "";
+
+      document.body.style.height = "auto";
     }, 6000);
   }, [pathname]);
 

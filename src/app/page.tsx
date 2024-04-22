@@ -56,12 +56,16 @@ export default function Home() {
             </span>
           </div>
         </div>
-        <p className="w-[425px] max-w-full px-10 md:px-0 text-center md:text-xl">
+        <p
+          className="w-[425px] max-w-full px-10 md:px-0 text-center md:text-xl"
+          data-aos="fade-up"
+        >
           I&apos;m a passionate learner and dedicated researcher specializing in
           advancing artificial intelligence with a robust skill set spanning
           both research and industry.
         </p>
         <button
+          data-aos="fade-up"
           className="btn flex items-center gap-3 group"
           data-cursor="-hidden"
         >
@@ -71,20 +75,31 @@ export default function Home() {
       </div>
 
       <div className="mt-[74px] md:mt-[120px] text-center">
-        <h2 className="text-[32px] md:text-[64px] font-medium font-Acorns">
+        <h2
+          className="text-[32px] md:text-[64px] font-medium font-Acorns"
+          data-aos="fade-up"
+        >
           Skillset
         </h2>
-        <p className="md:text-xl">
+        <p className="md:text-xl" data-aos="fade-up">
           I am well-versed in essential tools such as
         </p>
-        <div className="flex justify-center gap-2 sm:gap-2.5 mt-4 md:text-xl">
+        <div
+          className="flex justify-center gap-2 sm:gap-2.5 mt-4 md:text-xl"
+          data-aos="fade-up"
+        >
           <span className="btn">Python</span>
           <span className="btn">PyTorch</span>
           <span className="btn">TensorFlow</span>
           <span className="btn">Keras</span>
         </div>
-        <p className="mt-10 md:text-xl">Development Environments</p>
-        <div className="flex justify-center gap-2 sm:gap-2.5 mt-4 md:text-xl">
+        <p className="mt-10 md:text-xl" data-aos="fade-up">
+          Development Environments
+        </p>
+        <div
+          className="flex justify-center gap-2 sm:gap-2.5 mt-4 md:text-xl"
+          data-aos="fade-up"
+        >
           <span className="btn">VSCode</span>
           <span className="btn">Visual Studio</span>
           <span className="btn">PyCharm</span>
@@ -95,11 +110,15 @@ export default function Home() {
         <h2
           className="text-[32px] md:text-[64px] font-medium font-Acorns text-center"
           id="updates"
+          data-aos="fade-up"
         >
           Update
         </h2>
 
-        <div className="mt-6 md:mt-8 w-[380px] max-w-full mx-auto overflow-hidden relative rounded-full">
+        <div
+          className="mt-6 md:mt-8 w-[380px] max-w-full mx-auto overflow-hidden relative rounded-full"
+          data-aos="fade-up"
+        >
           <span className="absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-black/10 dark:from-black/30 to-transparent pointer-events-none"></span>
           <span className="absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-black/10 dark:from-black/30 to-transparent pointer-events-none"></span>
           <div
@@ -125,7 +144,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mt-5">
+        <div className="mt-5" data-aos="fade-up">
           <UpdateBox yearSelected={yearSelected} />
         </div>
       </div>
@@ -134,15 +153,19 @@ export default function Home() {
         <h2
           className="text-[32px] md:text-[64px] font-medium font-Acorns"
           id="blog"
+          data-aos="fade-up"
         >
           Blog
         </h2>
-        <p className="mt-4 w-[640px] max-w-full mx-auto md:text-2xl font-Acorns px-10 md:px-0">
+        <p
+          className="mt-4 w-[640px] max-w-full mx-auto md:text-2xl font-Acorns px-10 md:px-0"
+          data-aos="fade-up"
+        >
           Some thoughts, reflections, & notes on artificial intelligence and
           development, along with some latest work in progress.
         </p>
 
-        <div className="overflow-hidden">
+        <div className="overflow-hidden" data-aos="fade-up">
           <div
             className="mt-14 flex gap-4 overflow-x-scroll px-5 sm:px-10 hide-scrollbar"
             id="draggable"
@@ -155,10 +178,16 @@ export default function Home() {
       </div>
 
       <div className="mt-[102px] text-center px-5 sm:px-10">
-        <h2 className="text-[32px] md:text-[64px] font-medium font-Acorns">
+        <h2
+          className="text-[32px] md:text-[64px] font-medium font-Acorns"
+          data-aos="fade-up"
+        >
           Let’s work together
         </h2>
-        <p className="mt-8 font-light md:text-xl w-[730px] max-w-full mx-auto text-center">
+        <p
+          className="mt-8 font-light md:text-xl w-[730px] max-w-full mx-auto text-center"
+          data-aos="fade-up"
+        >
           If you&apos;d like to talk about a project you want help with or need
           an advice about research on artificial intelligence, just drop me a
           message at <strong className="font-bold">toluwani@aremu.ai</strong>
@@ -167,7 +196,10 @@ export default function Home() {
           research gigs.
         </p>
 
-        <div className="mt-16 flex flex-col gap-4 justify-center items-center">
+        <div
+          className="mt-16 flex flex-col gap-4 justify-center items-center"
+          data-aos="fade-up"
+        >
           <MailIcon2 />
           <a href="mailto:toluwani@aremu.ai" className="md:text-xl font-light">
             WRITE ME AN EMAIL

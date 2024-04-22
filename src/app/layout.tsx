@@ -77,7 +77,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${Planar.className} ${Acorn.variable}`}>
       {/* #0A0A0A */}
-      <body className="overflow-hidden bg-[#EEF2FF] dark:bg-[#0A0A0A] text-black dark:text-white">
+      <body className="overflow-hidden h-screen bg-[#EEF2FF] dark:bg-[#0A0A0A] text-black dark:text-white">
         <LenisScroll>{children}</LenisScroll>
       </body>
     </html>
