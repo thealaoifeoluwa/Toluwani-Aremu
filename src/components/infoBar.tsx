@@ -46,7 +46,9 @@ const InfoBar = ({
         const { weather, main } = res;
         let { icon, description } = weather ? weather[0] : "";
         const temp = main ? Math.round(main.temp - 273) : 0;
-        icon = `https://openweathermap.org/img/wn/${icon}@2x.png`;
+        icon = icon
+          ? `https://openweathermap.org/img/wn/${icon}@2x.png`
+          : '"/images/icon.svg"';
 
         setData({ description, icon, temp });
       } catch (error) {
