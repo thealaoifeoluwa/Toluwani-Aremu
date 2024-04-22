@@ -1,5 +1,4 @@
 import Gradient from "@/icons/gradient";
-import LoaderGradient from "@/icons/loader-gradient";
 import { useEffect, useState } from "react";
 
 const Loader = () => {

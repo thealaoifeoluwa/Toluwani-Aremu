@@ -22,16 +22,16 @@ const config: Config = {
       keyframes: {
         scrollLeft: {
           "0%": {
-            translate: "0 0",
+            translate: "-10% 0",
           },
           "100%": {
-            translate: "-100% 0",
+            translate: "-70% 0",
           },
         },
       },
       animation: {
         spin: "spin 4s linear infinite",
-        scrollLeft: "scrollLeft 20s linear infinite",
+        scrollLeft: "scrollLeft 30s linear infinite",
       },
     },
   },
