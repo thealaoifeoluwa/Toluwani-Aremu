@@ -34,6 +34,7 @@ const UpdateBox = ({ yearSelected }: { yearSelected: number }) => {
                         {li.text}
                         {li.link && (
                           <a
+                            target="_blank"
                             href={li.link}
                             className="text-primary inline-block ml-2"
                           >
@@ -43,6 +44,7 @@ const UpdateBox = ({ yearSelected }: { yearSelected: number }) => {
                         {li.links &&
                           li.links.map((li, index) => (
                             <a
+                              target="_blank"
                               key={index}
                               href={li.link}
                               className="text-primary inline-block ml-2"
