@@ -87,7 +87,7 @@ export default function Home() {
                 <Typewriter
                   words={["Toluwani Aremu"]}
                   loop={1}
-                  typeSpeed={200}
+                  typeSpeed={100}
                 />
               )}
             </h1>
