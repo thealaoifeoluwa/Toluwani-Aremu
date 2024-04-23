@@ -54,7 +54,7 @@ export default function Home() {
 
       setTimeout(() => {
         setTypingDone(true);
-      }, 3500);
+      }, 1800);
     }, 6500);
 
     return () => clearTimeout(timeout);
