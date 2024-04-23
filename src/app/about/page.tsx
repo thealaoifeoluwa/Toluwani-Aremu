@@ -50,7 +50,8 @@ const Page = () => {
                   Development Environments, including VSCode, Visual Studio, and
                   PyCharm.
                 </p>
-                <button
+                <Link
+                  href="https://scholar.google.com/citations?user=Ji8fnw0AAAAJ&hl=en"
                   className="mt-7 md:mt-16 flex gap-2 md:gap-4 items-center md:text-xl"
                   data-aos="fade-up"
                 >
@@ -58,7 +59,7 @@ const Page = () => {
                   <span className="underline underline-offset-2 inline-block">
                     GOOGLE SCHOLAR
                   </span>
-                </button>
+                </Link>
               </div>
               <div className="relative flex w-fit items-end" data-aos="fade-up">
                 <Image

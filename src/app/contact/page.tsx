@@ -23,7 +23,7 @@ const socialLinks = [
   },
   {
     title: "google scholar",
-    link: "#",
+    link: "https://scholar.google.com/citations?user=Ji8fnw0AAAAJ&hl=en",
   },
 ];
 

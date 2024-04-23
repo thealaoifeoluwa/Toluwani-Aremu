@@ -59,7 +59,7 @@ const Header = () => {
             data-cursor="-hidden"
           >
             <Link
-              href=""
+              href="https://scholar.google.com/citations?user=Ji8fnw0AAAAJ&hl=en"
               target="_blank"
               className="transition-transform duration-500 hover:scale-125"
             >
