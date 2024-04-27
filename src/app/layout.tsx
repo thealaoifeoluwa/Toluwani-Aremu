@@ -68,7 +68,7 @@ export const metadata: Metadata = {
   title:
     "Toluwani Aremu | Researcher specializing in advancing artificial intelligence.",
   description:
-    "A Researcher specializing in advancing artificial intelligence.",
+    "A researcher specializing in advancing artificial intelligence.",
   robots:
     "AI, robotics, aritificial intelligence, computer science, AVR sitemap",
 
@@ -84,7 +84,7 @@ export const metadata: Metadata = {
     title:
       "Toluwani Aremu | Researcher specializing in advancing artificial intelligence.",
     description:
-      "A Researcher specializing in advancing artificial intelligence.",
+      "A researcher specializing in advancing artificial intelligence.",
     url: "https://toluwani.com",
     siteName: "Toluwani Aremu",
     images: [
