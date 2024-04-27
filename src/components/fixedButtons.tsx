@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const FixedButtons = () => {
   const toggleDarkMode = () => {
     if (
@@ -27,12 +29,15 @@ const FixedButtons = () => {
           <DarkIcon />
         </span>
       </button>
-      <button
+      <Link
+        href="/Toluwani_Aremu_Resume.pdf"
+        download
+        target="_blank"
         className="fixed right-0 sm:right-4 2xl:right-8 bottom-0 sm:bottom-4 2xl:bottom-8 z-40 rounded-full"
         data-cursor="-hidden"
       >
         <GetCVIcon />
-      </button>
+      </Link>
     </>
   );
 };
