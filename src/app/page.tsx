@@ -223,7 +223,7 @@ export default function Home() {
               id="updates"
               data-aos="fade-up"
             >
-              Update
+              Updates
             </h2>
 
             <div
