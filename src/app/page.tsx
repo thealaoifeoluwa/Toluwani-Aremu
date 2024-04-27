@@ -317,8 +317,8 @@ export default function Home() {
               Got a cool research idea or just want to muse about the future? Hit me up!{" "}
               {/* <strong className="font-bold">toluwani@aremu.ai</strong>
               <br /> */}
-              I&apos;m currently available for any form of artificial
-              intelligence research gigs.
+              {/* I&apos;m currently available for any form of artificial
+              intelligence research gigs. */}
             </p>
 
             <div className="flex gap-4  justify-center items-center"> 
