@@ -75,9 +75,9 @@ export const metadata: Metadata = {
   icons: {
     icon: "/icon.png",
     shortcut:
-      "https://res.cloudinary.com/alaoifeoluwa/image/upload/v1714227061/Toluwani_Aremu_logo_wy3kfh.png",
+      "https://res.cloudinary.com/alaoifeoluwa/image/upload/v1714227528/Toluwani_Aremu_logo_u24ucq.png",
     apple:
-      "https://res.cloudinary.com/alaoifeoluwa/image/upload/v1714227061/Toluwani_Aremu_logo_wy3kfh.png",
+      "https://res.cloudinary.com/alaoifeoluwa/image/upload/v1714227528/Toluwani_Aremu_logo_u24ucq.png",
   },
 
   openGraph: {
@@ -89,7 +89,7 @@ export const metadata: Metadata = {
     siteName: "Toluwani Aremu",
     images: [
       {
-        url: "https://res.cloudinary.com/alaoifeoluwa/image/upload/v1714226734/Toluwa_Aremu_wmhtmh.png",
+        url: "https://res.cloudinary.com/alaoifeoluwa/image/upload/v1714227529/Toluwa_Aremu_axebys.png",
         width: 800,
         height: 600,
         alt: "Toluwani Aremu",
