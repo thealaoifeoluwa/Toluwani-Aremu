@@ -512,7 +512,7 @@ export const blogs = [
   {
     title: "Check my latest publications on google scholar",
     image: "/image-9.png",
-    link: "https://scholar.google.com/citations?user=Ji8fnw0AAAAJ&hl=en",
+    link: "https://scholar.google.com/citations?hl=en&user=Ji8fnw0AAAAJ&view_op=list_works&sortby=pubdate",
     date: "20 January 2024",
   },
   {
