@@ -75,9 +75,9 @@ export const metadata: Metadata = {
   icons: {
     icon: "/icon.png",
     shortcut:
-      "https://res.cloudinary.com/alaoifeoluwa/image/upload/v1714227528/Toluwani_Aremu_logo_u24ucq.png",
+      "https://res.cloudinary.com/alaoifeoluwa/image/upload/v1714238165/Toluwa_Aremu_logo_ezq4m1.png",
     apple:
-      "https://res.cloudinary.com/alaoifeoluwa/image/upload/v1714227528/Toluwani_Aremu_logo_u24ucq.png",
+      "https://res.cloudinary.com/alaoifeoluwa/image/upload/v1714238165/Toluwa_Aremu_logo_ezq4m1.png",
   },
 
   openGraph: {
