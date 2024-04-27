@@ -11,7 +11,7 @@ import { useEffect, useState } from "react";
 import { blogs, years } from "../../data";
 import Link from "next/link";
 import { Typewriter } from "react-simple-typewriter";
-import { LinkedinIcon } from "@/icons/socialIcons";
+import { LinkedinIcon, LinkedinIcon2, MediumIcon, MediumIcon2 } from "@/icons/socialIcons";
 
 export default function Home() {
   useDrag();
@@ -108,13 +108,72 @@ export default function Home() {
         <div>
           <div className="space-y-14 mt-14">
             <p
-              className="w-[425px] max-w-full px-10 md:px-0 text-center mx-auto md:text-xl"
+              className="w-[625px] max-w-full px-10 md:px-0 text-center mx-auto md:text-xl"
               data-aos="fade-up"
             >
-              I&apos;m a passionate learner and dedicated researcher
+              {/* I&apos;m a passionate learner and dedicated researcher
               specializing in advancing artificial intelligence with a robust
-              skill set spanning both research and industry.
+              skill set spanning both research and industry. */}
+              It seems like I&apos;ve gotten your attention! Hey there! I&apos;m Toluwani, your friendly neighborhood AI enthusiast. 
+              I build and write AI stuff sometimes. I am also a Machine Learning Doctoral Candidate at <span> </span>
+            <Link
+              href="https://mbzuai.ac.ae/"
+              className=" text-primary"
+            >
+              MBZUAI.
+            </Link>
+            <span> </span> When I&apos;m not boring <span> </span>
+            
+            <Link
+              href="https://scholar.google.ca/citations?hl=en&user=VcOjgngAAAAJ&view_op=list_works&sortby=pubdate"
+              className=" text-primary"
+            >
+              Prof. Abdulmotaleb El Saddik
+            </Link> and <span> </span>
+            
+            <Link
+              href="https://scholar.google.com/citations?hl=en&user=2qx0RnEAAAAJ&view_op=list_works&sortby=pubdate"
+              className=" text-primary"
+            >
+              Dr. Karthik Nandakumar
+            </Link> with Machine Learning puzzles and thesis duties, 
+               I&apos;m disturbing <span> </span>
+               
+               <Link
+              href="https://www.cmu.edu/dietrich/philosophy/people/faculty/zhang.html?source=about_page"
+              className=" text-primary"
+            >
+              Prof. Kun Zhang
+            </Link> on how to transfer our smartness and intelligence to these machines. My current focus is to
+                outsmart sneaky vision models with adversarial attacks or crafting adversarial shields for VLMs. Before this,
+                 I worked on projects in the Responsible and Trustworthy AI domain, specifically, in privacy and fairness.
             </p>
+
+            <p
+              className="w-[625px] max-w-full px-10 md:px-0 text-center mx-auto md:text-xl"
+              data-aos="fade-up"
+            >
+            When I unplug from the matrix, I dive into spirited debates about whether we&apos;re heading towards a 
+            tech utopia or just brewing the next batch of conspiracy theories. Philosophy? Love it. 
+            The meaning of life? Come here Aristotle! Let&apos;s chat over any game... I would say my gaming 
+            prowess is &ldquo;uniquely charming.&ldquo; I&apos;m also a fan of staying active, whether it&apos;s sports or gym 
+            sessions where I do nothing but lift my weary body through my fiery spirit.
+            </p>
+
+            <p
+              className="w-[625px] max-w-full px-10 md:px-0 text-center mx-auto md:text-xl"
+              data-aos="fade-up"
+            >
+              
+              Even with all my weirdness, music is my soul&apos;s language. I&apos;ve got the softest spots for Country and Folk, 
+              and I love humorous songs. I strum, sing, and tinkle the ivories, adding my own soundtrack to life. Oh, 
+              and I&apos;ve recently dabbled into photography – I wouldn&apos;t call myself talented, but I keep shooting at &ldquo;nouns.&ldquo;
+               Bad, or great shots... Both, I&apos;ll enjoy! I also love comedy, but that talent evades me, though you can find
+                a little touch on my platforms.
+            </p>
+
+
+
             <Link
               href="mailto:tioluwaniaremu@gmail.com"
               data-aos="fade-up"
@@ -207,15 +266,15 @@ export default function Home() {
               id="blog"
               data-aos="fade-up"
             >
-              Blog
+              Publications
             </h2>
-            <p
+            {/* <p
               className="mt-4 w-[640px] max-w-full mx-auto md:text-2xl font-Acorns px-10 md:px-0"
               data-aos="fade-up"
             >
               Some thoughts, reflections, & notes on artificial intelligence and
               development, along with some latest work in progress.
-            </p>
+            </p> */}
 
             <div className="overflow-hidden" data-aos="fade-up">
               <div
@@ -234,12 +293,15 @@ export default function Home() {
               data-aos="fade-up"
             >
               <Link
-                href="https://tolusophy.medium.com/"
-                className="md:text-xl font-light  text-primary"
-              >
-                Read more..
-              </Link>
-            </div>
+              href="https://tolusophy.medium.com/"
+              data-aos="fade-up"
+              className="btn flex items-center w-fit mx-auto gap-3 group"
+              data-cursor="-hidden"
+            >
+              <MediumIcon2 />
+              Read more
+            </Link>
+          </div>
 
           <div className="mt-[102px] text-center px-5 sm:px-10">
             <h2
@@ -249,7 +311,7 @@ export default function Home() {
               Let’s work together
             </h2>
             <p
-              className="mt-2 font-light md:text-xl w-[730px] max-w-full mx-auto text-center"
+              className="mt-2 font-light md:text-xl w-[680px] max-w-full mx-auto text-center"
               data-aos="fade-up"
             >
               Got a cool research idea or just want to muse about the future? Hit me up!{" "}
@@ -263,26 +325,30 @@ export default function Home() {
               className="mt-16 flex flex-col gap-4 justify-center items-center"
               data-aos="fade-up"
             >
-              <LinkedinIcon />
               <Link
-                href="https://linkedin.com/in/toluwaniaremu"
-                className="md:text-xl font-light"
-              >
-                CONTACT ME ON LINKEDIN
-              </Link>
+              href="https://linkedin.com/in/toluwaniaremu"
+              data-aos="fade-up"
+              className="btn flex items-center w-fit mx-auto gap-3 group"
+              data-cursor="-hidden"
+            >
+              <LinkedinIcon2 />
+              Linkedin
+            </Link>
             </div>
 
             <div
               className="mt-16 flex flex-col gap-4 justify-center items-center"
               data-aos="fade-up"
             >
-              <MailIcon2 />
               <Link
-                href="mailto:tioluwaniaremu@gmail.com"
-                className="md:text-xl font-light"
-              >
-                WRITE ME AN EMAIL
-              </Link>
+              href="toluwani.aremu@mbzuai.ac.ae"
+              data-aos="fade-up"
+              className="btn flex items-center w-fit mx-auto gap-3 group"
+              data-cursor="-hidden"
+            >
+              <MailIcon />
+              Email
+            </Link>
             </div>
           </div>
         </div>

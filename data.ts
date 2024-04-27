@@ -510,10 +510,16 @@ export const years = allData.map((data) => data.year);
 
 export const blogs = [
   {
+    title: "Check my latest publications on google scholar",
+    image: "/image-9.png",
+    link: "https://scholar.google.com/citations?user=Ji8fnw0AAAAJ&hl=en",
+    date: "20 January 2024",
+  },
+  {
     title: "Accented Speech Recognition",
     image: "/image-1.png",
     link: "https://tolusophy.medium.com/accented-speech-recognition-the-inclusive-realm-of-automatic-speech-recognition-systems-881ee480c502",
-    date: "01 July 2024",
+    date: "01 July 2023",
   },
   {
     title: "AI Text Detectors: Amazing Sleuths or WHAT?",
