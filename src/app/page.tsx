@@ -321,6 +321,9 @@ export default function Home() {
               intelligence research gigs.
             </p>
 
+            <div className="flex gap-4  justify-center items-center"> 
+
+            
             <div
               className="mt-16 flex flex-col gap-4 justify-center items-center"
               data-aos="fade-up"
@@ -349,6 +352,8 @@ export default function Home() {
               <MailIcon />
               Email
             </Link>
+
+            </div>
             </div>
           </div>
         </div>
