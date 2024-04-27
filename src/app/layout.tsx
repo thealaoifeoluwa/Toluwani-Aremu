@@ -64,41 +64,41 @@ const Planar = localFont({
   ],
 });
 
-// export const metadata: Metadata = {
-//   title:
-//     "BigiBrand | Brand-centric Design Agency for Web & Mobile Product Design and Development.",
-//   description:
-//     "A brand-centric, web, and mobile application design and development agency.",
-//   robots:
-//     "brand identity, user experience design, brand strategy, Nigeria, Ibadan, Lagos, Web and mobile app development, user interface design, brand-centric design, human-centric design,web development, project design, branding, marketing strategy, design thinking, iconography, icon design, brand kit, brand collateral, digital design, design audit, UI/UX design, Prototyping, Branding styleguide, Marketing materials, collage, wordpress, webflow developer, interaction design, vr design webflow developer, graphics design, product design, web design, visual communication, motion graphics design, uiux design, protoyping, brand mockups, community, illustration design, 2D design, 3D design, industrial design, promo videos, front-end development, webapp development, app development,content strategy, typography, movie design, photography branding, design system, figma, adobe xd, webflow designer, brand consultant, logo design, Nigeria, International, USA, UK, Ghana, page, sitemap",
+export const metadata: Metadata = {
+  title:
+    "Toluwani Aremu | Researcher specializing in advancing artificial intelligence.",
+  description:
+    "A Researcher specializing in advancing artificial intelligence.",
+  robots:
+    "AI, robotics, aritificial intelligence, computer science, AVR sitemap",
 
-//   icons: {
-//     icon: "/icon.png",
-//     shortcut:
-//       "https://res.cloudinary.com/bigibrand/image/upload/v1699318365/BigiBrand%20Website/BigiBrand_favicon_tfye0s.png",
-//     apple:
-//       "https://res.cloudinary.com/bigibrand/image/upload/v1699318365/BigiBrand%20Website/BigiBrand_favicon_tfye0s.png",
-//   },
+  icons: {
+    icon: "/icon.png",
+    shortcut:
+      "https://res.cloudinary.com/alaoifeoluwa/image/upload/v1714227061/Toluwani_Aremu_logo_wy3kfh.png",
+    apple:
+      "https://res.cloudinary.com/alaoifeoluwa/image/upload/v1714227061/Toluwani_Aremu_logo_wy3kfh.png",
+  },
 
-//   openGraph: {
-//     title:
-//       "BigiBrand | Brand-centric Design Agency for Web & Mobile Product Design and Development.",
-//     description:
-//       "A brand-centric, web, and mobile application design and development agency.",
-//     url: "https://bigibrand.com",
-//     siteName: "Bigibrand",
-//     images: [
-//       {
-//         url: "https://res.cloudinary.com/bigibrand/image/upload/v1707522350/think_big_create_diffrenent_emoji_dxnuv1.png",
-//         width: 800,
-//         height: 600,
-//         alt: "Bigibrand",
-//       },
-//     ],
-//     locale: "en_US",
-//     type: "website",
-//   },
-// };
+  openGraph: {
+    title:
+      "Toluwani Aremu | Researcher specializing in advancing artificial intelligence.",
+    description:
+      "A Researcher specializing in advancing artificial intelligence.",
+    url: "https://toluwani.com",
+    siteName: "Toluwani Aremu",
+    images: [
+      {
+        url: "https://res.cloudinary.com/alaoifeoluwa/image/upload/v1714226734/Toluwa_Aremu_wmhtmh.png",
+        width: 800,
+        height: 600,
+        alt: "Toluwani Aremu",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+};
 
 export default function RootLayout({
   children,

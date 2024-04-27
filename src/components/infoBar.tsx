@@ -96,7 +96,7 @@ const InfoBar = ({
         <span className="flex gap-2 items-center justify-end">
           <KiteIcon />
           <a href="mailto:tioluwaniaremu@gmail.com" className="font-medium">
-            INFO@TOLUWANI.EA
+            INFO@TOLUWANI.UAE
           </a>
         </span>
       </div>

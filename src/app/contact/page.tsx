@@ -7,7 +7,7 @@ const InfoBar = dynamic(() => import("@/components/infoBar"), { ssr: false });
 const socialLinks = [
   {
     title: "github",
-    link: "#",
+    link: "https://github.com/tolusophy",
   },
   {
     title: "medium",
@@ -19,7 +19,7 @@ const socialLinks = [
   },
   {
     title: "instagram",
-    link: "#",
+    link: "https://www.instagram.com/tolusophy/",
   },
   {
     title: "google scholar",

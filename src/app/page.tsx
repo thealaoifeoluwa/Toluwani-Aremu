@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 import { blogs, years } from "../../data";
 import Link from "next/link";
 import { Typewriter } from "react-simple-typewriter";
+import { LinkedinIcon } from "@/icons/socialIcons";
 
 export default function Home() {
   useDrag();
@@ -142,11 +143,11 @@ export default function Home() {
               <span className="btn">Python</span>
               <span className="btn">PyTorch</span>
               <span className="btn">TensorFlow</span>
-              <span className="btn">Keras</span>
+              <span className="btn">Github</span>
             </div>
-            <p className="mt-10 md:text-xl" data-aos="fade-up">
+            {/* <p className="mt-10 md:text-xl" data-aos="fade-up">
               Development Environments
-            </p>
+            </p> */}
             <div
               className="flex justify-center gap-2 sm:gap-2.5 mt-4 md:text-xl"
               data-aos="fade-up"
@@ -228,6 +229,18 @@ export default function Home() {
             </div>
           </div>
 
+          <div
+              className="mt-16 flex flex-col gap-4 justify-center items-center"
+              data-aos="fade-up"
+            >
+              <Link
+                href="https://tolusophy.medium.com/"
+                className="md:text-xl font-light  text-primary"
+              >
+                Read more..
+              </Link>
+            </div>
+
           <div className="mt-[102px] text-center px-5 sm:px-10">
             <h2
               className="text-[32px] md:text-[64px] font-medium font-Acorns"
@@ -236,17 +249,28 @@ export default function Home() {
               Let’s work together
             </h2>
             <p
-              className="mt-8 font-light md:text-xl w-[730px] max-w-full mx-auto text-center"
+              className="mt-2 font-light md:text-xl w-[730px] max-w-full mx-auto text-center"
               data-aos="fade-up"
             >
-              If you&apos;d like to talk about a project you want help with or
-              need an advice about research on artificial intelligence, just
-              drop me a message at{" "}
-              <strong className="font-bold">toluwani@aremu.ai</strong>
-              <br />
+              Got a cool research idea or just want to muse about the future? Hit me up!{" "}
+              {/* <strong className="font-bold">toluwani@aremu.ai</strong>
+              <br /> */}
               I&apos;m currently available for any form of artificial
               intelligence research gigs.
             </p>
+
+            <div
+              className="mt-16 flex flex-col gap-4 justify-center items-center"
+              data-aos="fade-up"
+            >
+              <LinkedinIcon />
+              <Link
+                href="https://linkedin.com/in/toluwaniaremu"
+                className="md:text-xl font-light"
+              >
+                CONTACT ME ON LINKEDIN
+              </Link>
+            </div>
 
             <div
               className="mt-16 flex flex-col gap-4 justify-center items-center"

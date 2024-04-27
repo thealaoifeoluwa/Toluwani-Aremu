@@ -73,14 +73,15 @@ const Header = () => {
               <LinkedinIcon />
             </Link>
             <Link
-              href=""
+              href="https://twitter.com/tolusophy"
               target="_blank"
               className="transition-transform duration-500 hover:scale-125"
             >
               <XIcon />
             </Link>
+
             <Link
-              href=""
+              href="https://github.com/tolusophy"
               target="_blank"
               className="transition-transform duration-500 hover:scale-125"
             >
@@ -94,7 +95,7 @@ const Header = () => {
               <MediumIcon />
             </Link>
             <Link
-              href=""
+              href="https://www.instagram.com/tolusophy/"
               target="_blank"
               className="transition-transform duration-500 hover:scale-125"
             >

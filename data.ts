@@ -1,7 +1,7 @@
 export const socialLinks = [
   {
     title: "github",
-    link: "#",
+    link: "https://github.com/tolusophy",
   },
   {
     title: "medium",
@@ -13,14 +13,14 @@ export const socialLinks = [
   },
   {
     title: "instagram",
-    link: "#",
+    link: "https://www.instagram.com/tolusophy/",
   },
   {
     title: "google scholar",
     link: "https://scholar.google.com/citations?user=Ji8fnw0AAAAJ&hl=en",
   },
   {
-    title: "INFO@TOLUWANI.EA",
+    title: "INFO@TOLUWANI.UAE",
     link: "mailto:tioluwaniaremu@gmail.com",
   },
 ];
@@ -59,6 +59,17 @@ const data2024: dataType = {
         },
       ],
     },
+
+    {
+      title: "April",
+      data: [
+        {
+          text: 'Our paper, "Redefining Contributions: Shapley-Driven Federated Learning", has been accepted for presentation and publication at the 33rd International Joint Conference on Artificial Intelligence (IJCAI), Jeju, Korea. Congrats to the team.',
+        },
+      ],
+    },
+
+    
   ],
 };
 
