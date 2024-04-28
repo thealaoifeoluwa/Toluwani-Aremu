@@ -146,8 +146,8 @@ export default function Home() {
               Prof. Kun Zhang
             </Link> on how to transfer our smartness and intelligence to these machines. My current focus is to
                 outsmart sneaky vision models with adversarial attacks or crafting adversarial shields for VLMs. Before this,
-                 I worked on projects in the Responsible and Trustworthy AI domain, specifically, in privacy and fairness.
-            </p> */}
+                 I worked on projects in the Responsible and Trustworthy AI domain, specifically, in privacy and fairness. */}
+            </p>
 
             <p
               className="w-[625px] max-w-full px-10 md:px-0 text-center mx-auto md:text-xl"
