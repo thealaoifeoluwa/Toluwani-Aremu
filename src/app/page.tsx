@@ -122,7 +122,7 @@ export default function Home() {
             >
               MBZUAI.
             </Link>
-            <span> </span> When I&apos;m not boring <span> </span>
+            {/* <span> </span> When I&apos;m not boring <span> </span>
             
             <Link
               href="https://scholar.google.ca/citations?hl=en&user=VcOjgngAAAAJ&view_op=list_works&sortby=pubdate"
@@ -147,7 +147,7 @@ export default function Home() {
             </Link> on how to transfer our smartness and intelligence to these machines. My current focus is to
                 outsmart sneaky vision models with adversarial attacks or crafting adversarial shields for VLMs. Before this,
                  I worked on projects in the Responsible and Trustworthy AI domain, specifically, in privacy and fairness.
-            </p>
+            </p> */}
 
             <p
               className="w-[625px] max-w-full px-10 md:px-0 text-center mx-auto md:text-xl"
