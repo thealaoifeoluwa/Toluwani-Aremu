@@ -146,7 +146,7 @@ export default function Home() {
               Prof. Kun Zhang
             </Link> on how to transfer our smartness and intelligence to these machines. My current focus is to
                 outsmart sneaky vision models with adversarial attacks or crafting adversarial shields for VLMs. Before this,
-                 I worked on projects in the Responsible and Trustworthy AI domain, specifically, in privacy and fairness. */}
+                 I worked on projects in the Responsible and Trustworthy AI domain, specifically, in privacy and fairness.
             </p>
 
             <p
@@ -169,7 +169,7 @@ export default function Home() {
               and I love humorous songs. I strum, sing, and tinkle the ivories, adding my own soundtrack to life. Oh, 
               and I&apos;ve recently dabbled into photography – I wouldn&apos;t call myself talented, but I keep shooting at &ldquo;nouns.&ldquo;
                Bad, or great shots... Both, I&apos;ll enjoy! I also love comedy, but that talent evades me, though you can find
-                a little touch on my platforms.
+                a little touch on my platforms. */}
             </p>
 
 
