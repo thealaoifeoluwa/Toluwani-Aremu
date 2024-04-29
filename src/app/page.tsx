@@ -121,38 +121,36 @@ export default function Home() {
               skill set spanning both research and industry. */}
               It seems like I&apos;ve gotten your attention! Hey there! I&apos;m
               Toluwani, your friendly neighborhood AI enthusiast. I build and
-              write AI stuff sometimes. I am also a Machine Learning Doctoral
-              Candidate at <span> </span>
+              write AI stuff sometimes. I am also a Machine Learning PhD Student
+              at <span> </span>
               <Link href="https://mbzuai.ac.ae/" className=" text-primary">
                 MBZUAI.
               </Link>
-              <span> </span> When I&apos;m not boring <span> </span>
-              <Link
-                href="https://scholar.google.ca/citations?hl=en&user=VcOjgngAAAAJ&view_op=list_works&sortby=pubdate"
-                className=" text-primary"
-              >
-                Prof. Abdulmotaleb El Saddik
-              </Link>{" "}
-              and <span> </span>
-              <Link
-                href="https://scholar.google.com/citations?hl=en&user=2qx0RnEAAAAJ&view_op=list_works&sortby=pubdate"
-                className=" text-primary"
-              >
-                Dr. Karthik Nandakumar
-              </Link>{" "}
-              with Machine Learning puzzles and thesis duties, I&apos;m
-              disturbing <span> </span>
-              <Link
-                href="https://www.cmu.edu/dietrich/philosophy/people/faculty/zhang.html?source=about_page"
-                className=" text-primary"
-              >
-                Prof. Kun Zhang
-              </Link>{" "}
-              on how to transfer our smartness and intelligence to these
-              machines. My current focus is to outsmart sneaky vision models
-              with adversarial attacks or crafting adversarial shields for VLMs.
-              Before this, I worked on projects in the Responsible and
-              Trustworthy AI domain, specifically, in privacy and fairness.
+              {/* <span> </span> When I&apos;m not boring <span> </span>
+            
+            <Link
+              href="https://scholar.google.ca/citations?hl=en&user=VcOjgngAAAAJ&view_op=list_works&sortby=pubdate"
+              className=" text-primary"
+            >
+              Prof. Abdulmotaleb El Saddik
+            </Link> and <span> </span>
+            
+            <Link
+              href="https://scholar.google.com/citations?hl=en&user=2qx0RnEAAAAJ&view_op=list_works&sortby=pubdate"
+              className=" text-primary"
+            >
+              Dr. Karthik Nandakumar
+            </Link> with Machine Learning puzzles and thesis duties, 
+               I&apos;m disturbing <span> </span>
+               
+               <Link
+              href="https://www.cmu.edu/dietrich/philosophy/people/faculty/zhang.html?source=about_page"
+              className=" text-primary"
+            >
+              Prof. Kun Zhang
+            </Link> on how to transfer our smartness and intelligence to these machines. My current focus is to
+                outsmart sneaky vision models with adversarial attacks or crafting adversarial shields for VLMs. Before this,
+                 I worked on projects in the Responsible and Trustworthy AI domain, specifically, in privacy and fairness.
             </p>
 
             <p
@@ -173,14 +171,12 @@ export default function Home() {
               className="w-[625px] max-w-full px-10 md:px-0 text-center mx-auto md:text-xl"
               data-aos="fade-up"
             >
-              Even with all my weirdness, music is my soul&apos;s language.
-              I&apos;ve got the softest spots for Country and Folk, and I love
-              humorous songs. I strum, sing, and tinkle the ivories, adding my
-              own soundtrack to life. Oh, and I&apos;ve recently dabbled into
-              photography – I wouldn&apos;t call myself talented, but I keep
-              shooting at &ldquo;nouns.&ldquo; Bad, or great shots... Both,
-              I&apos;ll enjoy! I also love comedy, but that talent evades me,
-              though you can find a little touch on my platforms.
+              
+              Even with all my weirdness, music is my soul&apos;s language. I&apos;ve got the softest spots for Country and Folk, 
+              and I love humorous songs. I strum, sing, and tinkle the ivories, adding my own soundtrack to life. Oh, 
+              and I&apos;ve recently dabbled into photography – I wouldn&apos;t call myself talented, but I keep shooting at &ldquo;nouns.&ldquo;
+               Bad, or great shots... Both, I&apos;ll enjoy! I also love comedy, but that talent evades me, though you can find
+                a little touch on my platforms. */}
             </p>
 
             <Link
