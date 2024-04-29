@@ -4,7 +4,7 @@ import GoogleIcon from "@/icons/google";
 import SpotifyIcon from "@/icons/spotify";
 import Image from "next/image";
 import Link from "next/link";
-import { socialLinks } from "../../../data";
+import { socialLinks } from "../../data";
 import { useDrag } from "@/hooks/useAnimation";
 // import InfoBar from "@/components/infoBar";
 import dynamic from "next/dynamic";

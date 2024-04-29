@@ -59,7 +59,6 @@ const data2024: dataType = {
         },
       ],
     },
-
     {
       title: "April",
       data: [
@@ -68,9 +67,7 @@ const data2024: dataType = {
         },
       ],
     },
-
-    
-  ],
+  ].reverse(),
 };
 
 const data2023: dataType = {
@@ -172,7 +169,7 @@ const data2023: dataType = {
         },
       ],
     },
-  ],
+  ].reverse(),
 };
 
 const data2022: dataType = {
@@ -232,21 +229,12 @@ const data2022: dataType = {
         },
       ],
     },
-  ],
+  ].reverse(),
 };
 
 const data2021: dataType = {
   year: 2021,
   contents: [
-    {
-      title: "2021 (THE BIG JUMP)",
-      data: [
-        {
-          text: "Before this, my understanding of AI was rather limited. I had a grasp of the concept of automation, but I never really connected it to AI. My perception of AI was mainly influenced by what I had seen in movies, where it was often depicted as robotics. As a result, I developed a strong desire to study robotics based on those impressions. I also saw a video on YouTube which made me interested in anything automation.",
-          link: "",
-        },
-      ],
-    },
     {
       title: "January",
       data: [
@@ -265,7 +253,16 @@ const data2021: dataType = {
         },
       ],
     },
-  ],
+    {
+      title: "2021 (THE BIG JUMP)",
+      data: [
+        {
+          text: "Before this, my understanding of AI was rather limited. I had a grasp of the concept of automation, but I never really connected it to AI. My perception of AI was mainly influenced by what I had seen in movies, where it was often depicted as robotics. As a result, I developed a strong desire to study robotics based on those impressions. I also saw a video on YouTube which made me interested in anything automation.",
+          link: "",
+        },
+      ],
+    },
+  ].reverse(),
 };
 
 const data2020: dataType = {
@@ -307,7 +304,7 @@ const data2020: dataType = {
         },
       ],
     },
-  ],
+  ].reverse(),
 };
 
 const data2019: dataType = {
@@ -322,7 +319,7 @@ const data2019: dataType = {
         },
       ],
     },
-  ],
+  ].reverse(),
 };
 
 const data2018: dataType = {
@@ -355,7 +352,7 @@ const data2018: dataType = {
         },
       ],
     },
-  ],
+  ].reverse(),
 };
 
 const data2017: dataType = {
@@ -392,7 +389,7 @@ const data2017: dataType = {
         },
       ],
     },
-  ],
+  ].reverse(),
 };
 
 const data2016: dataType = {
@@ -416,7 +413,7 @@ const data2016: dataType = {
         },
       ],
     },
-  ],
+  ].reverse(),
 };
 
 const data2015: dataType = {
@@ -440,7 +437,7 @@ const data2015: dataType = {
         },
       ],
     },
-  ],
+  ].reverse(),
 };
 
 const data2014: dataType = {
@@ -464,7 +461,7 @@ const data2014: dataType = {
         },
       ],
     },
-  ],
+  ].reverse(),
 };
 
 const data2012: dataType = {
@@ -488,7 +485,7 @@ const data2012: dataType = {
         },
       ],
     },
-  ],
+  ].reverse(),
 };
 
 export const allData = [

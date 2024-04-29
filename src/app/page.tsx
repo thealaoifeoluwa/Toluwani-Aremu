@@ -8,10 +8,15 @@ import MailIcon2 from "@/icons/mail2";
 import StarIcon from "@/icons/star";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { blogs, years } from "../../data";
+import { blogs, years } from "../data";
 import Link from "next/link";
 import { Typewriter } from "react-simple-typewriter";
-import { LinkedinIcon, LinkedinIcon2, MediumIcon, MediumIcon2 } from "@/icons/socialIcons";
+import {
+  LinkedinIcon,
+  LinkedinIcon2,
+  MediumIcon,
+  MediumIcon2,
+} from "@/icons/socialIcons";
 
 export default function Home() {
   useDrag();
@@ -114,65 +119,69 @@ export default function Home() {
               {/* I&apos;m a passionate learner and dedicated researcher
               specializing in advancing artificial intelligence with a robust
               skill set spanning both research and industry. */}
-              It seems like I&apos;ve gotten your attention! Hey there! I&apos;m Toluwani, your friendly neighborhood AI enthusiast. 
-              I build and write AI stuff sometimes. I am also a Machine Learning Doctoral Candidate at <span> </span>
-            <Link
-              href="https://mbzuai.ac.ae/"
-              className=" text-primary"
-            >
-              MBZUAI.
-            </Link>
-            <span> </span> When I&apos;m not boring <span> </span>
-            
-            <Link
-              href="https://scholar.google.ca/citations?hl=en&user=VcOjgngAAAAJ&view_op=list_works&sortby=pubdate"
-              className=" text-primary"
-            >
-              Prof. Abdulmotaleb El Saddik
-            </Link> and <span> </span>
-            
-            <Link
-              href="https://scholar.google.com/citations?hl=en&user=2qx0RnEAAAAJ&view_op=list_works&sortby=pubdate"
-              className=" text-primary"
-            >
-              Dr. Karthik Nandakumar
-            </Link> with Machine Learning puzzles and thesis duties, 
-               I&apos;m disturbing <span> </span>
-               
-               <Link
-              href="https://www.cmu.edu/dietrich/philosophy/people/faculty/zhang.html?source=about_page"
-              className=" text-primary"
-            >
-              Prof. Kun Zhang
-            </Link> on how to transfer our smartness and intelligence to these machines. My current focus is to
-                outsmart sneaky vision models with adversarial attacks or crafting adversarial shields for VLMs. Before this,
-                 I worked on projects in the Responsible and Trustworthy AI domain, specifically, in privacy and fairness.
+              It seems like I&apos;ve gotten your attention! Hey there! I&apos;m
+              Toluwani, your friendly neighborhood AI enthusiast. I build and
+              write AI stuff sometimes. I am also a Machine Learning Doctoral
+              Candidate at <span> </span>
+              <Link href="https://mbzuai.ac.ae/" className=" text-primary">
+                MBZUAI.
+              </Link>
+              <span> </span> When I&apos;m not boring <span> </span>
+              <Link
+                href="https://scholar.google.ca/citations?hl=en&user=VcOjgngAAAAJ&view_op=list_works&sortby=pubdate"
+                className=" text-primary"
+              >
+                Prof. Abdulmotaleb El Saddik
+              </Link>{" "}
+              and <span> </span>
+              <Link
+                href="https://scholar.google.com/citations?hl=en&user=2qx0RnEAAAAJ&view_op=list_works&sortby=pubdate"
+                className=" text-primary"
+              >
+                Dr. Karthik Nandakumar
+              </Link>{" "}
+              with Machine Learning puzzles and thesis duties, I&apos;m
+              disturbing <span> </span>
+              <Link
+                href="https://www.cmu.edu/dietrich/philosophy/people/faculty/zhang.html?source=about_page"
+                className=" text-primary"
+              >
+                Prof. Kun Zhang
+              </Link>{" "}
+              on how to transfer our smartness and intelligence to these
+              machines. My current focus is to outsmart sneaky vision models
+              with adversarial attacks or crafting adversarial shields for VLMs.
+              Before this, I worked on projects in the Responsible and
+              Trustworthy AI domain, specifically, in privacy and fairness.
             </p>
 
             <p
               className="w-[625px] max-w-full px-10 md:px-0 text-center mx-auto md:text-xl"
               data-aos="fade-up"
             >
-            When I unplug from the matrix, I dive into spirited debates about whether we&apos;re heading towards a 
-            tech utopia or just brewing the next batch of conspiracy theories. Philosophy? Love it. 
-            The meaning of life? Come here Aristotle! Let&apos;s chat over any game... I would say my gaming 
-            prowess is &ldquo;uniquely charming.&ldquo; I&apos;m also a fan of staying active, whether it&apos;s sports or gym 
-            sessions where I do nothing but lift my weary body through my fiery spirit.
+              When I unplug from the matrix, I dive into spirited debates about
+              whether we&apos;re heading towards a tech utopia or just brewing
+              the next batch of conspiracy theories. Philosophy? Love it. The
+              meaning of life? Come here Aristotle! Let&apos;s chat over any
+              game... I would say my gaming prowess is &ldquo;uniquely
+              charming.&ldquo; I&apos;m also a fan of staying active, whether
+              it&apos;s sports or gym sessions where I do nothing but lift my
+              weary body through my fiery spirit.
             </p>
 
             <p
               className="w-[625px] max-w-full px-10 md:px-0 text-center mx-auto md:text-xl"
               data-aos="fade-up"
             >
-              
-              Even with all my weirdness, music is my soul&apos;s language. I&apos;ve got the softest spots for Country and Folk, 
-              and I love humorous songs. I strum, sing, and tinkle the ivories, adding my own soundtrack to life. Oh, 
-              and I&apos;ve recently dabbled into photography – I wouldn&apos;t call myself talented, but I keep shooting at &ldquo;nouns.&ldquo;
-               Bad, or great shots... Both, I&apos;ll enjoy! I also love comedy, but that talent evades me, though you can find
-                a little touch on my platforms.
+              Even with all my weirdness, music is my soul&apos;s language.
+              I&apos;ve got the softest spots for Country and Folk, and I love
+              humorous songs. I strum, sing, and tinkle the ivories, adding my
+              own soundtrack to life. Oh, and I&apos;ve recently dabbled into
+              photography – I wouldn&apos;t call myself talented, but I keep
+              shooting at &ldquo;nouns.&ldquo; Bad, or great shots... Both,
+              I&apos;ll enjoy! I also love comedy, but that talent evades me,
+              though you can find a little touch on my platforms.
             </p>
-
-
 
             <Link
               href="mailto:tioluwaniaremu@gmail.com"
@@ -289,10 +298,10 @@ export default function Home() {
           </div>
 
           <div
-              className="mt-16 flex flex-col gap-4 justify-center items-center"
-              data-aos="fade-up"
-            >
-              <Link
+            className="mt-16 flex flex-col gap-4 justify-center items-center"
+            data-aos="fade-up"
+          >
+            <Link
               href="https://tolusophy.medium.com/"
               data-aos="fade-up"
               className="btn flex items-center w-fit mx-auto gap-3 group"
@@ -314,46 +323,44 @@ export default function Home() {
               className="mt-2 font-light md:text-xl w-[680px] max-w-full mx-auto text-center"
               data-aos="fade-up"
             >
-              Got a cool research idea or just want to muse about the future? Hit me up!{" "}
+              Got a cool research idea or just want to muse about the future?
+              Hit me up!{" "}
               {/* <strong className="font-bold">toluwani@aremu.ai</strong>
               <br /> */}
               {/* I&apos;m currently available for any form of artificial
               intelligence research gigs. */}
             </p>
 
-            <div className="flex gap-4  justify-center items-center"> 
+            <div className="flex gap-4  justify-center items-center">
+              <div
+                className="mt-16 flex flex-col gap-4 justify-center items-center"
+                data-aos="fade-up"
+              >
+                <Link
+                  href="https://linkedin.com/in/toluwaniaremu"
+                  data-aos="fade-up"
+                  className="btn flex items-center w-fit mx-auto gap-3 group"
+                  data-cursor="-hidden"
+                >
+                  <LinkedinIcon2 />
+                  Linkedin
+                </Link>
+              </div>
 
-            
-            <div
-              className="mt-16 flex flex-col gap-4 justify-center items-center"
-              data-aos="fade-up"
-            >
-              <Link
-              href="https://linkedin.com/in/toluwaniaremu"
-              data-aos="fade-up"
-              className="btn flex items-center w-fit mx-auto gap-3 group"
-              data-cursor="-hidden"
-            >
-              <LinkedinIcon2 />
-              Linkedin
-            </Link>
-            </div>
-
-            <div
-              className="mt-16 flex flex-col gap-4 justify-center items-center"
-              data-aos="fade-up"
-            >
-              <Link
-              href="toluwani.aremu@mbzuai.ac.ae"
-              data-aos="fade-up"
-              className="btn flex items-center w-fit mx-auto gap-3 group"
-              data-cursor="-hidden"
-            >
-              <MailIcon />
-              Email
-            </Link>
-
-            </div>
+              <div
+                className="mt-16 flex flex-col gap-4 justify-center items-center"
+                data-aos="fade-up"
+              >
+                <Link
+                  href="toluwani.aremu@mbzuai.ac.ae"
+                  data-aos="fade-up"
+                  className="btn flex items-center w-fit mx-auto gap-3 group"
+                  data-cursor="-hidden"
+                >
+                  <MailIcon />
+                  Email
+                </Link>
+              </div>
             </div>
           </div>
         </div>

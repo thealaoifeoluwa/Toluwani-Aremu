@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { blogs } from "../../data";
+import { blogs } from "../data";
 import Link from "next/link";
 
 const ArticleBox = ({ data }: { data: (typeof blogs)[0] }) => {

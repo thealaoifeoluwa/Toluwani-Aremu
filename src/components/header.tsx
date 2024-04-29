@@ -16,7 +16,7 @@ import { Squeeze as Hamburger } from "hamburger-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { socialLinks } from "../../data";
+import { socialLinks } from "../data";
 // import InfoBar from "./infoBar";
 import dynamic from "next/dynamic";
 
