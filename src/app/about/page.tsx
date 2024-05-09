@@ -90,13 +90,35 @@ const Page = () => {
                 className="mt-5 2xl:mt-9 md:text-lg 2xl:text-2xl text-justify"
                 data-aos="fade-up"
               >
-                I am currently exploring and developing neural networks that are
-                not only safe and robust but also prioritize privacy. My focus
-                is on designing these networks by drawing inspiration from human
-                cognition, aiming to create AI systems that emulate the
-                intricacies of human thought processes while ensuring their
-                reliability and security against privacy breaches.
+                I am currently studying and exploring human cognition and visual
+                perception to inspire the design and development of neural
+                networks that are robust and reliable. My research focuses on
+                testing these novel architectures on diverse real-world datasets
+                to validate their performance and ensure reliability.
               </p>
+              <p
+                className="mt-5 2xl:mt-9 md:text-lg 2xl:text-2xl text-justify"
+                data-aos="fade-up"
+              >
+                I am also working on and open to collaborations in various
+                domains, including:
+              </p>
+              <ul className="md:text-lg 2xl:text-2xl list-disc ml-7 sm:ml-10 text-justify">
+                <li data-aos="fade-up">Transfer Learning</li>
+                <li data-aos="fade-up">AI in Smart Cities</li>
+                <li data-aos="fade-up">Generative AI</li>
+                <li data-aos="fade-up">
+                  Responsible AI (with a particular emphasis on adversarial
+                  robustness, fairness, and privacy)
+                </li>
+              </ul>
+              {/* <p
+                className="md:text-lg 2xl:text-2xl text-justify"
+                data-aos="fade-up"
+              >
+                Feel free to reach out if you have an idea or project where we
+                can collaborate!
+              </p> */}
             </div>
           </section>
 
