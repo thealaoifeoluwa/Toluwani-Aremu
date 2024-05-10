@@ -20,7 +20,7 @@ export const socialLinks = [
     link: "https://scholar.google.com/citations?user=Ji8fnw0AAAAJ&hl=en",
   },
   {
-    title: "INFO@TOLUWANI.UAE",
+    title: "hello@toluwani.ai",
     link: "mailto:tioluwaniaremu@gmail.com",
   },
 ];

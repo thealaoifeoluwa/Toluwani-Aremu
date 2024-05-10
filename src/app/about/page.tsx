@@ -112,13 +112,13 @@ const Page = () => {
                   robustness, fairness, and privacy)
                 </li>
               </ul>
-              {/* <p
-                className="md:text-lg 2xl:text-2xl text-justify"
+              <p
+                className="pt-4 md:text-lg 2xl:text-2xl text-justify"
                 data-aos="fade-up"
               >
                 Feel free to reach out if you have an idea or project where we
                 can collaborate!
-              </p> */}
+              </p>
             </div>
           </section>
 
