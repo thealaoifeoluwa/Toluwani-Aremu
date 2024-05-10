@@ -97,7 +97,7 @@ const Page = () => {
                 to validate their performance and ensure reliability.
               </p>
               <p
-                className="mt-5 2xl:mt-9 md:text-lg 2xl:text-2xl text-justify"
+                className="mt-4 2xl:mt-4 md:text-lg 2xl:text-2xl text-justify"
                 data-aos="fade-up"
               >
                 I am also working on and open to collaborations in various
