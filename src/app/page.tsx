@@ -293,7 +293,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div
+          {/* <div
             className="mt-16 flex flex-col gap-4 justify-center items-center"
             data-aos="fade-up"
           >
@@ -306,7 +306,7 @@ export default function Home() {
               <MediumIcon2 />
               Read more
             </Link>
-          </div>
+          </div> */}
 
           <div className="mt-[102px] text-center px-5 sm:px-10">
             <h2
