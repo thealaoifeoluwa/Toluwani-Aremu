@@ -53,7 +53,7 @@ const data2024: dataType = {
           linkTitle: "[Paper]",
         },
         {
-          text: 'Our preprint, "Edge of Tomorrow: Evaluating Misinformation and Bias in LLM-Powered Chatbots on Climate Change and Mental Health", has been uploaded on SSRN.',
+          text: 'Our preprint, "On the Reliability of Large Language Models to Misinformed and Demographically-Informed Prompts: Evaluating Misinformation and Bias in LLM-Powered Chatbots on Climate Change and Mental Health", has been uploaded on SSRN.',
           link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4699451",
           linkTitle: "[Preprint]",
         },

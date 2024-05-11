@@ -101,14 +101,14 @@ const Page = () => {
                 data-aos="fade-up"
               >
                 I am also working on and open to collaborations in various
-                domains, including:
+                domains, including, but not limited to:
               </p>
-              <ul className="md:text-lg 2xl:text-2xl list-disc ml-7 sm:ml-10 text-justify">
-                <li data-aos="fade-up">Transfer Learning</li>
-                <li data-aos="fade-up">AI in Smart Cities</li>
-                <li data-aos="fade-up">Generative AI</li>
+              <ul className="md:text-lg  2xl:text-2xl list-disc ml-7 sm:ml-10 text-justify">
+                <li data-aos="fade-up"> <strong>Transfer Learning</strong></li>
+                <li data-aos="fade-up"> <strong>Vision-Language Models</strong></li>
+                <li data-aos="fade-up"><strong>Generative AI</strong> (LLMs, Stable Diffusion, etc)</li>
                 <li data-aos="fade-up">
-                  Responsible AI (with a particular emphasis on adversarial
+                  <strong>Trustworthy AI </strong>(with a particular emphasis on adversarial
                   robustness, fairness, and privacy)
                 </li>
               </ul>
