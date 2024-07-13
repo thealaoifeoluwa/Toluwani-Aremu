@@ -64,6 +64,8 @@ const data2024: dataType = {
       data: [
         {
           text: 'Our paper, "Redefining Contributions: Shapley-Driven Federated Learning", has been accepted for presentation and publication at the 33rd International Joint Conference on Artificial Intelligence (IJCAI), Jeju, Korea. Congrats to the team.',
+          link: "https://arxiv.org/abs/2406.00569",
+          linkTitle: "[Paper]",
         },
       ],
     },
