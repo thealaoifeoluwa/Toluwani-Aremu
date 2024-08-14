@@ -90,11 +90,9 @@ const Page = () => {
                 className="mt-5 2xl:mt-9 md:text-lg 2xl:text-2xl text-justify"
                 data-aos="fade-up"
               >
-                I am currently studying and exploring human cognition and visual
-                perception to inspire the design and development of neural
-                networks that are robust and reliable. My research focuses on
-                testing these novel architectures on diverse real-world datasets
-                to validate their performance and ensure reliability.
+                I aim to build Responsible and Trustworthy AI systems. Specifically, 
+                I am interested in the robustness, reliability, privacy, and safety 
+                of foundation models.
               </p>
               <p
                 className="mt-4 2xl:mt-4 md:text-lg 2xl:text-2xl text-justify"
@@ -104,13 +102,11 @@ const Page = () => {
                 domains, including, but not limited to:
               </p>
               <ul className="md:text-lg  2xl:text-2xl list-disc ml-7 sm:ml-10 text-justify">
-                <li data-aos="fade-up"> <strong>Transfer Learning</strong></li>
-                <li data-aos="fade-up"> <strong>Vision-Language Models</strong></li>
-                <li data-aos="fade-up"><strong>Generative AI</strong> (LLMs, Stable Diffusion, etc)</li>
-                <li data-aos="fade-up">
-                  <strong>Trustworthy AI </strong>(with a particular emphasis on adversarial
-                  robustness, fairness, and privacy)
-                </li>
+                <li data-aos="fade-up"> <strong>Visual Perception</strong></li>
+                <li data-aos="fade-up"> <strong>Cognition and Reasoning</strong></li>
+                <li data-aos="fade-up"><strong>Concept Learning</strong></li>
+                <li data-aos="fade-up"><strong>Model Efficiency</strong></li>
+                <li data-aos="fade-up"><strong>AI Ethics</strong></li>
               </ul>
               <p
                 className="pt-4 md:text-lg 2xl:text-2xl text-justify"
