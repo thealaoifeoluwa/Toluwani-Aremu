@@ -186,7 +186,7 @@ export default function Home() {
             >
 
             <Link
-              href="tioluwaniaremu@gmail.com"
+              href="mailto:tioluwaniaremu@gmail.com"
               data-aos="fade-up"
               className="btn flex items-center w-fit gap-3 group"
               data-cursor="-hidden"
