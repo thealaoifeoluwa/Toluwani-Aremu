@@ -183,7 +183,7 @@ export default function Home() {
             <Link
               href="mailto:tioluwaniaremu@gmail.com"
               data-aos="fade-up"
-              className="btn flex items-center w-fit gap-3 group"
+              className="btn flex items-center w-fit mx-auto gap-3 group"
               data-cursor="-hidden"
             >
               <MailIcon />
@@ -193,7 +193,7 @@ export default function Home() {
             <Link
               href="https://www.toluwaniaremu.com/about"
               data-aos="fade-up"
-              className="btn flex items-center w-fit gap-3 group"
+              className="btn flex items-center w-fit mx-auto gap-3 group"
               data-cursor="-hidden"
             >
               <KiteIcon />
