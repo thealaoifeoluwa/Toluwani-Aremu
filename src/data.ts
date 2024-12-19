@@ -54,7 +54,7 @@ const data2024: dataType = {
         },
         {
           text: 'Our preprint, "On the Reliability of Large Language Models to Misinformed and Demographically-Informed Prompts", has been uploaded on SSRN.',
-          link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4699451",
+          link: "https://arxiv.org/abs/2410.10850",
           linkTitle: "[Preprint]",
         },
       ],
@@ -64,8 +64,18 @@ const data2024: dataType = {
       data: [
         {
           text: 'Our paper, "Redefining Contributions: Shapley-Driven Federated Learning", has been accepted for presentation and publication at the 33rd International Joint Conference on Artificial Intelligence (IJCAI), Jeju, Korea. Congrats to the team.',
-          link: "https://arxiv.org/abs/2406.00569",
+          link: "https://www.ijcai.org/proceedings/2024/0554",
           linkTitle: "[Paper]",
+        },
+      ],
+    },
+    {
+      title: "December",
+      data: [
+        {
+          text: 'Our paper, "On the Reliability of Large Language Models to Misinformed and Demographically-Informed Prompts", has been accepted for inclusion and publication in AI Magaizine (official journal of the AAAI). Congrats to the team.',
+          link: "https://arxiv.org/abs/2410.10850",
+          linkTitle: "[Preprint]",
         },
       ],
     },

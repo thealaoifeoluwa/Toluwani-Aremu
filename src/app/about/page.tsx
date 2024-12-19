@@ -92,7 +92,8 @@ const Page = () => {
               >
                 I aim to build Responsible and Trustworthy AI systems. Specifically, 
                 I am interested in the robustness, reliability, privacy, and safety 
-                of foundation models.
+                of foundation models. I am also interested in the exploring the 
+                societal impacts of deployed AI systems.
               </p>
               <p
                 className="mt-4 2xl:mt-4 md:text-lg 2xl:text-2xl text-justify"
@@ -208,9 +209,7 @@ const Page = () => {
                 data-aos="fade-up"
               >
                 Presently, I am pursuing a PhD in Machine Learning at MBZUAI,
-                working under the guidance of esteemed mentors: Prof.
-                Abdulmotaleb El Saddik and Dr. Karthik Nandakumar, while also
-                collaborating with Prof. Bhiksha Raj and Prof. Kun Zhang.
+                working under the guidance of Dr. Nils Lukas.
               </p>
             </div>
           </section>
