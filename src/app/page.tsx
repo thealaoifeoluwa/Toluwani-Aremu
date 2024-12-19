@@ -180,6 +180,11 @@ export default function Home() {
                 a little touch on my platforms. */}
             </p>
 
+            <div
+              className="flex justify-center gap-2 sm:gap-2.5 mt-4 md:text-xl"
+              data-aos="fade-up"
+            >
+
             <Link
               href="mailto:tioluwaniaremu@gmail.com"
               data-aos="fade-up"
@@ -199,6 +204,7 @@ export default function Home() {
               <KiteIcon />
               Find out more!
             </Link>
+            </div>
           </div>
 
           <div className="mt-[74px] md:mt-[120px] text-center">
