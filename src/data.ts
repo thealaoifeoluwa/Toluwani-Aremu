@@ -73,7 +73,7 @@ const data2024: dataType = {
       title: "December",
       data: [
         {
-          text: 'Our paper, "On the Reliability of Large Language Models to Misinformed and Demographically-Informed Prompts", has been accepted for inclusion and publication in AI Magaizine (official journal of the AAAI). Congrats to the team.',
+          text: 'Our paper, "On the Reliability of Large Language Models to Misinformed and Demographically-Informed Prompts", has been accepted for inclusion and publication in AI Magaizine (official journal of the AAAI). Congrats to the team. Published version coming out soon!',
           link: "https://arxiv.org/abs/2410.10850",
           linkTitle: "[Preprint]",
         },
