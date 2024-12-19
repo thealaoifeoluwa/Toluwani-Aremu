@@ -17,6 +17,7 @@ import {
   MediumIcon,
   MediumIcon2,
 } from "@/icons/socialIcons";
+import KiteIcon from "@/icons/kite";
 
 export default function Home() {
   useDrag();
@@ -187,6 +188,16 @@ export default function Home() {
             >
               <MailIcon />
               Say Hi!
+            </Link>
+
+            <Link
+              href="https://www.toluwaniaremu.com/about"
+              data-aos="fade-up"
+              className="btn flex items-center w-fit mx-auto gap-3 group"
+              data-cursor="-hidden"
+            >
+              <KiteIcon />
+              Find out more!
             </Link>
           </div>
 
