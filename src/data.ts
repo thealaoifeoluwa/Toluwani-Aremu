@@ -41,6 +41,22 @@ type dataType = {
   }[];
 };
 
+const data2025: dataType = {
+  year: 2025,
+  contents: [
+    {
+      title: "January",
+      data: [
+        {
+          text: 'Our paper, "On the Reliability of Large Language Models to Misinformed and Demographically-Informed Prompts", has been accepted at AAAI-AI Magazine. Congrats to the team.',
+          link: "https://onlinelibrary.wiley.com/doi/10.1002/aaai.12208",
+          linkTitle: "[Paper]",
+        },
+      ],
+    },
+  ].reverse(),
+};
+
 const data2024: dataType = {
   year: 2024,
   contents: [
@@ -513,16 +529,29 @@ export const allData = [
   data2022,
   data2023,
   data2024,
+  data2025,
 ];
 
 export const years = allData.map((data) => data.year);
 
 export const blogs = [
   {
-    title: "Check my latest publications on google scholar",
+    title: "Check my latest publications on Google Scholar",
     image: "/image-9.png",
     link: "https://scholar.google.com/citations?hl=en&user=Ji8fnw0AAAAJ&view_op=list_works&sortby=pubdate",
-    date: "20 January 2024",
+    date: Date.now().toString(),
+  },
+  {
+    title: "Slow down!",
+    image: "/slowdown.webp",
+    link: "https://x.com/tolusophy/status/1887112651794235807",
+    date: "05 February 2025",
+  },
+  {
+    title: "The Dark Side of Boycotting and Cancel Culture",
+    image: "/boycott.jpeg",
+    link: "https://x.com/tolusophy/status/1827269838848319862",
+    date: "24 August 2024",
   },
   {
     title: "Accented Speech Recognition",
