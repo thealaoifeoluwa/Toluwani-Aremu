@@ -539,7 +539,7 @@ export const blogs = [
     title: "Check my latest publications on Google Scholar",
     image: "/image-9.png",
     link: "https://scholar.google.com/citations?hl=en&user=Ji8fnw0AAAAJ&view_op=list_works&sortby=pubdate",
-    date: Date.now().toString(),
+    date: "Today",
   },
   {
     title: "Slow down!",
