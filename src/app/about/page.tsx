@@ -103,11 +103,11 @@ const Page = () => {
                 domains, including, but not limited to:
               </p>
               <ul className="md:text-lg  2xl:text-2xl list-disc ml-7 sm:ml-10 text-justify">
-                <li data-aos="fade-up"> <strong>Visual Perception</strong></li>
-                <li data-aos="fade-up"> <strong>Cognition and Reasoning</strong></li>
-                <li data-aos="fade-up"><strong>Concept Learning</strong></li>
-                <li data-aos="fade-up"><strong>Model Efficiency</strong></li>
-                <li data-aos="fade-up"><strong>AI Ethics</strong></li>
+                <li data-aos="fade-up"> <strong>AI Debate</strong></li>
+                <li data-aos="fade-up"> <strong>Self-Alignment</strong></li>
+                <li data-aos="fade-up"><strong>Multi-Agent Alignment</strong></li>
+                <li data-aos="fade-up"><strong>Threat models for LLM watermarks</strong></li>
+                <li data-aos="fade-up"><strong>AI Ethics, Policy, and Governance</strong></li>
               </ul>
               <p
                 className="pt-4 md:text-lg 2xl:text-2xl text-justify"
