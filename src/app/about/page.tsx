@@ -90,9 +90,9 @@ const Page = () => {
                 className="mt-5 2xl:mt-9 md:text-lg 2xl:text-2xl text-justify"
                 data-aos="fade-up"
               >
-                I aim to build Responsible and Trustworthy AI systems. Specifically, 
-                I am interested in the robustness, reliability, privacy, and safety 
-                of foundation models. I am also interested in the exploring the 
+                I aim to build Safe and Trustworthy Generative AI Systems. Specifically, 
+                I am currently exploring watermarking in LLMs and the alignment problems that 
+                comes from the use of watermarks. I am also interested in the exploring the 
                 societal impacts of deployed AI systems.
               </p>
               <p
