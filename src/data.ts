@@ -543,7 +543,7 @@ export const blogs = [
   },
   {
     title: "The Thinker vs. The Builder",
-    image: "/image-9.png",
+    image: "/thinkbuild.jpeg",
     link: "https://x.com/tolusophy/status/1900886093907849322",
     date: "15 March 2025",
   },
