@@ -542,6 +542,12 @@ export const blogs = [
     date: "Today",
   },
   {
+    title: "The Thinker vs. The Builder",
+    image: "/image-9.png",
+    link: "https://x.com/tolusophy/status/1900886093907849322",
+    date: "15 March 2025",
+  },
+  {
     title: "Slow down!",
     image: "/slowdown.webp",
     link: "https://x.com/tolusophy/status/1887112651794235807",
