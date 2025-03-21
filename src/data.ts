@@ -542,6 +542,12 @@ export const blogs = [
     date: "Today",
   },
   {
+    title: "Human Social Mirrors and AI Looking Glass",
+    image: "/ailookingglass.jpg",
+    link: "https://pub.towardsai.net/human-social-mirrors-and-ai-looking-glass-1939919c02d9",
+    date: "20 March 2025",
+  },
+  {
     title: "The Thinker vs. The Builder",
     image: "/thinkbuild.jpeg",
     link: "https://x.com/tolusophy/status/1900886093907849322",
