@@ -54,6 +54,16 @@ const data2025: dataType = {
         },
       ],
     },
+    {
+      title: "April",
+      data: [
+        {
+          text: 'I am now a PhD Candidate. Looking forward to the next phase of my research journey.',
+          // link: "https://onlinelibrary.wiley.com/doi/10.1002/aaai.12208",
+          // linkTitle: "[Paper]",
+        },
+      ],
+    },
   ].reverse(),
 };
 

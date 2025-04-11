@@ -122,7 +122,7 @@ export default function Home() {
               skill set spanning both research and industry. */}
               It seems like I&apos;ve gotten your attention! Hey there! I&apos;m
               Toluwani, your friendly neighborhood AI enthusiast. I build and
-              write AI stuff sometimes. I am also a Machine Learning PhD Student
+              write AI stuff sometimes. I am also a Machine Learning PhD Candidate
               at <span> </span>
               <Link href="https://mbzuai.ac.ae/" className=" text-primary">
                 MBZUAI.
