@@ -78,7 +78,7 @@ const data2025: dataType = {
       title: "May",
       data: [
         {
-          text: 'Our paper, "Optimizing Adaptive Attacks against Content Watermarks for Language Models" has been accepted as a spotlight paper at ICML 2025! Congratulations to the team. [Published version coming out soon]',
+          text: 'Our paper, "Optimizing Adaptive Attacks against Content Watermarks for Language Models" has been accepted as a spotlight paper at ICML 2025! Congratulations to the team.',
           link: "https://arxiv.org/abs/2410.02440",
           linkTitle: "[Paper]",
         },
