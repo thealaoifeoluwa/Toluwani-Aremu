@@ -70,6 +70,16 @@ const data2025: dataType = {
         {
           text: 'I got the MBZUAI Conference Travel Scholarship to present our work on "Optimizing Adaptive Attacks against Content Watermarks for Language Models" which was accepted at ICLR-WMARK 2025!',
           link: "https://arxiv.org/abs/2410.02440",
+          linkTitle: "[Preprint]",
+        },
+      ],
+    },
+    {
+      title: "May",
+      data: [
+        {
+          text: 'Our paper, "Optimizing Adaptive Attacks against Content Watermarks for Language Models" has been accepted as a spotlight paper at ICML 2025! Congratulations to the team. [Published version coming out soon]',
+          link: "https://arxiv.org/abs/2410.02440",
           linkTitle: "[Paper]",
         },
       ],
