@@ -62,11 +62,6 @@ const data2025: dataType = {
           // link: "https://onlinelibrary.wiley.com/doi/10.1002/aaai.12208",
           // linkTitle: "[Paper]",
         },
-      ],
-    },
-    {
-      title: "April",
-      data: [
         {
           text: 'I got the MBZUAI Conference Travel Scholarship to present our work on "Optimizing Adaptive Attacks against Content Watermarks for Language Models" which was accepted at ICLR-WMARK 2025!',
           link: "https://arxiv.org/abs/2410.02440",
