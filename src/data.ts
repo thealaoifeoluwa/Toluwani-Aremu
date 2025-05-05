@@ -569,10 +569,10 @@ export const blogs = [
     title: "Check my latest research on Google Scholar",
     image: "/image-9.png",
     link: "https://scholar.google.com/citations?hl=en&user=Ji8fnw0AAAAJ&view_op=list_works&sortby=pubdate",
-    date: "Today",
+    date: " ",
   },
   {
-    title: "Political Protests, Global Influence, and the Ripple Effect: A Call for Patience and Perspective",
+    title: "A Call for Patience and Perspective",
     image: "/protest.webp",
     link: "https://x.com/tolusophy/status/1908792259832930563",
     date: "06 April 2025",
