@@ -121,9 +121,8 @@ export default function Home() {
               specializing in advancing artificial intelligence with a robust
               skill set spanning both research and industry. */}
               It seems like I&apos;ve gotten your attention! Hey there! I&apos;m
-              Toluwani, your friendly neighborhood sp-AI-derman. I build and
-              write AI stuff sometimes. I am also a Machine Learning PhD Candidate
-              at <span> </span>
+              Toluwani and I ask a lot of questions. I am also a Machine 
+              Learning PhD Candidate at <span> </span>
               <Link href="https://mbzuai.ac.ae/" className=" text-primary">
                 MBZUAI.
               </Link>
