@@ -62,7 +62,7 @@ const Page = () => {
                   </span>
                 </Link>
               </div>
-              <div className="relative flex w-fit items-end" data-aos="fade-up">
+              {/* <div className="relative flex w-fit items-end" data-aos="fade-up">
                 <Image
                   src="/images/toluwani.png"
                   alt="toluwani image"
@@ -74,7 +74,7 @@ const Page = () => {
                 <span className="absolute left-2 right-2 bottom-2 2xl:bottom-4 grid place-content-center">
                   <SpotifyIcon />
                 </span>
-              </div>
+              </div> */}
             </div>
           </section>
 
