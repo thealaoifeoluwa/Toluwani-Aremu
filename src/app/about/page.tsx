@@ -43,7 +43,7 @@ const Page = () => {
                 >
                   Hi! I&apos;m <strong className="font-bold">Toluwani</strong>, a 
                   curiosity-powered human on a never-ending quest to understand 
-                  minds (human and artificial), why we make the choices we do, 
+                  human and artificial minds, why we make the choices we do, 
                   what freedom truly means, and how we can align intelligence 
                   with intention. I ask big questions, follow weird thoughts, 
                   and believe the most fascinating answers are the ones that lead 

@@ -120,7 +120,7 @@ export default function Home() {
               {/* I&apos;m a passionate learner and dedicated researcher
               specializing in advancing artificial intelligence with a robust
               skill set spanning both research and industry. */}
-              It seems like I&apos;ve gotten your attention! Hey there! I&apos;m
+              It seems like I&apos;ve gotten your attention! I&apos;m
               Toluwani and I ask a lot of questions. I am also a Machine 
               Learning PhD Candidate at <span> </span>
               <Link href="https://mbzuai.ac.ae/" className=" text-primary">
