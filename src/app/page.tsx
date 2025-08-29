@@ -220,10 +220,10 @@ export default function Home() {
               className="flex justify-center gap-2 sm:gap-2.5 mt-4 md:text-xl"
               data-aos="fade-up"
             >
-              <span className="btn">Python</span>
-              <span className="btn">PyTorch</span>
-              <span className="btn">TensorFlow</span>
-              <span className="btn">Github</span>
+              <span className="btn">theWorld</span>
+              <span className="btn">myBrain</span>
+              <span className="btn">AgenticLLMs</span>
+              <span className="btn">SemanticScholar</span>
             </div>
             {/* <p className="mt-10 md:text-xl" data-aos="fade-up">
               Development Environments
@@ -232,9 +232,9 @@ export default function Home() {
               className="flex justify-center gap-2 sm:gap-2.5 mt-4 md:text-xl"
               data-aos="fade-up"
             >
-              <span className="btn">VSCode</span>
-              <span className="btn">Visual Studio</span>
-              <span className="btn">PyCharm</span>
+              <span className="btn">PyTorch</span>
+              <span className="btn">GitHub</span>
+              <span className="btn">Sleep</span>
             </div>
           </div>
 
