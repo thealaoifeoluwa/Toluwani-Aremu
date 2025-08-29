@@ -74,7 +74,7 @@ export default function Home() {
           {typingDone && (
             <div data-aos="fade-up">
               <Image
-                src="/images/tolu.png"
+                src="/images/toluwani.png"
                 alt="toluwani image"
                 width={0}
                 height={0}
