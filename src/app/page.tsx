@@ -232,6 +232,7 @@ export default function Home() {
               className="flex justify-center gap-2 sm:gap-2.5 mt-4 md:text-xl"
               data-aos="fade-up"
             >
+              <span className="btn">GoogleScholar</span>
               <span className="btn">PyTorch</span>
               <span className="btn">GitHub</span>
               <span className="btn">Sleep</span>
