@@ -47,7 +47,7 @@ const Page = () => {
                   what freedom truly means, and how we can align intelligence 
                   with intention. I ask big questions, follow weird thoughts, 
                   and believe the most fascinating answers are the ones that lead 
-                  to even better questions. If you're into brains, philosophy, or 
+                  to even better questions. If you&apos;re into brains, philosophy, or 
                   figuring out how AI can be less of a black box and more of a 
                   trustworthy companion, we&apos;ll get along just fine.
                 </p>
