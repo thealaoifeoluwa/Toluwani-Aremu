@@ -49,7 +49,7 @@ const Page = () => {
                   and believe the most fascinating answers are the ones that lead 
                   to even better questions. If you're into brains, philosophy, or 
                   figuring out how AI can be less of a black box and more of a 
-                  trustworthy companion, we’ll get along just fine.
+                  trustworthy companion, we&apos;ll get along just fine.
                 </p>
                 <Link
                   href="https://scholar.google.com/citations?user=Ji8fnw0AAAAJ&hl=en"
