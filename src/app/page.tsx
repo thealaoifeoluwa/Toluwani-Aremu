@@ -103,7 +103,7 @@ export default function Home() {
                 className="block text-right text-xs md:text-[20px] text-primary"
                 data-aos="fade-up"
               >
-                Seeking AI... responsibly!
+                Seeking answers to the big questions!
               </span>
             )}
           </div>
