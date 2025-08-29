@@ -41,14 +41,15 @@ const Page = () => {
                   className="mt-5 2xl:mt-9 md:text-lg 2xl:text-2xl md:w-[425px] text-justify"
                   data-aos="fade-up"
                 >
-                  I&apos;m <strong className="font-bold">Toluwani Aremu</strong>
-                  , a passionate learner and dedicated researcher specializing
-                  in advancing artificial intelligence with a robust skill set
-                  spanning both research and industry, I am well-versed in
-                  essential tools such as Python, PyTorch, TensorFlow, and
-                  Keras, among others. Proficiency extends to various Integrated
-                  Development Environments, including VSCode, Visual Studio, and
-                  PyCharm.
+                  Hi! I&apos;m <strong className="font-bold">Toluwani</strong>, a 
+                  curiosity-powered human on a never-ending quest to understand 
+                  minds (human and artificial), why we make the choices we do, 
+                  what freedom truly means, and how we can align intelligence 
+                  with intention. I ask big questions, follow weird thoughts, 
+                  and believe the most fascinating answers are the ones that lead 
+                  to even better questions. If you're into brains, philosophy, or 
+                  figuring out how AI can be less of a black box and more of a 
+                  trustworthy companion, we’ll get along just fine.
                 </p>
                 <Link
                   href="https://scholar.google.com/citations?user=Ji8fnw0AAAAJ&hl=en"
