@@ -48,7 +48,7 @@ const data2026: dataType = {
       title: "February",
       data: [
         {
-          text: 'My co-founder and I are building a fintech(Stealth) under Kora. Excited for this new chapter.',
+          text: 'My co-founder and I are building a stealth investment fintech under Kora. Excited for this new chapter.',
           // link: "https://onlinelibrary.wiley.com/doi/10.1002/aaai.12208",
           // linkTitle: "[Paper]",
         },
@@ -68,7 +68,7 @@ const data2026: dataType = {
       title: "April",
       data: [
         {
-          text: 'I am at the Center for Frontier AI Research (CFAR), A*STAR Singapore for a 3-month research visit. Looking forward to collaborating with the amazing researchers there.',
+          text: 'I am at the Center for Frontier AI Research, A*STAR Singapore for a 3-month research visit. Looking forward to collaborating with the amazing researchers there.',
           // link: "https://arxiv.org/abs/2410.02440",
           // linkTitle: "[Paper]",
         },
