@@ -666,7 +666,7 @@ export const blogs = [
   {
     title: "Impact of Optimizers in Image Classifiers",
     image: "/image-6.png",
-    link: "https://pub.towardsai.net/impact-of-optimizers-in-image-c.pnglassifiers-3b04ed20823a",
+    link: "https://pub.towardsai.net/impact-of-optimizers-in-image-classifiers-3b04ed20823a",
     date: "28 August 2022",
   },
   {
