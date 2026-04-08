@@ -41,6 +41,42 @@ type dataType = {
   }[];
 };
 
+const data2026: dataType = {
+  year: 2026,
+  contents: [
+    {
+      title: "February",
+      data: [
+        {
+          text: 'My co-founder and I are building a fintech(Stealth) under Kora. Excited for this new chapter.',
+          // link: "https://onlinelibrary.wiley.com/doi/10.1002/aaai.12208",
+          // linkTitle: "[Paper]",
+        },
+      ],
+    },
+    {
+      title: "March",
+      data: [
+        {
+          text: 'Our paper, "MirrorCheck: Efficient Adversarial Defense for Vision-Language Models", has been accepted at CVPR (AdvML) 2026! Congrats to the team.',
+          link: "https://openreview.net/pdf?id=pdIPR5TSXy",
+          linkTitle: "[Paper]",
+        },
+      ],
+    },
+    {
+      title: "April",
+      data: [
+        {
+          text: 'I am at the Center for Frontier AI Research (CFAR), A*STAR Singapore for a 3-month research visit. Looking forward to collaborating with the amazing researchers there.',
+          // link: "https://arxiv.org/abs/2410.02440",
+          // linkTitle: "[Paper]",
+        },
+      ],
+    },
+  ].reverse(),
+};
+
 const data2025: dataType = {
   year: 2025,
   contents: [
@@ -555,6 +591,7 @@ export const allData = [
   data2023,
   data2024,
   data2025,
+  data2026,
 ];
 
 export const years = allData.map((data) => data.year);
