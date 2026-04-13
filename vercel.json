@@ -1,8 +1,5 @@
 {
   "buildCommand": "npm run build",
   "installCommand": "npm install",
-  "outputDirectory": ".next",
-  "env": {
-    "NODE_VERSION": "24"
-  },
+  "outputDirectory": ".next"
 }
