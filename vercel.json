@@ -5,5 +5,4 @@
   "env": {
     "NODE_VERSION": "24"
   },
-  "nodeVersion": "24.x"
 }
