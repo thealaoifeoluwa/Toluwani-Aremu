@@ -21,7 +21,7 @@ import KiteIcon from "@/icons/kite";
 
 export default function Home() {
   useDrag();
-  const [yearSelected, setYearSelected] = useState(2025);
+  const [yearSelected, setYearSelected] = useState(2026);
 
   const [loaded, setLoaded] = useState(true);
   const [typingDone, setTypingDone] = useState(true);
