@@ -41,18 +41,15 @@ const Page = () => {
                   className="mt-5 2xl:mt-9 md:text-lg 2xl:text-2xl md:w-[425px] text-justify"
                   data-aos="fade-up"
                 >
-                  Hi! I&apos;m <strong className="font-bold">Toluwani</strong>, a 
-                  curiosity-powered human on a never-ending quest to understand 
-                  human and artificial minds, why we make the choices we do, 
-                  what freedom truly means, and how we can align intelligence 
-                  with intention. I ask big questions, follow weird thoughts, 
-                  and believe the most fascinating answers are the ones that lead 
-                  to even better questions. If you&apos;re into brains, philosophy, or 
-                  figuring out how AI can be less of a black box and more of a 
-                  trustworthy companion, we&apos;ll get along just fine.
+                  Hi! I&apos;m <strong className="font-bold">Toluwani</strong> and 
+                  I am on a never-ending quest to understand human and artificial 
+                  minds. If you&apos;re into brains, philosophy, or figuring out 
+                  how AI can be less of a black box and more of a trustworthy 
+                  companion through alignment with human values, we&apos;ll get 
+                  along just fine.
                 </p>
                 <Link
-                  href="https://scholar.google.com/citations?user=Ji8fnw0AAAAJ&hl=en"
+                  href="https://scholar.google.com/citations?hl=en&user=Ji8fnw0AAAAJ&view_op=list_works&sortby=pubdate"
                   className="mt-7 md:mt-16 flex gap-2 md:gap-4 items-center md:text-xl"
                   data-aos="fade-up"
                 >
@@ -91,31 +88,29 @@ const Page = () => {
                 className="mt-5 2xl:mt-9 md:text-lg 2xl:text-2xl text-justify"
                 data-aos="fade-up"
               >
-                I aim to build Safe and Trustworthy Generative AI Systems. Specifically, 
-                I am currently exploring watermarking in LLMs and the alignment problems that 
-                comes from the use of watermarks. I am also interested in the exploring the 
-                societal impacts of deployed AI systems.
+                I am generally interested in AI Safety and Security. Currently, for my PhD research, 
+                I am exploring robust and strong watermarking techniques for Generative AI.
               </p>
               <p
                 className="mt-4 2xl:mt-4 md:text-lg 2xl:text-2xl text-justify"
                 data-aos="fade-up"
               >
-                I am also working on and open to collaborations in various
-                domains, including, but not limited to:
+                Here are some specific areas (in no order of preference) I am interested in:
               </p>
               <ul className="md:text-lg  2xl:text-2xl list-disc ml-7 sm:ml-10 text-justify">
-                <li data-aos="fade-up"> <strong>AI Debate</strong></li>
-                <li data-aos="fade-up"> <strong>Self-Alignment</strong></li>
-                <li data-aos="fade-up"><strong>Multi-Agent Alignment</strong></li>
-                <li data-aos="fade-up"><strong>Threat models for LLM watermarks</strong></li>
-                <li data-aos="fade-up"><strong>AI Ethics, Policy, and Governance</strong></li>
+                <li data-aos="fade-up"> <strong>Safe and trustworthy generative AI via technical control, alignment, and evaluation</strong></li>
+                <li data-aos="fade-up"> <strong>Model provenance and attribution via robust watermarking techniques</strong></li>
+                <li data-aos="fade-up"><strong>Model safety and reliability through robust monitoring primitives and verification mechanisms</strong></li>
+                <li data-aos="fade-up"><strong>Threat modeling and analysis of advanced AI risks, including existential risk scenarios</strong></li>
+                <li data-aos="fade-up"><strong>Societal impacts of AI development and deployment</strong></li>
+                <li data-aos="fade-up"><strong>AI Safety and alignment strategies grounded in philosophical, psychological, and sociological theories of human behavior</strong></li>
+                <li data-aos="fade-up"><strong>AI Ethics, AI Governance, and Human–AI collaboration (e.g., AI debate, self-alignment, cooperative AI)</strong></li>
               </ul>
               <p
                 className="pt-4 md:text-lg 2xl:text-2xl text-justify"
                 data-aos="fade-up"
               >
-                Feel free to reach out if you have an idea or project where we
-                can collaborate!
+                Do reach out if you have an interesting research question or project in these areas that you think I can contribute to! I am always open to collaborations and discussions.
               </p>
             </div>
           </section>
