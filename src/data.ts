@@ -652,6 +652,12 @@ export const blogs = [
     date: "12 February 2023",
   },
   {
+    title: "PolyKervNets: Activation-Free Neural Networks for Efficient Private Inference",
+    image: "/pkn.png",
+    link: "https://openreview.net/pdf?id=OGzt9NKC0lO",
+    date: "08 February 2023",
+  },
+  {
     title: "Choosing a Learning Rate for DNNs",
     image: "/image-4.png",
     link: "https://pub.towardsai.net/choosing-a-learning-rate-for-dnns-35c201b1b49b",
