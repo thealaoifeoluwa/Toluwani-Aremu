@@ -181,10 +181,9 @@ const Page = () => {
                 Artificial Intelligence in December 2022. Presently, I am pursuing a PhD in Machine Learning at MBZUAI,
                 working under the guidance of <span> </span>
                 <Link href="https://nilslukas.github.io/" className=" text-primary">
-                Dr. Nils Lukas.</Link> 
-                I am also visiting CFAR at A*STAR, hosted by <span> </span>
+                Dr. Nils Lukas</Link>. I am also visiting CFAR at A*STAR, hosted by <span> </span>
                 <Link href="https://zjzac.github.io/" className=" text-primary">
-                Dr. Jie Zhang.</Link>
+                Dr. Jie Zhang</Link>.
               </p>
             </div>
           </section>
