@@ -606,6 +606,18 @@ export const blogs = [
     date: " ",
   },
   {
+    title: "Activation Watermarking for Monitoring",
+    image: "/actwm.png",
+    link: "https://arxiv.org/pdf/2603.23171",
+    date: "Preprint",
+  },
+  {
+    title: "The War Against Watermark Forgery",
+    image: "/forger.png",
+    link: "https://arxiv.org/pdf/2507.07871",
+    date: "Preprint",
+  },
+  {
     title: "MirrorCheck: Adversarial Defense for VLMs",
     image: "/mirrorcheck.png",
     link: "https://openreview.net/pdf?id=pdIPR5TSXy",
