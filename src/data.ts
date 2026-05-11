@@ -601,9 +601,15 @@ export const years = allData.map((data) => data.year);
 export const blogs = [
   {
     title: "Check my latest research on Google Scholar",
-    image: "/image-9.png",
+    image: "/scholar.png",
     link: "https://scholar.google.com/citations?hl=en&user=Ji8fnw0AAAAJ&view_op=list_works&sortby=pubdate",
     date: " ",
+  },
+  {
+    title: "MirrorCheck: Adversarial Defense for VLMs",
+    image: "/mirrorcheck.png",
+    link: "https://openreview.net/pdf?id=pdIPR5TSXy",
+    date: "CVPR [AdvML] 2026",
   },
   {
     title: "Adaptive Attacks against LLM Watermarks",
