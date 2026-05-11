@@ -45,7 +45,7 @@ const Page = () => {
                   I am on a never-ending quest to understand human and artificial 
                   minds. If you&apos;re into brains, philosophy, or figuring out 
                   how AI can be less of a black box and more of a trustworthy 
-                  companion through alignment with human values, we&apos;ll get 
+                  companion, aligned with human values, we&apos;ll get 
                   along just fine.
                 </p>
                 <Link
@@ -200,7 +200,9 @@ const Page = () => {
                 Presently, I am pursuing a PhD in Machine Learning at MBZUAI,
                 working under the guidance of <span> </span>
                   <Link href="https://nilslukas.github.io/" className=" text-primary">
-                  Dr. Nils Lukas.</Link>
+                  Dr. Nils Lukas.</Link> I am also visiting CFAR at A*STAR, hosted by <span> </span>
+                  <Link href="https://zjzac.github.io/" className=" text-primary">
+                  Dr. Jie Zhang.</Link>
               </p>
             </div>
           </section>
