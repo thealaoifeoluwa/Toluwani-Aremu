@@ -652,7 +652,7 @@ export const blogs = [
     date: "12 February 2023",
   },
   {
-    title: "PolyKervNets: Activation-Free Neural Networks for Efficient Private Inference",
+    title: "PolyKervNets: Activation-Free NNs for Efficient PI",
     image: "/pkn.png",
     link: "https://openreview.net/pdf?id=OGzt9NKC0lO",
     date: "08 February 2023",
