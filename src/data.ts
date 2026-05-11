@@ -653,7 +653,7 @@ export const blogs = [
   },
   {
     title: "PolyKervNets: Activation-Free NNs for Efficient PI",
-    image: "/rpkn.png",
+    image: "/pkn.png",
     link: "https://openreview.net/pdf?id=OGzt9NKC0lO",
     date: "08 February 2023",
   },
