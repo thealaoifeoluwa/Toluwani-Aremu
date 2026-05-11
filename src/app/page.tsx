@@ -211,24 +211,23 @@ export default function Home() {
               className="text-[32px] md:text-[64px] font-medium font-Acorns"
               data-aos="fade-up"
             >
-              Skillset
+              The Essentials
             </h2>
             <p className="md:text-xl" data-aos="fade-up">
-              Here are some tools I work with
+              Turns out, this is all I really need
             </p>
             <div
               className="flex justify-center gap-2 sm:gap-2.5 mt-4 md:text-xl"
               data-aos="fade-up"
             >
-              <span className="btn">theWorld</span>
-              <span className="btn">myBrain</span>
-              <span className="btn">AgenticLLMs</span>
-              <span className="btn">SemanticScholar</span>
+              <span className="btn">World</span>
+              <span className="btn">Brain</span>
+              <span className="btn">Sleep</span>
             </div>
             {/* <p className="mt-10 md:text-xl" data-aos="fade-up">
               Development Environments
             </p> */}
-            <div
+            {/* <div
               className="flex justify-center gap-2 sm:gap-2.5 mt-4 md:text-xl"
               data-aos="fade-up"
             >
@@ -236,7 +235,7 @@ export default function Home() {
               <span className="btn">PyTorch</span>
               <span className="btn">GitHub</span>
               <span className="btn">Sleep</span>
-            </div>
+            </div> */}
           </div>
 
           <div className="mt-[102px] px-5">
