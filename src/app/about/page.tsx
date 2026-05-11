@@ -153,16 +153,10 @@ const Page = () => {
                   pivotal role in developing a toolkit aimed at streamlining the
                   preprocessing of the NHANES dataset, ultimately facilitating
                   model utilization, result reproduction, and TRIPOD statement
-                  extraction.
-                </p>
-                <p
-                  className="md:text-lg 2xl:text-2xl text-justify"
-                  data-aos="fade-up"
-                >
-                  Subsequently, as an AI research assistant at MBZUAI Metaverse
+                  extraction. Subsequently, as an AI research assistant at MBZUAI Metaverse
                   Lab under the guidance of <span> </span>
                   <Link href="https://scholar.google.com/citations?hl=en&user=VcOjgngAAAAJ&view_op=list_works" className=" text-primary">
-                  Prof. Abdulmotaleb El Saddik.</Link>, I got a patent for an innovative project called ScholarFace.
+                  Prof. Abdulmotaleb El Saddik</Link>, I got a patent for an innovative project called ScholarFace.
                 </p>
               </div>
             </div>
@@ -183,13 +177,7 @@ const Page = () => {
                 My academic journey includes a Bachelor of Science in Computer
                 Science from Adeleke University, Nigeria, and a subsequent
                 Master of Science in Computer Science from the University of
-                Ibadan, Nigeria.
-              </p>
-              <p
-                className="md:text-lg 2xl:text-2xl text-justify"
-                data-aos="fade-up"
-              >
-                More recently, I achieved a Research-focused Master of Science
+                Ibadan, Nigeria. More recently, I achieved a Research-focused Master of Science
                 in Machine Learning at the Mohamed Bin Zayed University of
                 Artificial Intelligence in December 2022.
               </p>
@@ -199,10 +187,11 @@ const Page = () => {
               >
                 Presently, I am pursuing a PhD in Machine Learning at MBZUAI,
                 working under the guidance of <span> </span>
-                  <Link href="https://nilslukas.github.io/" className=" text-primary">
-                  Dr. Nils Lukas.</Link> I am also visiting CFAR at A*STAR, hosted by <span> </span>
-                  <Link href="https://zjzac.github.io/" className=" text-primary">
-                  Dr. Jie Zhang.</Link>
+                <Link href="https://nilslukas.github.io/" className=" text-primary">
+                Dr. Nils Lukas.</Link> 
+                I am also visiting CFAR at A*STAR, hosted by <span> </span>
+                <Link href="https://zjzac.github.io/" className=" text-primary">
+                Dr. Jie Zhang.</Link>
               </p>
             </div>
           </section>
