@@ -95,7 +95,7 @@ const Page = () => {
                 className="mt-4 2xl:mt-4 md:text-lg 2xl:text-2xl text-justify"
                 data-aos="fade-up"
               >
-                Here are some specific areas (in no order of preference) I am interested in:
+                Here are some specific areas I am interested in:
               </p>
               <ul className="md:text-lg  2xl:text-2xl list-disc ml-7 sm:ml-10 text-justify">
                 <li data-aos="fade-up"><strong>AI Safety and Security</strong></li>
@@ -109,7 +109,7 @@ const Page = () => {
                 className="pt-4 md:text-lg 2xl:text-2xl text-justify"
                 data-aos="fade-up"
               >
-                Do reach out if you have an interesting research question or project in these areas that you think I can contribute to! I am always open to collaborations and discussions.
+                Do reach out if you want to discuss and/or collaborate!
               </p>
             </div>
           </section>
