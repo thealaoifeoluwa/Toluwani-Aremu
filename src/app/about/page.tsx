@@ -132,22 +132,16 @@ const Page = () => {
                   data-aos="fade-up"
                 >
                   As a student at MBZUAI, I served as a Research Assistant at
-                  the SPriNT-AI Lab, collaborating with Dr. Karthik Nandakumar.
+                  the SPriNT-AI Lab, collaborating with <span> </span>
+                  <Link href="https://scholar.google.com/citations?user=2qx0RnEAAAAJ&hl=en" className=" text-primary">
+                  Dr. Karthik Nandakumar.</Link>.
                   My primary focus was the development of an innovative method
                   known as PolyKervNets, designed to address the
                   Accuracy-Efficiency challenge within Deep Neural Networks,
-                  particularly in the context of private inference (PI).
-                </p>
-                <p
-                  className="md:text-lg 2xl:text-2xl text-justify"
-                  data-aos="fade-up"
-                >
+                  particularly in the context of private inference (PI). 
                   Additionally, I embarked on personal projects covering
                   Accented Speech Recognition, Racial Bias Mitigation in SSLs,
-                  and Gender Bias Mitigation in Word Embeddings. These projects
-                  not only broadened my understanding of AI but also contributed
-                  to bias mitigation and performance enhancement in various
-                  applications.
+                  and Gender Bias Mitigation in Word Embeddings.
                 </p>
               </div>
               <div className="md:w-[580px] space-y-5 2xl:space-y-9">
@@ -166,10 +160,9 @@ const Page = () => {
                   data-aos="fade-up"
                 >
                   Subsequently, as an AI research assistant at MBZUAI Metaverse
-                  Lab under the guidance of Prof. Abdulmotaleb El Saddik, I
-                  embarked on projects to enhance 2D classifiers in the
-                  Proactive Violence and Weapon Detection domain, including the
-                  leadership of an innovative project known as ScholarFace.
+                  Lab under the guidance of <span> </span>
+                  <Link href="https://scholar.google.com/citations?hl=en&user=VcOjgngAAAAJ&view_op=list_works" className=" text-primary">
+                  Prof. Abdulmotaleb El Saddik.</Link>, I got a patent for an innovative project called ScholarFace.
                 </p>
               </div>
             </div>
@@ -205,7 +198,9 @@ const Page = () => {
                 data-aos="fade-up"
               >
                 Presently, I am pursuing a PhD in Machine Learning at MBZUAI,
-                working under the guidance of Dr. Nils Lukas.
+                working under the guidance of <span> </span>
+                  <Link href="https://nilslukas.github.io/" className=" text-primary">
+                  Dr. Nils Lukas.</Link>
               </p>
             </div>
           </section>
