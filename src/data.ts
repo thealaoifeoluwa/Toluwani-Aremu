@@ -653,8 +653,8 @@ export const blogs = [
   },
   {
     title: "PolyKervNets: Activation-Free NNs for Efficient PI",
-    image: "/pkn.png",
-    link: "https://www.researchgate.net/profile/Toluwani-Aremu/publication/371230167_PolyKervNets_Activation-free_Neural_Networks_For_Efficient_Private_Inference/links/657ab97fcbd2c535ea25d1f9/PolyKervNets-Activation-free-Neural-Networks-For-Efficient-Private-Inference.pdf",
+    image: "/rpkn.png",
+    link: "https://openreview.net/pdf?id=OGzt9NKC0lO",
     date: "08 February 2023",
   },
   {
