@@ -634,6 +634,12 @@ export const blogs = [
     date: "24 August 2024",
   },
   {
+    title: "Shapley-Driven Federated Learning",
+    image: "/shfl.png",
+    link: "https://www.ijcai.org/proceedings/2024/0554",
+    date: "1 June 2024",
+  },
+  {
     title: "Accented Speech Recognition",
     image: "/image-1.png",
     link: "https://tolusophy.medium.com/accented-speech-recognition-the-inclusive-realm-of-automatic-speech-recognition-systems-881ee480c502",
@@ -650,6 +656,12 @@ export const blogs = [
     image: "/aidet.png",
     link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4470719",
     date: "06 June 2023",
+  },
+  {
+    title: "SSIVD-Net for Weaponized Violence Detection",
+    image: "/violencenet.png",
+    link: "https://link.springer.com/chapter/10.1007/978-3-031-62269-4_2",
+    date: "01 June 2023",
   },
   {
     title: "Learning Rate Schedulers",
