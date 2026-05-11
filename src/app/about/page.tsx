@@ -98,13 +98,12 @@ const Page = () => {
                 Here are some specific areas (in no order of preference) I am interested in:
               </p>
               <ul className="md:text-lg  2xl:text-2xl list-disc ml-7 sm:ml-10 text-justify">
-                <li data-aos="fade-up"> <strong>AI Safety and Security</strong></li>
-                <li data-aos="fade-up"> <strong>Watermarking for provenance and attribution</strong></li>
-                <li data-aos="fade-up"><strong>Robust monitoring primitives against Jailbreaks</strong></li>
+                <li data-aos="fade-up"><strong>AI Safety and Security</strong></li>
+                <li data-aos="fade-up"><strong>Societal impacts of AI</strong></li>
+                <li data-aos="fade-up"><strong>AI Governance and Policy</strong></li>
+                <li data-aos="fade-up"><strong>Self/Multi-Agent Alignment</strong></li>
                 <li data-aos="fade-up"><strong>Threat modeling and analysis of AI risks</strong></li>
-                <li data-aos="fade-up"><strong>Societal impacts of AI development and deployment</strong></li>
-                <li data-aos="fade-up"><strong>Philosophical and sociological theories of human behavior</strong></li>
-                <li data-aos="fade-up"><strong>AI debate, Self-alignment, cooperative AI, etc</strong></li>
+                <li data-aos="fade-up"><strong>Watermarking for provenance and attribution</strong></li>
               </ul>
               <p
                 className="pt-4 md:text-lg 2xl:text-2xl text-justify"
