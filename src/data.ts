@@ -643,7 +643,13 @@ export const blogs = [
     title: "AI Text Detectors: Amazing Sleuths or WHAT?",
     image: "/image-2.png",
     link: "https://tolusophy.medium.com/ai-text-detectors-amazing-sleuths-or-what-31e4e2ca7803",
-    date: "10 January 2023",
+    date: "10 June 2023",
+  },
+  {
+    title: "Unveiling the Elusive Realm of AI Text Detection",
+    image: "/aidet.png",
+    link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4470719",
+    date: "06 June 2023",
   },
   {
     title: "Learning Rate Schedulers",
