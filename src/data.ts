@@ -1,3 +1,5 @@
+import { title } from "process";
+
 export const socialLinks = [
   {
     title: "github",
@@ -604,6 +606,30 @@ export const blogs = [
     date: " ",
   },
   {
+    title: "Adaptive Attacks against LLM Watermarks",
+    image: "/wmark.png",
+    link: "https://arxiv.org/pdf/2410.02440",
+    date: "ICML [Spotlight🏆] 2025",
+  },
+  {
+    title: "Are LLMs Reliable?",
+    image: "/llmreliable.png",
+    link: "https://onlinelibrary.wiley.com/doi/pdf/10.1002/aaai.12208",
+    date: "AAAI [AI Magazine] 2025",
+  },
+  {
+    title: "Self-Referencing Causal Cycles",
+    image: "/llm.png",
+    link: "https://aclanthology.org/2025.acl-long.1232.pdf",
+    date: "ACL [Main] 2025",
+  },
+  {
+    title: "All Languages Matter!",
+    image: "/lmm.png",
+    link: "https://arxiv.org/pdf/2411.16508",
+    date: "CVPR [Spotlight🏆] 2025",
+  },
+  {
     title: "A Call for Patience and Perspective",
     image: "/protest.webp",
     link: "https://x.com/tolusophy/status/1908792259832930563",
@@ -628,6 +654,12 @@ export const blogs = [
     date: "05 February 2025",
   },
   {
+    title: "ScholarFace: Scanning Faces, Discovering Minds",
+    image: "/scholarface.png",
+    link: "https://patents.google.com/patent/US12423369B2/en",
+    date: "[Patented] 2025",
+  },
+  {
     title: "The Dark Side of Boycotting and Cancel Culture",
     image: "/boycott.jpeg",
     link: "https://x.com/tolusophy/status/1827269838848319862",
@@ -637,7 +669,7 @@ export const blogs = [
     title: "Shapley-Driven Federated Learning",
     image: "/shfl.png",
     link: "https://www.ijcai.org/proceedings/2024/0554",
-    date: "1 June 2024",
+    date: "IJCAI 2024",
   },
   {
     title: "Accented Speech Recognition",
@@ -655,13 +687,13 @@ export const blogs = [
     title: "Unveiling the Elusive Realm of AI Text Detection",
     image: "/aidet.png",
     link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4470719",
-    date: "06 June 2023",
+    date: "SSRN 2023",
   },
   {
     title: "SSIVD-Net for Weaponized Violence Detection",
     image: "/violencenet.png",
     link: "https://link.springer.com/chapter/10.1007/978-3-031-62269-4_2",
-    date: "01 June 2023",
+    date: "SAI 2025",
   },
   {
     title: "Learning Rate Schedulers",
@@ -673,7 +705,7 @@ export const blogs = [
     title: "PolyKervNets: Activation-Free NNs for Efficient PI",
     image: "/pkn.png",
     link: "https://openreview.net/pdf?id=OGzt9NKC0lO",
-    date: "08 February 2023",
+    date: "IEEE SaTML 2023",
   },
   {
     title: "Choosing a Learning Rate for DNNs",
