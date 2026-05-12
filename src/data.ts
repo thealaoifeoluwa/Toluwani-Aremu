@@ -1,3 +1,4 @@
+import { link } from "fs";
 import { title } from "process";
 
 export const socialLinks = [
@@ -50,7 +51,9 @@ const data2026: dataType = {
       title: "February",
       data: [
         {
-          text: 'Our startup idea is incubated under [Kora](https://www.korahq.com/). Excited for this new chapter.',
+          text: 'Our startup idea is incubated under Kora. Excited for this new chapter.',
+          link: "https://www.korahq.com/",
+          linkTitle: "[Learn more about Kora]",
         },
       ],
     },
