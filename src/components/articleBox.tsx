@@ -9,7 +9,7 @@ const ArticleBox = ({ data }: { data: (typeof blogs)[0] }) => {
     <Link
       href={link}
       target="_blank"
-      className="w-[390px] min-w-[300px] md:min-w-[390px] h-[420px] p-3 sm:p-5 bg-white dark:bg-[#1B1B1B] rounded-[10px] flex flex-col"
+      className="w-[390px] min-w-[300px] md:min-w-[390px] h-[380px] p-3 sm:p-5 bg-white dark:bg-[#1B1B1B] rounded-[10px] flex flex-col"
     >
       <Image
         src={"/images/blogs" + image}
@@ -19,7 +19,7 @@ const ArticleBox = ({ data }: { data: (typeof blogs)[0] }) => {
         sizes="100vw"
         className="w-full h-[200px] object-cover rounded-xl"
       />
-      <h2 className="my-[14px] flex-grow font-Acorns font-medium text-left line-clamp-3">
+      <h2 className="my-[14px] flex-grow font-Acorns font-medium text-center line-clamp-3">
         {title}
       </h2>
       {(authors || venue || year) && (
