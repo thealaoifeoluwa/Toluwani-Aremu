@@ -22,15 +22,21 @@ const ArticleBox = ({ data }: { data: (typeof blogs)[0] }) => {
       <h2 className="my-[14px] flex-grow font-Acorns font-medium text-left line-clamp-3">
         {title}
       </h2>
-      <div className="text-xs space-y-1">
-        <p className="text-gray-600 dark:text-gray-400 line-clamp-2">
-          {authors?.join(", ")}
-        </p>
-        <div className="flex justify-between items-center pt-1 border-t border-gray-200 dark:border-gray-700">
-          <span className="text-primary font-medium">{venue}</span>
-          <span className="text-gray-500 dark:text-gray-400">{year}</span>
+      {(authors || venue || year) && (
+        <div className="text-xs space-y-1">
+          {authors && (
+            <p className="text-gray-600 dark:text-gray-400 line-clamp-2">
+              {authors.join(", ")}
+            </p>
+          )}
+          {(venue || year) && (
+            <div className="flex justify-between items-center pt-1 border-t border-gray-200 dark:border-gray-700">
+              {venue && <span className="text-primary font-medium">{venue}</span>}
+              {year && <span className="text-gray-500 dark:text-gray-400">{year}</span>}
+            </div>
+          )}
         </div>
-      </div>
+      )}
     </Link>
   );
 };
