@@ -655,11 +655,11 @@ export const blogs = [
     year: 2025,
   },
   {
-    title: "Self-Referencing Causal Cycles",
+    title: "Library-Like Behavior In Language Models is Enhanced by Self-Referencing Causal Cycles",
     image: "/llm.png",
     link: "https://aclanthology.org/2025.acl-long.1232.pdf",
-    authors: ["Toluwani Aremu"],
-    venue: "ACL",
+    authors: ["Munachiso Nwadike", "Zangir Iklassov", "Toluwani Aremu", "Tatsuya Hiraoka", "Benjamin Heinzerling", "Velibor Bojkovic", "Hilal Alqaubeh", "Martin Takáč", "Kentaro Inui"],
+    venue: "ACL (Main)",
     year: 2025,
   },
   {
