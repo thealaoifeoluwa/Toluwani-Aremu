@@ -616,6 +616,12 @@ export const blogs = [
     link: "https://arxiv.org/pdf/2507.07871",
     date: "Preprint",
   },
+   {
+    title: "What Stuttered Speech Research Actually Needs",
+    image: "/stut.png",
+    link: "https://arxiv.org/pdf/2604.20535",
+    date: "Preprint",
+  },
   {
     title: "MirrorCheck: Adversarial Defense for VLMs",
     image: "/mirrorcheck.png",
