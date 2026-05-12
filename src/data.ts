@@ -706,7 +706,6 @@ export const blogs = [
     title: "ScholarFace: Scanning Faces, Discovering Minds",
     image: "/scholarface.png",
     link: "https://patents.google.com/patent/US12423369B2/en",
-    // Wong Yu KANGToluwani AREMUYounes BALAHAbdulmotaleb El SaddikMaryam NADEEMIvo Gollini NAVARRETE
     authors: ["Wong Yu Kang", "Toluwani Aremu", "Younes Balah", "Maryam Nadeem", "Ivo Gollini Navarrete", "Abdulmotaleb El Saddik"],
     venue: "Patent",
     year: 2025,
