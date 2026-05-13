@@ -727,6 +727,14 @@ export const blogs = [
     year: 2024,
   },
   {
+    title: "SSIVD-Net: A Novel Salient Super Image Classification & Detection Technique for Weaponized Violence",
+    image: "/violencenet.png",
+    link: "https://arxiv.org/pdf/2207.12850",
+    authors: ["Toluwani Aremu", "Li Zhiyuan", "Reem Alameeri", "Mustaqeem Khan", "Abdulmotaleb El Saddik"],
+    venue: "SAI",
+    year: 2024,
+  },
+  {
     title: "Accented Speech Recognition: The Inclusive Realm of Automatic Speech Recognition Systems",
     image: "/image-1.png",
     link: "https://tolusophy.medium.com/accented-speech-recognition-the-inclusive-realm-of-automatic-speech-recognition-systems-881ee480c502",
@@ -749,14 +757,6 @@ export const blogs = [
     authors: ["Toluwani Aremu"],
     venue: "SSRN",
     year: 2023,
-  },
-  {
-    title: "SSIVD-Net: A Novel Salient Super Image Classification & Detection Technique for Weaponized Violence",
-    image: "/violencenet.png",
-    link: "https://arxiv.org/pdf/2207.12850",
-    authors: ["Toluwani Aremu", "Li Zhiyuan", "Reem Alameeri", "Mustaqeem Khan", "Abdulmotaleb El Saddik"],
-    venue: "SAI",
-    year: 2025,
   },
   {
     title: "Learning Rate Schedulers",
