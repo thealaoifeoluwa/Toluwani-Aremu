@@ -46,7 +46,7 @@ const Page = () => {
                   minds. If you&apos;re into brains, philosophy, or figuring out 
                   how AI can be less of a black box and more of a trustworthy 
                   companion, aligned with human values, we&apos;ll get 
-                  along just fine.
+                  along just fine. 
                 </p>
                 <Link
                   href="https://scholar.google.com/citations?hl=en&user=Ji8fnw0AAAAJ&view_op=list_works&sortby=pubdate"
