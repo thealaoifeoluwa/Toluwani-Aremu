@@ -19,6 +19,17 @@ const config: Config = {
       fontFamily: {
         Acorns: ["var(--font-Acorns)"],
       },
+      backdropBlur: {
+        xs: "2px",
+        sm: "4px",
+        md: "8px",
+        lg: "12px",
+        xl: "16px",
+      },
+      boxShadow: {
+        "glow-primary": "0 0 20px rgba(99, 133, 255, 0.4)",
+        "glow-primary-lg": "0 0 30px rgba(99, 133, 255, 0.6)",
+      },
       keyframes: {
         scrollLeft: {
           "0%": {
@@ -28,10 +39,19 @@ const config: Config = {
             translate: "-70% 0",
           },
         },
+        shimmer: {
+          "0%": {
+            backgroundPosition: "0% 0%",
+          },
+          "100%": {
+            backgroundPosition: "100% 0%",
+          },
+        },
       },
       animation: {
         spin: "spin 4s linear infinite",
         scrollLeft: "scrollLeft 30s linear infinite",
+        shimmer: "shimmer 3s linear infinite",
       },
     },
   },

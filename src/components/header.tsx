@@ -55,27 +55,30 @@ const Header = () => {
         </Link>
         {isHomepage && (
           <div
-            className="px-5 py-[18px] mr-28 bg-[#00000026] dark:bg-[#B4B3B326] hidden md:flex gap-6 rounded-[48px]"
+            className="glass-effect px-5 py-[18px] mr-28 hidden md:flex gap-6 rounded-[48px]"
             data-cursor="-hidden"
           >
             <Link
               href="https://scholar.google.com/citations?user=Ji8fnw0AAAAJ&hl=en"
               target="_blank"
-              className="transition-transform duration-500 hover:scale-125"
+              className="social-link glow-accent"
+              title="Google Scholar"
             >
               <GoogleIcon />
             </Link>
             <Link
               href="https://www.linkedin.com/in/toluwaniaremu/"
               target="_blank"
-              className="transition-transform duration-500 hover:scale-125"
+              className="social-link glow-accent"
+              title="LinkedIn"
             >
               <LinkedinIcon />
             </Link>
             <Link
               href="https://twitter.com/tolusophy"
               target="_blank"
-              className="transition-transform duration-500 hover:scale-125"
+              className="social-link glow-accent"
+              title="X (Twitter)"
             >
               <XIcon />
             </Link>
@@ -83,26 +86,29 @@ const Header = () => {
             <Link
               href="https://github.com/tolusophy"
               target="_blank"
-              className="transition-transform duration-500 hover:scale-125"
+              className="social-link glow-accent"
+              title="GitHub"
             >
               <GithubIcon />
             </Link>
             <Link
               href="https://tolusophy.medium.com/"
               target="_blank"
-              className="transition-transform duration-500 hover:scale-125"
+              className="social-link glow-accent"
+              title="Medium"
             >
               <MediumIcon />
             </Link>
             <Link
               href="https://www.instagram.com/tolusophy/"
               target="_blank"
-              className="transition-transform duration-500 hover:scale-125"
+              className="social-link glow-accent"
+              title="Instagram"
             >
               <InstagramIcon />
             </Link>
           </div>
-        )}
+        )
         <button
           data-cursor="-hidden"
           className="scale-[0.7] md:scale-100 text-black dark:text-white"

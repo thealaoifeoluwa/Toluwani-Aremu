@@ -9,7 +9,7 @@ const ArticleBox = ({ data }: { data: (typeof blogs)[0] }) => {
     <Link
       href={link}
       target="_blank"
-      className="w-[390px] min-w-[300px] md:min-w-[390px] h-[380px] p-3 sm:p-5 bg-white dark:bg-[#1B1B1B] rounded-[10px] flex flex-col"
+      className="w-[390px] min-w-[300px] md:min-w-[390px] h-[380px] p-3 sm:p-5 bg-white dark:bg-[#1B1B1B] rounded-[10px] flex flex-col transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 hover:scale-105 hover:glow-accent-lg focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-black"
     >
       <Image
         src={"/images/blogs" + image}

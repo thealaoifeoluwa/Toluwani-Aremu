@@ -17,7 +17,11 @@
 } */
 
 .btn {
-  @apply px-3 md:px-6 py-1.5 md:py-3 rounded-md border-primary border-[1.5px] md:border-2 text-sm md:text-xl transition-colors duration-500 hover:bg-primary hover:text-white;
+  @apply px-3 md:px-6 py-1.5 md:py-3 rounded-md border-primary border-[1.5px] md:border-2 text-sm md:text-xl transition-all duration-500 hover:bg-primary hover:text-white hover:shadow-glow-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-black;
+}
+
+.btn:hover {
+  @apply transform hover:scale-105;
 }
 
 @layer utilities {
@@ -79,4 +83,56 @@
 
 html.dark .title {
   -webkit-text-stroke: 0px;
+}
+
+/* Glass Morphism & Backdrop Blur Effects */
+.glass-effect {
+  @apply backdrop-blur-md bg-white/5 dark:bg-white/10 border border-white/20 dark:border-white/10;
+}
+
+.glass-effect-sm {
+  @apply backdrop-blur-sm bg-white/5 dark:bg-white/5 border border-white/10 dark:border-white/5;
+}
+
+/* Glow Effects */
+.glow-accent {
+  @apply hover:shadow-glow-primary transition-shadow duration-300;
+}
+
+.glow-accent-lg {
+  @apply hover:shadow-glow-primary-lg transition-shadow duration-300;
+}
+
+/* Social Link Enhancement */
+.social-link {
+  @apply transition-all duration-300 hover:scale-125 hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-transparent dark:focus:ring-offset-transparent rounded;
+}
+
+/* Responsive Motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Focus Visible for Better Accessibility */
+*:focus-visible {
+  @apply outline-none ring-2 ring-primary ring-offset-2 dark:ring-offset-black rounded;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  @apply outline-none ring-2 ring-primary ring-offset-2 dark:ring-offset-black;
+}
+
+/* Enhanced Link States */
+a {
+  @apply transition-all duration-200;
+}
+
+a:hover {
+  @apply text-primary;
 }

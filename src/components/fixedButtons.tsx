@@ -18,9 +18,10 @@ const FixedButtons = () => {
   return (
     <>
       <button
-        className="fixed left-4 sm:left-8 2xl:left-16 bottom-10 sm:bottom-10 2xl:bottom-16 z-40 rounded-full"
+        className="fixed left-4 sm:left-8 2xl:left-16 bottom-10 sm:bottom-10 2xl:bottom-16 z-40 rounded-full transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-black hover:shadow-glow-primary"
         data-cursor="-hidden"
         onClick={toggleDarkMode}
+        title="Toggle dark mode"
       >
         <span className="block dark:hidden">
           <LightIcon />
@@ -33,8 +34,9 @@ const FixedButtons = () => {
         href="/Toluwani_Aremu_Resume.pdf"
         download
         target="_blank"
-        className="fixed right-0 sm:right-4 2xl:right-8 bottom-0 sm:bottom-4 2xl:bottom-8 z-40 rounded-full"
+        className="fixed right-0 sm:right-4 2xl:right-8 bottom-0 sm:bottom-4 2xl:bottom-8 z-40 rounded-full transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-black hover:shadow-glow-primary"
         data-cursor="-hidden"
+        title="Download resume"
       >
         <GetCVIcon />
       </Link>
