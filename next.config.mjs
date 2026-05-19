@@ -1,15 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   env: {
-    API_KEY: process.env.API_KEY, // pulls from .env file
+    API_KEY: process.env.API_KEY,
   },
+
+  // Disable Next.js image optimization
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "openweathermap.org",
-      },
-    ],
+    unoptimized: true,
   },
 };
 
