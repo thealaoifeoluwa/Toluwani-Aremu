@@ -108,7 +108,7 @@ const Header = () => {
               <InstagramIcon />
             </Link>
           </div>
-        )
+        )}
         <button
           data-cursor="-hidden"
           className="scale-[0.7] md:scale-100 text-black dark:text-white"
