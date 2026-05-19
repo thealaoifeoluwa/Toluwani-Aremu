@@ -1,12 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export", // enables static export
+
   env: {
     API_KEY: process.env.API_KEY,
   },
 
-  // Disable Next.js image optimization
   images: {
-    unoptimized: true,
+    unoptimized: true, // required for static export
   },
 };
 
