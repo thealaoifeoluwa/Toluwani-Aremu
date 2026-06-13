@@ -75,6 +75,24 @@ const data2026: dataType = {
         },
       ],
     },
+    {
+      title: "May",
+      data: [
+        {
+          text: 'I got a gold reviewer award from ICML.',
+        },
+      ],
+    },
+    {
+      title: "June",
+      data: [
+        {
+          text: 'Our paper, "MirrorCheck: Efficient Adversarial Defense for Vision-Language Models", got the distinguished paper award at CVPR-AdvML!',
+          link: "https://openreview.net/pdf?id=pdIPR5TSXy",
+          linkTitle: "[Paper]",
+        },
+      ],
+    },
   ].reverse(),
 };
 
@@ -643,7 +661,7 @@ export const blogs = [
     image: "/mirrorcheck.png",
     link: "https://openreview.net/pdf?id=pdIPR5TSXy",
     authors: ["Samar Fares*", "Klea Ziu*", "Toluwani Aremu*", "Nikita Durasov", "Martin Takáč", "Pascal Fua", "Karthik Nandakumar", "Ivan Laptev"],
-    venue: "CVPR (AdvML)",
+    venue: "CVPR (AdvML) [Distinguished Paper🏆]",
     year: 2026,
   },
   {

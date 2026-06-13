@@ -178,7 +178,7 @@ const Page = () => {
                 Master of Science in Computer Science from the University of
                 Ibadan, Nigeria. More recently, I achieved a Research-focused Master of Science
                 in Machine Learning at the Mohamed Bin Zayed University of
-                Artificial Intelligence in December 2022. Presently, I am pursuing a PhD in Machine Learning at MBZUAI,
+                Artificial Intelligence in December 2022. Presently, I am a final year PhD Candidate in Machine Learning at MBZUAI,
                 working under the guidance of <span> </span>
                 <Link href="https://nilslukas.github.io/" className=" text-primary">
                 Dr. Nils Lukas</Link>. I am also visiting CFAR at A*STAR, hosted by <span> </span>

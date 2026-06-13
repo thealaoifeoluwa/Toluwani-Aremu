@@ -121,11 +121,11 @@ export default function Home() {
               specializing in advancing artificial intelligence with a robust
               skill set spanning both research and industry. */}
               It seems like I&apos;ve gotten your attention! I&apos;m
-              Toluwani and I ask a lot of questions. I am also a Machine 
+              Toluwani and I ask a lot of questions. I am also a final year Machine 
               Learning PhD Candidate at <span> </span>
               <Link href="https://mbzuai.ac.ae/" className=" text-primary">
-                MBZUAI.
-              </Link>
+                MBZUAI
+              </Link>, and on the lookout for full-time research or applied science positions in industry.
               {/* <span> </span> When I&apos;m not boring <span> </span>
             
             <Link
