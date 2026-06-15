@@ -634,12 +634,12 @@ export const years = allData.map((data) => data.year);
 
 export const blogs = [
   {
-    title: "Check my latest research on Google Scholar",
+    title: "Check my updated list of publications and research projects!",
     image: "/scholar.png",
     link: "https://scholar.google.com/citations?hl=en&user=Ji8fnw0AAAAJ&view_op=list_works&sortby=pubdate",
-    authors: undefined,
-    venue: undefined,
-    year: undefined,
+    authors: ["Toluwani Aremu"],
+    venue: "Google Scholar",
+    year: 2026,
   },
   {
     title: "WAXAL-NET: Finetuned Edge ASR Across 19 African Languages",
