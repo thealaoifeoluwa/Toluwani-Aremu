@@ -91,6 +91,23 @@ const data2026: dataType = {
           link: "https://openreview.net/pdf?id=pdIPR5TSXy",
           linkTitle: "[Paper]",
         },
+        {
+          text: "WAXAL-NET is live now! Finetuned Edge ASR Across 19 African Languages, evaluated against 51 open source models.",
+          links: [
+            {
+              link: "https://arxiv.org/pdf/2606.02375",
+              linkTitle: "[Paper]",
+            },
+            {
+              link: "https://waxalnet.vercel.app/",
+              linkTitle: "[Website]",
+            },
+            {
+              link: "https://huggingface.co/waxal-benchmarking",
+              linkTitle: "[HuggingFace]",
+            },
+          ],
+        },
       ],
     },
   ].reverse(),
@@ -623,6 +640,14 @@ export const blogs = [
     authors: undefined,
     venue: undefined,
     year: undefined,
+  },
+  {
+    title: "WAXAL-NET: Finetuned Edge ASR Across 19 African Languages",
+    image: "/waxal.png",
+    link: "https://arxiv.org/pdf/2606.02375",
+    authors: ["Toluwani Aremu", "et al."],
+    venue: "arXiv",
+    year: 2026,
   },
   {
     title: "Watermarking Should Be Treated as a Monitoring Primitive",
