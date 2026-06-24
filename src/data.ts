@@ -648,6 +648,10 @@ export const blogs = [
     authors: ["Toluwani Aremu", "et al."],
     venue: "arXiv",
     year: 2026,
+    extraLinks: [
+      { name: "Website", url: "https://waxalnet.vercel.app/" },
+      { name: "HuggingFace", url: "https://huggingface.co/waxal-benchmarking" }
+    ]
   },
   {
     title: "Watermarking Should Be Treated as a Monitoring Primitive",
