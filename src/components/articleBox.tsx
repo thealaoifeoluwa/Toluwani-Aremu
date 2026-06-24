@@ -29,19 +29,21 @@ const ArticleBox = ({ data }: { data: (typeof blogs)[0] }) => {
               {authors.join(", ")}
             </p>
           )}
-          {(venue || year) && (
-            <div className="flex justify-between items-center pt-1 border-t border-gray-200 dark:border-gray-700">
-              {venue && <span className="text-primary font-medium">{venue}</span>}
-              {year && <span className="text-gray-500 dark:text-gray-400">{year}</span>}
-            </div>
-          )}
-          {extraLinks && (
-            <div className="flex gap-2 pt-1">
-              {(extraLinks as { name: string; url: string }[]).map((ext, idx) => (
-                <Link key={idx} href={ext.url} target="_blank" className="px-2 py-1 rounded bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-primary hover:text-white transition-colors">
-                  {ext.name}
-                </Link>
-              ))}
+          {(venue || year || extraLinks) && (
+            <div className="flex justify-between items-center pt-2 gap-2 border-t border-gray-200 dark:border-gray-700">
+              <span className="text-primary font-medium text-left">{venue || ""}</span>
+              
+              {extraLinks && (
+                <div className="flex gap-2 justify-center">
+                  {(extraLinks as { name: string; url: string }[]).map((ext, idx) => (
+                    <Link key={idx} href={ext.url} target="_blank" className="px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-primary hover:text-white transition-colors whitespace-nowrap text-[10px] sm:text-xs">
+                      {ext.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
+
+              <span className="text-gray-500 dark:text-gray-400 text-right whitespace-nowrap">{year || ""}</span>
             </div>
           )}
         </div>
