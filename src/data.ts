@@ -660,6 +660,9 @@ export const blogs = [
     authors: ["Toluwani Aremu", "Nils Lukas", "Jie Zhang"],
     venue: "arXiv",
     year: 2026,
+    extraLinks: [
+      { name: "Project Page", url: "/wm-monitoring" }
+    ]
   },
   {
     title: "Robust Safety Monitoring of Language Models via Activation Watermarking",
