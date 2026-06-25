@@ -671,6 +671,9 @@ export const blogs = [
     authors: ["Toluwani Aremu", "Daniil Ognev", "Samuele Poppi", "Nils Lukas"],
     venue: "arXiv",
     year: 2026,
+    extraLinks: [
+      { name: "Project Page", url: "/wm-harm" }
+    ]
   },
   {
     title: "Mitigating Watermark Forgery in Generative Models via Randomized Key Selection",
