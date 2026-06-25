@@ -110,6 +110,16 @@ const data2026: dataType = {
         },
       ],
     },
+    {
+      title: "July",
+      data: [
+        {
+          text: 'Our paper "Mitigating Watermark Forgery in Generative Models via Randomized Key Selection" will be presented at the ICML-Trustworthy AI for Good workshop in Seoul! Currently under review at NeurIPS 2026.',
+          link: "/wm-forgery",
+          linkTitle: "[Project Page]",
+        },
+      ],
+    },
   ].reverse(),
 };
 
@@ -683,6 +693,10 @@ export const blogs = [
     authors: ["Toluwani Aremu", "Noor Hussein", "Munachiso Nwadike", "Samuele Poppi", "Jie Zhang", "Karthik Nandakumar", "Neil Gong", "Nils Lukas"],
     venue: "arXiv",
     year: 2026,
+    extraLinks: [
+      { name: "Code (GitHub)", url: "https://github.com/MBZUAI-Trustworthy-ML/watermark-supression" },
+      { name: "Project Page", url: "/wm-forgery" }
+    ]
   },
   {
     title: "Aligning Stuttered-Speech Research with End-User Needs: Review, Survey, and Guidelines",
