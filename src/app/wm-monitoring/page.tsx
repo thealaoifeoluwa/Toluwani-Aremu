@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import { useDrag } from "@/hooks/useAnimation";
+import 'katex/dist/katex.min.css';
+import { InlineMath, BlockMath } from 'react-katex';
 
 const InfoBar = dynamic(() => import("@/components/infoBar"), { ssr: false });
 
@@ -94,6 +96,82 @@ const Page = () => {
               <p>
                 Our findings reveal a fundamental dual-use tension between attribution and monitoring, motivating evaluation of watermarking beyond per-sample robustness to account for aggregation and observer-based capabilities.
               </p>
+            </div>
+          </div>
+
+          {/* Threat Model Section */}
+          <div className="space-y-6 pt-8 border-t border-gray-200 dark:border-white/10">
+            <h2 className="text-2xl md:text-3xl font-Acorns font-medium text-gray-900 dark:text-gray-100">
+              Observer-Based Threat Model
+            </h2>
+            <div className="prose prose-lg dark:prose-invert max-w-none text-gray-600 dark:text-gray-400 leading-relaxed space-y-4">
+              <p>
+                Unlike prior work that considers adversaries manipulating individual outputs, we study <strong>observers</strong> that passively aggregate signals across multiple outputs.
+              </p>
+              <p>
+                Let <InlineMath math="\mathcal{M}" /> denote a generative model that maps a prompt <InlineMath math="p \in \mathcal{P}" /> to an output <InlineMath math="x \in \mathcal{X}" />, where:
+                <BlockMath math="x \sim \mathcal{M}(\cdot \mid p)" />
+              </p>
+              <p>
+                A watermarking scheme modifies generation using a secret key <InlineMath math="k \in \mathcal{K}" /> to produce watermarked outputs. Given an output <InlineMath math="x" />, a detector <InlineMath math="\mathcal{D}_k(x)" /> produces a score indicating the presence of a watermark.
+              </p>
+              <p>
+                We consider a set of entities <InlineMath math="\mathcal{E} = \{e_1, \dots, e_n\}" /> interacting with the model over time. An observer <InlineMath math="\mathcal{O}" /> passively observes these outputs to infer entity-level information.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                <div className="p-6 bg-white/5 border border-white/10 rounded-2xl">
+                  <h4 className="text-xl font-medium text-primary mb-2">Internal Observer</h4>
+                  <p className="text-sm">Has access to watermark detectors and keys. Under multi-key deployments, each entity has a distinct key <InlineMath math="k_e" />, allowing the observer to evaluate <InlineMath math="\mathcal{D}_{k_e}(x)" /> and directly attribute outputs.</p>
+                </div>
+                <div className="p-6 bg-white/5 border border-white/10 rounded-2xl">
+                  <h4 className="text-xl font-medium text-primary mb-2">External Observer</h4>
+                  <p className="text-sm">Does not have access to watermark keys. Relies on observable outputs and applies statistical or learned methods to extract signals and aggregate weak evidence across samples.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Methodology Section */}
+          <div className="space-y-6 pt-8 border-t border-gray-200 dark:border-white/10">
+            <h2 className="text-2xl md:text-3xl font-Acorns font-medium text-gray-900 dark:text-gray-100">
+              Watermarking as a Monitoring Primitive
+            </h2>
+            <div className="prose prose-lg dark:prose-invert max-w-none text-gray-600 dark:text-gray-400 leading-relaxed space-y-4">
+              <p>
+                Our key observation is that watermarking introduces a persistent, detectable signal into generated content, which can be aggregated across outputs to support entity-level inference over time.
+              </p>
+              <p>
+                Formally, given a prompt <InlineMath math="p" />, the model generates:
+                <BlockMath math="x \sim \mathcal{E}_k(\mathcal{M}(\cdot \mid p))" />
+                The detector computes a statistic <InlineMath math="s = \mathcal{D}_k(x)" /> and determines whether <InlineMath math="x" /> is watermarked via a hypothesis test <InlineMath math="s \gtrless \tau" />.
+              </p>
+              <p>
+                In <strong>zero-bit watermarking</strong>, no explicit identity is encoded. However, under multi-key deployments, each entity <InlineMath math="e \in \mathcal{E}" /> is associated with a distinct key <InlineMath math="k_e" />, inducing a key-dependent distribution:
+                <BlockMath math="x \sim \mathcal{E}_{k_e}(\mathcal{M}(\cdot \mid p))" />
+              </p>
+              <p>
+                Given labeled outputs <InlineMath math="\{(x_i, e_i)\}_{i=1}^N" />, an external observer can train a classifier <InlineMath math="f : \phi(x) \mapsto \hat{e}" /> and predict <InlineMath math="\hat{e}(x) = f(\phi(x))" />. If watermarking induces persistent key-dependent structure, the observer can identify the most likely source without access to watermark mechanisms.
+              </p>
+            </div>
+          </div>
+
+          {/* Results Section */}
+          <div className="space-y-6 pt-8 border-t border-gray-200 dark:border-white/10">
+            <h2 className="text-2xl md:text-3xl font-Acorns font-medium text-gray-900 dark:text-gray-100">
+              Key Results &amp; Takeaways
+            </h2>
+            <div className="prose prose-lg dark:prose-invert max-w-none text-gray-600 dark:text-gray-400 leading-relaxed space-y-4">
+              <ul className="list-disc pl-5 space-y-2">
+                <li>
+                  <strong className="text-gray-800 dark:text-gray-200">Zero-bit Watermarking enables Attribution:</strong> Even when no explicit identity is encoded in the watermark message, assigning distinct keys to different entities creates a statistical structure that allows for entity attribution.
+                </li>
+                <li>
+                  <strong className="text-gray-800 dark:text-gray-200">External Monitoring emerges naturally:</strong> Observers without access to the detection API can still learn to identify sources if the watermarking scheme alters the output distribution in a persistent, key-dependent way.
+                </li>
+                <li>
+                  <strong className="text-gray-800 dark:text-gray-200">Dual-use Tension:</strong> There is a fundamental tension between the desired properties of watermarking (robust attribution) and the privacy risks of mass monitoring, motivating a shift from per-sample evaluation to considering aggregation capabilities.
+                </li>
+              </ul>
             </div>
           </div>
 
