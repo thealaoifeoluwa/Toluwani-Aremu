@@ -86,7 +86,7 @@ const Page = () => {
             <h2 className="text-2xl md:text-3xl font-Acorns font-medium text-gray-900 dark:text-gray-100">
               Abstract
             </h2>
-            <div className="prose prose-lg dark:prose-invert max-w-none text-gray-600 dark:text-gray-400 leading-relaxed space-y-4">
+            <div className="prose prose-lg dark:prose-invert max-w-none text-gray-600 dark:text-gray-400 leading-relaxed space-y-4 text-justify">
               <p>
                 Watermarking is widely proposed for provenance, attribution, and safety monitoring in generative models, yet is typically evaluated only under adversaries who attempt to evade detection or induce false positives at the level of individual samples. We argue that watermarking should be treated as a monitoring primitive, and that internal monitoring is unavoidable given per-entity attribution keys and messages, as well as detector access. 
               </p>
@@ -104,7 +104,7 @@ const Page = () => {
             <h2 className="text-2xl md:text-3xl font-Acorns font-medium text-gray-900 dark:text-gray-100">
               Observer-Based Threat Model
             </h2>
-            <div className="prose prose-lg dark:prose-invert max-w-none text-gray-600 dark:text-gray-400 leading-relaxed space-y-4">
+            <div className="prose prose-lg dark:prose-invert max-w-none text-gray-600 dark:text-gray-400 leading-relaxed space-y-4 text-justify">
               <p>
                 Unlike prior work that considers adversaries manipulating individual outputs, we study <strong>observers</strong> that passively aggregate signals across multiple outputs.
               </p>
@@ -136,7 +136,7 @@ const Page = () => {
             <h2 className="text-2xl md:text-3xl font-Acorns font-medium text-gray-900 dark:text-gray-100">
               Watermarking as a Monitoring Primitive
             </h2>
-            <div className="prose prose-lg dark:prose-invert max-w-none text-gray-600 dark:text-gray-400 leading-relaxed space-y-4">
+            <div className="prose prose-lg dark:prose-invert max-w-none text-gray-600 dark:text-gray-400 leading-relaxed space-y-4 text-justify">
               <p>
                 Our key observation is that watermarking introduces a persistent, detectable signal into generated content, which can be aggregated across outputs to support entity-level inference over time.
               </p>
@@ -160,7 +160,7 @@ const Page = () => {
             <h2 className="text-2xl md:text-3xl font-Acorns font-medium text-gray-900 dark:text-gray-100">
               Key Results &amp; Takeaways
             </h2>
-            <div className="prose prose-lg dark:prose-invert max-w-none text-gray-600 dark:text-gray-400 leading-relaxed space-y-4">
+            <div className="prose prose-lg dark:prose-invert max-w-none text-gray-600 dark:text-gray-400 leading-relaxed space-y-4 text-justify">
               <ul className="list-disc pl-5 space-y-2">
                 <li>
                   <strong className="text-gray-800 dark:text-gray-200">Zero-bit Watermarking enables Attribution:</strong> Even when no explicit identity is encoded in the watermark message, assigning distinct keys to different entities creates a statistical structure that allows for entity attribution.
