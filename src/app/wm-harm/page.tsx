@@ -43,7 +43,7 @@ const Page = () => {
                   Safety & Alignment
                 </span>
                 <span className="px-3 py-1 text-xs font-semibold uppercase tracking-wider bg-white/10 text-white border border-white/20 rounded-full backdrop-blur-md">
-                  NeurIPS 2026
+                  COLM 2026
                 </span>
               </div>
               <h1 className="text-3xl md:text-5xl font-Acorns font-semibold text-white leading-tight">
@@ -72,6 +72,13 @@ const Page = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
+              <Link 
+                href="https://github.com/tolusophy/wm-harmful-prompts" 
+                target="_blank"
+                className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-white/10 text-gray-900 dark:text-white font-medium hover:bg-white/20 border border-gray-200 dark:border-white/10 transition-all hover:scale-105"
+              >
+                Code (GitHub)
+              </Link>
               <Link 
                 href="https://arxiv.org/pdf/2603.23171" 
                 target="_blank"
