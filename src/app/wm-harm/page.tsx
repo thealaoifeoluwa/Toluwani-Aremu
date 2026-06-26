@@ -89,6 +89,13 @@ const Page = () => {
             </div>
           </div>
 
+          {/* TL;DR Box */}
+          <div className="bg-primary/10 border-l-4 border-primary p-6 rounded-r-2xl mb-8">
+            <p className="text-gray-900 dark:text-white font-medium">
+              <strong>TL;DR:</strong> Existing external LLM monitors (e.g., LlamaGuard) are highly vulnerable to adaptive attackers who craft prompts that bypass keyword filters while eliciting safety policy violations. We introduce <strong>activation watermarking</strong>—a technique that embeds a randomized secret direction in target hidden states during model tuning. This internal defense reduces adaptive Attack Success Rate (ASR) by up to <strong>52%</strong> at 1% False Positive Rate (FPR), while preserving downstream model utility.
+            </p>
+          </div>
+
           {/* Abstract Section */}
           <div className="space-y-6">
             <h2 className="text-2xl md:text-3xl font-Acorns font-medium text-gray-900 dark:text-gray-100">
@@ -154,23 +161,269 @@ const Page = () => {
             </div>
           </div>
 
-          {/* Results Section */}
+          {/* Quantitative Results Section */}
           <div className="space-y-6 pt-8 border-t border-gray-200 dark:border-white/10">
             <h2 className="text-2xl md:text-3xl font-Acorns font-medium text-gray-900 dark:text-gray-100">
-              Key Results
+              Quantitative Evaluation
+            </h2>
+            <div className="prose prose-lg dark:prose-invert max-w-none text-gray-600 dark:text-gray-400 leading-relaxed space-y-4">
+              <p className="text-justify">
+                We evaluate our activation watermarked models (based on Qwen2.5) against standard guard models—namely, LlamaGuard-3-8B and Qwen3Guard-Gen-8B—across multiple template-based and optimization-based jailbreak attack families (Jailbroken, DeepInception, Multilingual, and AutoDAN).
+              </p>
+
+              {/* Table 1: Baseline Comparison */}
+              <h3 className="text-xl font-medium text-gray-900 dark:text-gray-100 mt-6 mb-2">
+                1. Robustness Against Adaptive Jailbreaks
+              </h3>
+              <p className="text-sm text-gray-500 mb-4 text-justify">
+                ASR (Attack Success Rate) at 1% False Positive Rate (FPR) measures the fraction of harmful responses that evade detection. Lower ASR and higher AUROC indicate superior detection performance.
+              </p>
+              
+              <div className="overflow-x-auto my-6 rounded-xl border border-gray-200 dark:border-white/10 shadow-sm">
+                <table className="min-w-full divide-y divide-gray-200 dark:divide-white/10 text-sm text-left">
+                  <thead className="bg-gray-50 dark:bg-white/5 text-gray-900 dark:text-white uppercase font-semibold text-xs tracking-wider">
+                    <tr>
+                      <th className="px-4 py-3" rowSpan={2}>Attack Dataset</th>
+                      <th className="px-4 py-3 text-center border-b border-gray-200 dark:border-white/10" colSpan={5}>ASR @ 1% FPR &darr;</th>
+                      <th className="px-4 py-3 text-center border-b border-gray-200 dark:border-white/10" colSpan={4}>AUROC &uarr;</th>
+                    </tr>
+                    <tr>
+                      <th className="px-3 py-2 text-center text-gray-500">Base</th>
+                      <th className="px-3 py-2 text-center text-gray-500">LlamaGuard</th>
+                      <th className="px-3 py-2 text-center text-gray-500">QwenGuard</th>
+                      <th className="px-3 py-2 text-center text-gray-500">ActProbe</th>
+                      <th className="px-3 py-2 text-center text-primary">ActWM (Ours)</th>
+                      <th className="px-3 py-2 text-center text-gray-500">LlamaGuard</th>
+                      <th className="px-3 py-2 text-center text-gray-500">QwenGuard</th>
+                      <th className="px-3 py-2 text-center text-gray-500">ActProbe</th>
+                      <th className="px-3 py-2 text-center text-primary">ActWM (Ours)</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-200 dark:divide-white/10 text-gray-600 dark:text-gray-400">
+                    <tr className="hover:bg-gray-50/50 dark:hover:bg-white/5">
+                      <td className="px-4 py-3 font-medium text-gray-900 dark:text-white">BeaverTails</td>
+                      <td className="px-3 py-3 text-center">0.6420</td>
+                      <td className="px-3 py-3 text-center">0.3260</td>
+                      <td className="px-3 py-3 text-center font-semibold text-green-600">0.1960</td>
+                      <td className="px-3 py-3 text-center">0.2729</td>
+                      <td className="px-3 py-3 text-center">0.3320</td>
+                      <td className="px-3 py-3 text-center">0.7454</td>
+                      <td className="px-3 py-3 text-center">0.8489</td>
+                      <td className="px-3 py-3 text-center">0.8594</td>
+                      <td className="px-3 py-3 text-center font-bold text-primary">0.8779</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50/50 dark:hover:bg-white/5">
+                      <td className="px-4 py-3 font-medium text-gray-900 dark:text-white">Jailbroken</td>
+                      <td className="px-3 py-3 text-center">1.0000</td>
+                      <td className="px-3 py-3 text-center">0.6429</td>
+                      <td className="px-3 py-3 text-center">0.6122</td>
+                      <td className="px-3 py-3 text-center font-semibold text-green-600">0.3296</td>
+                      <td className="px-3 py-3 text-center">0.4592</td>
+                      <td className="px-3 py-3 text-center">0.7233</td>
+                      <td className="px-3 py-3 text-center">0.9261</td>
+                      <td className="px-3 py-3 text-center font-semibold text-green-600">0.9653</td>
+                      <td className="px-3 py-3 text-center">0.9292</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50/50 dark:hover:bg-white/5">
+                      <td className="px-4 py-3 font-medium text-gray-900 dark:text-white">DeepInception</td>
+                      <td className="px-3 py-3 text-center">1.0000</td>
+                      <td className="px-3 py-3 text-center">0.8511</td>
+                      <td className="px-3 py-3 text-center">0.7660</td>
+                      <td className="px-3 py-3 text-center">0.8644</td>
+                      <td className="px-3 py-3 text-center font-bold text-primary">0.6702</td>
+                      <td className="px-3 py-3 text-center">0.8212</td>
+                      <td className="px-3 py-3 text-center">0.8697</td>
+                      <td className="px-3 py-3 text-center">0.8711</td>
+                      <td className="px-3 py-3 text-center font-bold text-primary">0.9229</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50/50 dark:hover:bg-white/5">
+                      <td className="px-4 py-3 font-medium text-gray-900 dark:text-white">Multilingual</td>
+                      <td className="px-3 py-3 text-center">1.0000</td>
+                      <td className="px-3 py-3 text-center">0.6585</td>
+                      <td className="px-3 py-3 text-center">0.3902</td>
+                      <td className="px-3 py-3 text-center">0.6214</td>
+                      <td className="px-3 py-3 text-center font-bold text-primary">0.3415</td>
+                      <td className="px-3 py-3 text-center">0.4353</td>
+                      <td className="px-3 py-3 text-center">0.9227</td>
+                      <td className="px-3 py-3 text-center">0.9484</td>
+                      <td className="px-3 py-3 text-center font-bold text-primary">0.9619</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50/50 dark:hover:bg-white/5">
+                      <td className="px-4 py-3 font-medium text-gray-900 dark:text-white">AutoDAN</td>
+                      <td className="px-3 py-3 text-center">1.0000</td>
+                      <td className="px-3 py-3 text-center">0.8988</td>
+                      <td className="px-3 py-3 text-center">0.8750</td>
+                      <td className="px-3 py-3 text-center">0.7532</td>
+                      <td className="px-3 py-3 text-center font-bold text-primary">0.6786</td>
+                      <td className="px-3 py-3 text-center">0.4092</td>
+                      <td className="px-3 py-3 text-center">0.7851</td>
+                      <td className="px-3 py-3 text-center">0.8746</td>
+                      <td className="px-3 py-3 text-center font-bold text-primary">0.9048</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              {/* Table 2: Alignment Tax */}
+              <h3 className="text-xl font-medium text-gray-900 dark:text-gray-100 mt-8 mb-2">
+                2. Impact on Downstream Utility (Alignment Tax)
+              </h3>
+              <p className="text-sm text-gray-500 mb-4 text-justify">
+                We measure utility on standard datasets to verify whether fine-tuning for activation watermarking degrades model intelligence. As shown, the absolute change is minor (mostly under 2 percentage points) on general tasks, with the biggest drop concentrated on complex math reasoning.
+              </p>
+
+              <div className="overflow-x-auto my-6 rounded-xl border border-gray-200 dark:border-white/10 shadow-sm">
+                <table className="min-w-full divide-y divide-gray-200 dark:divide-white/10 text-sm text-left">
+                  <thead className="bg-gray-50 dark:bg-white/5 text-gray-900 dark:text-white uppercase font-semibold text-xs tracking-wider">
+                    <tr>
+                      <th className="px-6 py-3">Benchmark Dataset</th>
+                      <th className="px-6 py-3 text-center">Base Model</th>
+                      <th className="px-6 py-3 text-center text-primary font-semibold">Watermarked Model (Ours)</th>
+                      <th className="px-6 py-3 text-center">Difference</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-200 dark:divide-white/10 text-gray-600 dark:text-gray-400">
+                    <tr className="hover:bg-gray-50/50 dark:hover:bg-white/5">
+                      <td className="px-6 py-3 font-medium text-gray-900 dark:text-white">BBH (Big-Bench Hard)</td>
+                      <td className="px-6 py-3 text-center">0.5381</td>
+                      <td className="px-6 py-3 text-center">0.5476</td>
+                      <td className="px-6 py-3 text-center text-green-600 font-semibold">+0.0095 &uarr;</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50/50 dark:hover:bg-white/5">
+                      <td className="px-6 py-3 font-medium text-gray-900 dark:text-white">IFEval (Instruction Following)</td>
+                      <td className="px-6 py-3 text-center">0.6000</td>
+                      <td className="px-6 py-3 text-center">0.5804</td>
+                      <td className="px-6 py-3 text-center text-red-500">-0.0196 &darr;</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50/50 dark:hover:bg-white/5">
+                      <td className="px-6 py-3 font-medium text-gray-900 dark:text-white">MMLU (pro)</td>
+                      <td className="px-6 py-3 text-center">0.4276</td>
+                      <td className="px-6 py-3 text-center">0.4417</td>
+                      <td className="px-6 py-3 text-center text-green-600 font-semibold">+0.0141 &uarr;</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50/50 dark:hover:bg-white/5">
+                      <td className="px-6 py-3 font-medium text-gray-900 dark:text-white">TruthfulQA</td>
+                      <td className="px-6 py-3 text-center">0.6482</td>
+                      <td className="px-6 py-3 text-center">0.6423</td>
+                      <td className="px-6 py-3 text-center text-red-500">-0.0059 &darr;</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50/50 dark:hover:bg-white/5">
+                      <td className="px-6 py-3 font-medium text-gray-900 dark:text-white">GSM8K (Math)</td>
+                      <td className="px-6 py-3 text-center">0.8423</td>
+                      <td className="px-6 py-3 text-center">0.7710</td>
+                      <td className="px-6 py-3 text-center text-red-500 font-medium">-0.0713 &darr;</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50/50 dark:hover:bg-white/5">
+                      <td className="px-6 py-3 font-medium text-gray-900 dark:text-white">MATH-Hard</td>
+                      <td className="px-6 py-3 text-center">0.2243</td>
+                      <td className="px-6 py-3 text-center">0.1979</td>
+                      <td className="px-6 py-3 text-center text-red-500">-0.0264 &darr;</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              {/* Table 3: Model Sizes */}
+              <h3 className="text-xl font-medium text-gray-900 dark:text-gray-100 mt-8 mb-2">
+                3. Scalability Across Model Sizes
+              </h3>
+              <p className="text-sm text-gray-500 mb-4 text-justify">
+                We compare activation watermarking across model sizes (7B and 14B Qwen2.5 base models) under the same adaptive attacks. Robustness remains high across scales, though smaller and larger models show slight differences in strengths on specific attack types.
+              </p>
+
+              <div className="overflow-x-auto my-6 rounded-xl border border-gray-200 dark:border-white/10 shadow-sm">
+                <table className="min-w-full divide-y divide-gray-200 dark:divide-white/10 text-sm text-left">
+                  <thead className="bg-gray-50 dark:bg-white/5 text-gray-900 dark:text-white uppercase font-semibold text-xs tracking-wider">
+                    <tr>
+                      <th className="px-6 py-3">Model Config</th>
+                      <th className="px-6 py-3 text-center">Utility (IFEval)</th>
+                      <th className="px-6 py-3 text-center">Jailbroken AUROC</th>
+                      <th className="px-6 py-3 text-center">DeepInception AUROC</th>
+                      <th className="px-6 py-3 text-center">Multilingual AUROC</th>
+                      <th className="px-6 py-3 text-center">AutoDAN AUROC</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-200 dark:divide-white/10 text-gray-600 dark:text-gray-400">
+                    <tr className="hover:bg-gray-50/50 dark:hover:bg-white/5">
+                      <td className="px-6 py-3 font-medium text-gray-900 dark:text-white">14B Base Model</td>
+                      <td className="px-6 py-3 text-center font-semibold">0.8244</td>
+                      <td className="px-6 py-3 text-center text-gray-400">&mdash;</td>
+                      <td className="px-6 py-3 text-center text-gray-400">&mdash;</td>
+                      <td className="px-6 py-3 text-center text-gray-400">&mdash;</td>
+                      <td className="px-6 py-3 text-center text-gray-400">&mdash;</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50/50 dark:hover:bg-white/5">
+                      <td className="px-6 py-3 font-medium text-gray-900 dark:text-white">7B ActWM (Ours)</td>
+                      <td className="px-6 py-3 text-center">0.5804</td>
+                      <td className="px-6 py-3 text-center font-semibold text-green-600">0.9329</td>
+                      <td className="px-6 py-3 text-center">0.9082</td>
+                      <td className="px-6 py-3 text-center font-semibold text-green-600">0.9541</td>
+                      <td className="px-6 py-3 text-center">0.8866</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50/50 dark:hover:bg-white/5">
+                      <td className="px-6 py-3 font-medium text-gray-900 dark:text-white">14B ActWM (Ours)</td>
+                      <td className="px-6 py-3 text-center">0.8194</td>
+                      <td className="px-6 py-3 text-center">0.9146</td>
+                      <td className="px-6 py-3 text-center font-bold text-primary">0.9840</td>
+                      <td className="px-6 py-3 text-center">0.9370</td>
+                      <td className="px-6 py-3 text-center font-bold text-primary">0.8905</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              {/* Table 4: Transfer Attacks */}
+              <h3 className="text-xl font-medium text-gray-900 dark:text-gray-100 mt-8 mb-2">
+                4. Robustness to Transfer Attacks (Surrogate Models)
+              </h3>
+              <p className="text-sm text-gray-500 mb-4 text-justify">
+                To test the limits of security, we train adaptive jailbreaks on a completely different model family (<strong>Mistral-7B-Instruct</strong>) and evaluate them directly against our Qwen2.5-7B watermarked model. The results prove that cross-model transfer is significantly impaired, with ASR dropping to near-zero.
+              </p>
+
+              <div className="overflow-x-auto my-6 rounded-xl border border-gray-200 dark:border-white/10 shadow-sm">
+                <table className="min-w-full divide-y divide-gray-200 dark:divide-white/10 text-sm text-left">
+                  <thead className="bg-gray-50 dark:bg-white/5 text-gray-900 dark:text-white uppercase font-semibold text-xs tracking-wider">
+                    <tr>
+                      <th className="px-6 py-3">Metric Evaluated on Qwen</th>
+                      <th className="px-6 py-3 text-center">Jailbroken</th>
+                      <th className="px-6 py-3 text-center">DeepInception</th>
+                      <th className="px-6 py-3 text-center">Multilingual</th>
+                      <th className="px-6 py-3 text-center">AutoDAN</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-200 dark:divide-white/10 text-gray-600 dark:text-gray-400">
+                    <tr className="hover:bg-gray-50/50 dark:hover:bg-white/5">
+                      <td className="px-6 py-3 font-medium text-gray-900 dark:text-white">AUROC &uarr;</td>
+                      <td className="px-6 py-3 text-center">0.9501</td>
+                      <td className="px-6 py-3 text-center">0.9545</td>
+                      <td className="px-6 py-3 text-center">0.8972</td>
+                      <td className="px-6 py-3 text-center font-semibold">0.9319</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50/50 dark:hover:bg-white/5">
+                      <td className="px-6 py-3 font-medium text-gray-900 dark:text-white">ASR @ 1% FPR &darr;</td>
+                      <td className="px-6 py-3 text-center">0.0460 (4.6%)</td>
+                      <td className="px-6 py-3 text-center font-bold text-green-600">0.0024 (0.24%)</td>
+                      <td className="px-6 py-3 text-center">0.1321 (13.2%)</td>
+                      <td className="px-6 py-3 text-center font-bold text-green-600">0.0050 (0.50%)</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          {/* Qualitative Results / Key Takeaways */}
+          <div className="space-y-6 pt-8 border-t border-gray-200 dark:border-white/10">
+            <h2 className="text-2xl md:text-3xl font-Acorns font-medium text-gray-900 dark:text-gray-100">
+              Key Insights & Discussion
             </h2>
             <div className="prose prose-lg dark:prose-invert max-w-none text-gray-600 dark:text-gray-400 leading-relaxed space-y-4 text-justify">
-              <ul className="list-disc pl-5 space-y-2">
-                <li>
-                  <strong className="text-gray-800 dark:text-gray-200">Robustness Against Adaptive Attackers:</strong> Existing guard models (LlamaGuard, QwenGuard) degrade significantly under sophisticated attacks. Activation watermarks achieve the highest AUROC across all attack strategies, proving that embedding the detection signal inside representations is more robust than external text screening.
-                </li>
-                <li>
-                  <strong className="text-gray-800 dark:text-gray-200">Modest Alignment Tax:</strong> Watermarking has a very low impact on general utility. On four out of six standard benchmarks (BBH, IFEval, MMLU-pro, TruthfulQA), the absolute performance change is under 2 percentage points, representing a highly favorable trade-off for security.
-                </li>
-                <li>
-                  <strong className="text-gray-800 dark:text-gray-200">Scalability & Multi-Entity Auditing:</strong> The framework easily scales to multi-entity environments and models of different sizes (7B and 14B), while maintaining consistent evasion transfer reduction and minimal multi-key interference.
-                </li>
-              </ul>
+              <p>
+                <strong>Token Weighting Matters:</strong> In our ablation studies, we compared linear token weighting against uniform weighting. Concentrating the watermark signal on later tokens in a response (using a linear ramp after the estimated onset offset <InlineMath math="\Delta" />) consistently achieves a higher AUROC. This aligns with the qualitative observation that harmful text becomes progressively more explicit over length, so focusing the loss budget on those tokens preserves the earlier conversational scaffolding.
+              </p>
+              <p>
+                <strong>The Key-Mismatch Barrier:</strong> The security guarantees of activation watermarking rest on the secrecy of key <InlineMath math="k" />. Our key-dependence evaluations show that prompts optimized to evade detector <InlineMath math="D_{k_j}" /> (surrogate key) transfer poorly to detector <InlineMath math="D_{k_i}" /> (true key). This demonstrates that adding key-dependent uncertainty prevents optimization-based attackers from reliably engineering bypass strings, offering a robust monitoring mechanism.
+              </p>
             </div>
           </div>
 

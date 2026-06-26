@@ -82,6 +82,14 @@ const Page = () => {
             </div>
           </div>
 
+          {/* TL;DR Box */}
+          <div className="bg-primary/10 border-l-4 border-primary p-6 rounded-r-2xl mb-8">
+            <p className="text-gray-900 dark:text-white font-medium">
+              <strong>TL;DR:</strong> While watermarking is widely proposed for provenance and safety monitoring, we reveal a fundamental <strong>dual-use tension</strong>. Assigning distinct keys to different entities (multi-key zero-bit deployment) induces a persistent statistical structure. An observer passively aggregating outputs can re-identify the source entity over time, enabling passive monitoring. External observers achieve up to <strong>73.0%</strong> (text) and <strong>91.0%</strong> (image) re-identification accuracy without access to watermark keys.
+            </p>
+          </div>
+
+          {/* Abstract Section */}
           <div className="space-y-6">
             <h2 className="text-2xl md:text-3xl font-Acorns font-medium text-gray-900 dark:text-gray-100">
               Abstract
@@ -121,11 +129,11 @@ const Page = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                 <div className="p-6 bg-white/5 border border-white/10 rounded-2xl">
                   <h4 className="text-xl font-medium text-primary mb-2">Internal Observer</h4>
-                  <p className="text-sm">Has access to watermark detectors and keys. Under multi-key deployments, each entity has a distinct key <InlineMath math="k_e" />, allowing the observer to evaluate <InlineMath math="\mathcal{D}_{k_e}(x)" /> and directly attribute outputs.</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">Has access to watermark detectors and keys. Under multi-key deployments, each entity has a distinct key <InlineMath math="k_e" />, allowing the observer to evaluate <InlineMath math="\mathcal{D}_{k_e}(x)" /> and directly attribute outputs.</p>
                 </div>
                 <div className="p-6 bg-white/5 border border-white/10 rounded-2xl">
                   <h4 className="text-xl font-medium text-primary mb-2">External Observer</h4>
-                  <p className="text-sm">Does not have access to watermark keys. Relies on observable outputs and applies statistical or learned methods to extract signals and aggregate weak evidence across samples.</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">Does not have access to watermark keys. Relies on observable outputs and applies statistical or learned methods to extract signals and aggregate weak evidence across samples.</p>
                 </div>
               </div>
             </div>
@@ -155,23 +163,160 @@ const Page = () => {
             </div>
           </div>
 
-          {/* Results Section */}
+          {/* Quantitative Results Section */}
           <div className="space-y-6 pt-8 border-t border-gray-200 dark:border-white/10">
             <h2 className="text-2xl md:text-3xl font-Acorns font-medium text-gray-900 dark:text-gray-100">
-              Key Results &amp; Takeaways
+              Quantitative Evaluation
+            </h2>
+            <div className="prose prose-lg dark:prose-invert max-w-none text-gray-600 dark:text-gray-400 leading-relaxed space-y-4">
+              <p className="text-justify">
+                We evaluate internal and external observer capabilities across text models (Qwen2.5-14B with KGW watermarking on C4) and image models (Stable Diffusion v2.1 with Tree-Ring watermarking).
+              </p>
+
+              {/* Table 1: External Observer Re-Identification */}
+              <h3 className="text-xl font-medium text-gray-900 dark:text-gray-100 mt-6 mb-2">
+                1. External Observer Re-Identification Accuracy
+              </h3>
+              <p className="text-sm text-gray-500 mb-4 text-justify">
+                Without access to watermark keys, an external observer trains a classifier (BERT-Base for text, CLIP-RN50 for images) on public outputs. Re-identification accuracy is initially near random, but improves substantially as more samples are aggregated.
+              </p>
+
+              <div className="overflow-x-auto my-6 rounded-xl border border-gray-200 dark:border-white/10 shadow-sm">
+                <table className="min-w-full divide-y divide-gray-200 dark:divide-white/10 text-sm text-left">
+                  <thead className="bg-gray-50 dark:bg-white/5 text-gray-900 dark:text-white uppercase font-semibold text-xs tracking-wider">
+                    <tr>
+                      <th className="px-6 py-3">Modality Method</th>
+                      <th className="px-6 py-3 text-center">Entities (<InlineMath math="n" />)</th>
+                      <th className="px-6 py-3 text-center">Top-1 (100 Samples)</th>
+                      <th className="px-6 py-3 text-center text-primary font-semibold">Top-1 (4000 Samples)</th>
+                      <th className="px-6 py-3 text-center">Top-3 (4000 Samples)</th>
+                      <th className="px-6 py-3 text-center">Random Baseline (<InlineMath math="1/n" />)</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-200 dark:divide-white/10 text-gray-600 dark:text-gray-400">
+                    <tr className="hover:bg-gray-50/50 dark:hover:bg-white/5">
+                      <td className="px-6 py-3 font-medium text-gray-900 dark:text-white" rowSpan={4}>Text (KGW)</td>
+                      <td className="px-6 py-3 text-center font-mono">n = 2</td>
+                      <td className="px-6 py-3 text-center">~52.0%</td>
+                      <td className="px-6 py-3 text-center font-semibold text-green-600">~96.0%</td>
+                      <td className="px-6 py-3 text-center">100.0%</td>
+                      <td className="px-6 py-3 text-center">50.0%</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50/50 dark:hover:bg-white/5">
+                      <td className="px-6 py-3 text-center font-mono">n = 4</td>
+                      <td className="px-6 py-3 text-center">~28.0%</td>
+                      <td className="px-6 py-3 text-center font-semibold text-green-600">~88.0%</td>
+                      <td className="px-6 py-3 text-center">~97.0%</td>
+                      <td className="px-6 py-3 text-center">25.0%</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50/50 dark:hover:bg-white/5">
+                      <td className="px-6 py-3 text-center font-mono">n = 8</td>
+                      <td className="px-6 py-3 text-center">~15.0%</td>
+                      <td className="px-6 py-3 text-center font-semibold text-green-600">~80.0%</td>
+                      <td className="px-6 py-3 text-center">~93.0%</td>
+                      <td className="px-6 py-3 text-center">12.5%</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50/50 dark:hover:bg-white/5">
+                      <td className="px-6 py-3 text-center font-mono border-b border-gray-200 dark:border-white/10">n = 16</td>
+                      <td className="px-6 py-3 text-center border-b border-gray-200 dark:border-white/10">11.3%</td>
+                      <td className="px-6 py-3 text-center font-bold text-primary border-b border-gray-200 dark:border-white/10">73.0%</td>
+                      <td className="px-6 py-3 text-center border-b border-gray-200 dark:border-white/10">90.0%</td>
+                      <td className="px-6 py-3 text-center border-b border-gray-200 dark:border-white/10">6.25%</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50/50 dark:hover:bg-white/5">
+                      <td className="px-6 py-3 font-medium text-gray-900 dark:text-white" rowSpan={4}>Images (Tree-Ring)</td>
+                      <td className="px-6 py-3 text-center font-mono">n = 2</td>
+                      <td className="px-6 py-3 text-center">~55.0%</td>
+                      <td className="px-6 py-3 text-center font-semibold text-green-600">~98.0%</td>
+                      <td className="px-6 py-3 text-center">100.0%</td>
+                      <td className="px-6 py-3 text-center">50.0%</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50/50 dark:hover:bg-white/5">
+                      <td className="px-6 py-3 text-center font-mono">n = 4</td>
+                      <td className="px-6 py-3 text-center">~32.0%</td>
+                      <td className="px-6 py-3 text-center font-semibold text-green-600">~94.0%</td>
+                      <td className="px-6 py-3 text-center">~99.0%</td>
+                      <td className="px-6 py-3 text-center">25.0%</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50/50 dark:hover:bg-white/5">
+                      <td className="px-6 py-3 text-center font-mono">n = 8</td>
+                      <td className="px-6 py-3 text-center">~18.0%</td>
+                      <td className="px-6 py-3 text-center font-semibold text-green-600">~92.0%</td>
+                      <td className="px-6 py-3 text-center">~97.0%</td>
+                      <td className="px-6 py-3 text-center">12.5%</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50/50 dark:hover:bg-white/5">
+                      <td className="px-6 py-3 text-center font-mono">n = 16</td>
+                      <td className="px-6 py-3 text-center">~12.0%</td>
+                      <td className="px-6 py-3 text-center font-bold text-primary">91.0%</td>
+                      <td className="px-6 py-3 text-center">96.0%</td>
+                      <td className="px-6 py-3 text-center">6.25%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              {/* Table 2: Control Experiments */}
+              <h3 className="text-xl font-medium text-gray-900 dark:text-gray-100 mt-8 mb-2">
+                2. Isolating Watermarking Roles (Control Settings for <InlineMath math="n=16" />)
+              </h3>
+              <p className="text-sm text-gray-500 mb-4 text-justify">
+                We compare four settings at 4000 samples to confirm that monitoring ability emerges specifically from the key-dependent watermark structure rather than model prompt biases. Without watermarking or under a shared-key setup, observer accuracy collapses to random chance.
+              </p>
+
+              <div className="overflow-x-auto my-6 rounded-xl border border-gray-200 dark:border-white/10 shadow-sm">
+                <table className="min-w-full divide-y divide-gray-200 dark:divide-white/10 text-sm text-left">
+                  <thead className="bg-gray-50 dark:bg-white/5 text-gray-900 dark:text-white uppercase font-semibold text-xs tracking-wider">
+                    <tr>
+                      <th className="px-6 py-3">Deployment Setting</th>
+                      <th className="px-6 py-3 text-center">Text Modality (KGW)</th>
+                      <th className="px-6 py-3 text-center">Image Modality (Tree-Ring)</th>
+                      <th className="px-6 py-3 text-center">Random Guess Baseline</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-200 dark:divide-white/10 text-gray-600 dark:text-gray-400">
+                    <tr className="hover:bg-gray-50/50 dark:hover:bg-white/5">
+                      <td className="px-6 py-3 font-medium text-gray-900 dark:text-white">Internal Observer (Key Access)</td>
+                      <td className="px-6 py-3 text-center font-semibold text-green-600">~98.0% TPR</td>
+                      <td className="px-6 py-3 text-center font-semibold text-green-600">~99.0% TPR</td>
+                      <td className="px-6 py-3 text-center">6.25%</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50/50 dark:hover:bg-white/5">
+                      <td className="px-6 py-3 font-medium text-gray-900 dark:text-white">External Observer (BERT/CLIP)</td>
+                      <td className="px-6 py-3 text-center font-bold text-primary">73.0% Top-1</td>
+                      <td className="px-6 py-3 text-center font-bold text-primary">91.0% Top-1</td>
+                      <td className="px-6 py-3 text-center">6.25%</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50/50 dark:hover:bg-white/5">
+                      <td className="px-6 py-3 font-medium text-gray-900 dark:text-white">No-Watermark Baseline</td>
+                      <td className="px-6 py-3 text-center text-red-500">~7.0% Top-1</td>
+                      <td className="px-6 py-3 text-center text-red-500">~6.0% Top-1</td>
+                      <td className="px-6 py-3 text-center">6.25%</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50/50 dark:hover:bg-white/5">
+                      <td className="px-6 py-3 font-medium text-gray-900 dark:text-white">Shared-Key Deployment</td>
+                      <td className="px-6 py-3 text-center text-red-500">~6.0% Top-1</td>
+                      <td className="px-6 py-3 text-center text-red-500 font-medium">~6.0% Top-1</td>
+                      <td className="px-6 py-3 text-center">6.25%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          {/* Discussion & Takeaways Section */}
+          <div className="space-y-6 pt-8 border-t border-gray-200 dark:border-white/10">
+            <h2 className="text-2xl md:text-3xl font-Acorns font-medium text-gray-900 dark:text-gray-100">
+              Key Insights & Discussion
             </h2>
             <div className="prose prose-lg dark:prose-invert max-w-none text-gray-600 dark:text-gray-400 leading-relaxed space-y-4 text-justify">
-              <ul className="list-disc pl-5 space-y-2">
-                <li>
-                  <strong className="text-gray-800 dark:text-gray-200">Zero-bit Watermarking enables Attribution:</strong> Even when no explicit identity is encoded in the watermark message, assigning distinct keys to different entities creates a statistical structure that allows for entity attribution.
-                </li>
-                <li>
-                  <strong className="text-gray-800 dark:text-gray-200">External Monitoring emerges naturally:</strong> Observers without access to the detection API can still learn to identify sources if the watermarking scheme alters the output distribution in a persistent, key-dependent way.
-                </li>
-                <li>
-                  <strong className="text-gray-800 dark:text-gray-200">Dual-use Tension:</strong> There is a fundamental tension between the desired properties of watermarking (robust attribution) and the privacy risks of mass monitoring, motivating a shift from per-sample evaluation to considering aggregation capabilities.
-                </li>
-              </ul>
+              <p>
+                <strong>The Dual-Use Tension:</strong> Provenance technologies like watermarking are typically marketed as security and transparency mechanisms. However, our findings show that assigning distinct keys to individual entities inevitably leaves a persistent, unique statistical trace. A passive observer (such as an ISP, database auditor, or government entity) can aggregate outputs to track, profile, and identify specific users over time.
+              </p>
+              <p>
+                <strong>Mitigation Directions:</strong> Reducing this risk requires watermarking methods that preserve the original text/image probability distribution, making the watermark statistically undetectable without key access. Alternatively, shared-key deployments offer a robust defense against passive external monitoring, although they eliminate the provider&apos;s ability to attribute content to individual target entities.
+              </p>
             </div>
           </div>
 
