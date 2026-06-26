@@ -713,6 +713,10 @@ export const blogs = [
     authors: ["Samar Fares*", "Klea Ziu*", "Toluwani Aremu*", "Nikita Durasov", "Martin Takáč", "Pascal Fua", "Karthik Nandakumar", "Ivan Laptev"],
     venue: "CVPR (AdvML) [Distinguished Paper🏆]",
     year: 2026,
+    extraLinks: [
+      { name: "Code (GitHub)", url: "https://github.com/klea-ziu/MirrorCheck" },
+      { name: "Project Page", url: "/mirrorcheck" }
+    ]
   },
   {
     title: "Optimizing Adaptive Attacks against Watermarks for Language Models",

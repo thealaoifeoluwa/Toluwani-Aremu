@@ -30,11 +30,14 @@ const ArticleBox = ({ data }: { data: (typeof blogs)[0] }) => {
             </p>
           )}
           {(venue || year || extraLinks) && (
-            <div className="flex justify-between items-center pt-2 gap-2 border-t border-gray-200 dark:border-gray-700">
-              <span className="text-primary font-medium text-left">{venue || ""}</span>
+            <div className="flex flex-col pt-2 border-t border-gray-200 dark:border-gray-700">
+              <div className="flex justify-between items-center gap-2">
+                <span className="text-primary font-medium text-left truncate max-w-[240px]" title={venue}>{venue || ""}</span>
+                <span className="text-gray-500 dark:text-gray-400 text-right whitespace-nowrap">{year || ""}</span>
+              </div>
               
               {extraLinks && (
-                <div className="flex gap-2 justify-center">
+                <div className="flex flex-wrap gap-2 justify-start mt-2">
                   {(extraLinks as { name: string; url: string }[]).map((ext, idx) => {
                     const isExternal = ext.url.startsWith("http");
                     return (
@@ -42,7 +45,7 @@ const ArticleBox = ({ data }: { data: (typeof blogs)[0] }) => {
                         key={idx} 
                         href={ext.url} 
                         target={isExternal ? "_blank" : undefined}
-                        className="px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-primary hover:text-white transition-colors whitespace-nowrap text-[10px] sm:text-xs"
+                        className="px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-primary hover:text-white transition-colors whitespace-nowrap text-[10px] sm:text-xs font-medium"
                       >
                         {ext.name}
                       </Link>
@@ -50,8 +53,6 @@ const ArticleBox = ({ data }: { data: (typeof blogs)[0] }) => {
                   })}
                 </div>
               )}
-
-              <span className="text-gray-500 dark:text-gray-400 text-right whitespace-nowrap">{year || ""}</span>
             </div>
           )}
         </div>
