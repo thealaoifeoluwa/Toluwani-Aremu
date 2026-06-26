@@ -682,7 +682,6 @@ export const blogs = [
     venue: "arXiv",
     year: 2026,
     extraLinks: [
-      { name: "Code (GitHub)", url: "https://github.com/tolusophy/wm-harmful-prompts" },
       { name: "Project Page", url: "/wm-harm" }
     ]
   },
@@ -694,7 +693,6 @@ export const blogs = [
     venue: "arXiv",
     year: 2026,
     extraLinks: [
-      { name: "Code (GitHub)", url: "https://github.com/MBZUAI-Trustworthy-ML/watermark-supression" },
       { name: "Project Page", url: "/wm-forgery" }
     ]
   },
@@ -714,7 +712,6 @@ export const blogs = [
     venue: "CVPR (AdvML) [Distinguished Paper🏆]",
     year: 2026,
     extraLinks: [
-      { name: "Code (GitHub)", url: "https://github.com/klea-ziu/MirrorCheck" },
       { name: "Project Page", url: "/mirrorcheck" }
     ]
   },

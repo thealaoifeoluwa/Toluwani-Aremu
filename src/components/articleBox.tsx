@@ -7,7 +7,7 @@ const ArticleBox = ({ data }: { data: (typeof blogs)[0] }) => {
 
   return (
     <div
-      className="w-[390px] min-w-[300px] md:min-w-[390px] min-h-[380px] p-3 sm:p-5 bg-white dark:bg-[#1B1B1B] rounded-[10px] flex flex-col transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 hover:scale-105 hover:glow-accent-lg focus-within:outline-none focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2 dark:focus-within:ring-offset-black"
+      className="w-[390px] min-w-[300px] md:min-w-[390px] min-h-[320px] p-3 sm:p-5 bg-white dark:bg-[#1B1B1B] rounded-[10px] flex flex-col transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 hover:scale-105 hover:glow-accent-lg focus-within:outline-none focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2 dark:focus-within:ring-offset-black"
     >
       <Link href={link} target="_blank" className="flex flex-col flex-grow outline-none">
         <Image
@@ -16,9 +16,9 @@ const ArticleBox = ({ data }: { data: (typeof blogs)[0] }) => {
           width={0}
           height={0}
           sizes="100vw"
-          className="w-full h-[200px] object-cover rounded-xl"
+          className="w-full h-[160px] object-cover rounded-xl"
         />
-        <h2 className="my-[14px] flex-grow font-Acorns font-medium text-center line-clamp-3">
+        <h2 className="my-2 flex-grow font-Acorns font-medium text-center line-clamp-3">
           {title}
         </h2>
       </Link>
@@ -30,14 +30,11 @@ const ArticleBox = ({ data }: { data: (typeof blogs)[0] }) => {
             </p>
           )}
           {(venue || year || extraLinks) && (
-            <div className="flex flex-col pt-2 border-t border-gray-200 dark:border-gray-700">
-              <div className="flex justify-between items-center gap-2">
-                <span className="text-primary font-medium text-left truncate max-w-[240px]" title={venue}>{venue || ""}</span>
-                <span className="text-gray-500 dark:text-gray-400 text-right whitespace-nowrap">{year || ""}</span>
-              </div>
+            <div className="flex justify-between items-center pt-2 gap-2 border-t border-gray-200 dark:border-gray-700">
+              <span className="text-primary font-medium text-left truncate max-w-[130px]" title={venue}>{venue || ""}</span>
               
               {extraLinks && (
-                <div className="flex flex-wrap gap-2 justify-start mt-2">
+                <div className="flex gap-2 justify-center">
                   {(extraLinks as { name: string; url: string }[]).map((ext, idx) => {
                     const isExternal = ext.url.startsWith("http");
                     return (
@@ -53,6 +50,8 @@ const ArticleBox = ({ data }: { data: (typeof blogs)[0] }) => {
                   })}
                 </div>
               )}
+
+              <span className="text-gray-500 dark:text-gray-400 text-right whitespace-nowrap">{year || ""}</span>
             </div>
           )}
         </div>
