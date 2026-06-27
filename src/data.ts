@@ -707,9 +707,9 @@ export const blogs = [
   {
     title: "MirrorCheck: Efficient Adversarial Defense for Vision-Language Models",
     image: "/mirrorcheck.png",
-    link: "https://openreview.net/pdf?id=pdIPR5TSXy",
+    link: "https://arxiv.org/pdf/2406.09250",
     authors: ["Samar Fares*", "Klea Ziu*", "Toluwani Aremu*", "Nikita Durasov", "Martin Takáč", "Pascal Fua", "Karthik Nandakumar", "Ivan Laptev"],
-    venue: "CVPR (AdvML) [Distinguished Paper🏆]",
+    venue: "CVPR🏆",
     year: 2026,
     extraLinks: [
       { name: "Project Page", url: "/mirrorcheck" }
@@ -720,7 +720,7 @@ export const blogs = [
     image: "/wmark.png",
     link: "https://arxiv.org/pdf/2410.02440",
     authors: ["Abdulrahman Diaa", "Toluwani Aremu", "Nils Lukas"],
-    venue: "ICML [Spotlight🏆]",
+    venue: "ICML🏆",
     year: 2025,
   },
   {
@@ -728,7 +728,7 @@ export const blogs = [
     image: "/llmreliable.png",
     link: "https://onlinelibrary.wiley.com/doi/pdf/10.1002/aaai.12208",
     authors: ["Toluwani Aremu", "Kemi Akinwehinmi", "Emeka Nwagu", "Syed Ahmed", "Rita Orji", "P. Arnau Del Amo", "Abdulmotaleb El Saddik"],
-    venue: "AAAI Magazine",
+    venue: "AAAI",
     year: 2025,
   },
   {
@@ -744,7 +744,7 @@ export const blogs = [
     image: "/lmm.png",
     link: "https://arxiv.org/pdf/2411.16508",
     authors: ["Ashmal Vayani", "Dinura Dissanayake", "Hasindri Watawana", "Noor Hassan", "...", "Toluwani Aremu", "et al."],
-    venue: "CVPR [Spotlight🏆]",
+    venue: "CVPR🏆",
     year: 2025,
   },
   {
